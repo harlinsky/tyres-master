@@ -1,0 +1,140 @@
+
+.page-cab-new .log {
+  & .log-row {
+    @include clearfix;
+
+    margin-bottom: 20px;
+  }
+}
+
+.page-cab-new .log {
+  & .log-row .title{
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+    color: #f39552;
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+.page-cab-new .log {
+  & .log-row .search{
+    width: 426px;
+    float: right;
+    @include clearfix;
+
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+}
+
+
+.page-cab-new .log {
+  & .log-row .search-send{
+    float: left;
+    cursor: pointer;
+    display: block;
+    width: 36px;
+    height: 40px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAACJUlEQVQ4T5XTP2gTcRQH8O+7/KsBBTuJ3oVKclYbKeJFrGNEUZBMDooIXQqKLi5Ss7koKsVJioiCDiKk4OaikEwqkqQdNFp76WAviYOKGK3FNPl9JYE77FFbve1+v/f7/N57907geyqVSngxGu0PMhJRBDUlS99qW76m09L2x3bfxV18UXH6+0K8SZHTAAK+4EUCN77X9Kt+qAeU5hsxUZ08gDjAnCLvMqReayoSFqVGAF4AcEAgzzZiKWOa5i/3AikUGNykO68AGSbkVMrUp/ypkpSZqnOFkCyIO9YO44wHlKq1USHvU3gxlYhNrFanu1aynSkBjivh8L5E7E2vB9O2UyCwu6/V3JZMJltrAu8bO0XrvCNwPWUal3pA2XZ+AHximbETax1298q2swCgapnGQRcgIJOWqZ//F6BkOzMCKsuMWS7wGcBLyzQy6wHdZk5Xa5/+jJfynPMYgiPttsT279K/rNmDai0tZJ5ANmUa13oZFOc+HNZEe0rgXso0xv4G2LYdaWLDc4BDXO7EU0MDH71JLM/VHkF4EsREs65n/dPWndJIGA8BHAWQ35vQD4kIPaDUaETlZycH4hiAeZIPBFKBxhCIEUBGAWx2s6PwthU3znUR71/IkYG4XR+jcFyA7StKIYoqgMtCZoRytrvnIavVXJytD2qBzoAiVYja2z2DRr13iJTyvDPpIgBueRms9wm99Fciy/8NuND07MJWJcHWb6fs91KirA9YAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+
+.page-cab-new .log {
+  & .log-row .search-input{
+    float: left;
+    padding-left: 10px;
+    margin-right: 30px;
+    /* Style for "Прямоуголь" */
+    width: 170px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid #464649;
+    background-color: #353538;
+
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+
+    transition: 0.3s ease-out;
+    outline: none;
+    &:focus {
+      border: 1px solid #cfdee7;
+    }
+
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &:-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;}
+  }
+}
+
+.page-cab-new .log {
+  & .log-row .search-btn{
+    float: right;
+    margin-right: 20px;
+    /* Style for "Прямоуголь" */
+    width: 170px;
+    height: 40px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
+    border-radius: 2px;
+    border: 2px solid #6b6b72;
+      background-color: #3a3a3d;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    &:active {
+      top: 1px;
+    }
+
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      background-color: #464649;
+    }
+
+    &:active {
+      background-color: #3a3a3d;
+    }
+  }
+  & .log-row .search-btn-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #ffffff;
+    white-space: nowrap;
+    text-align: center;
+  }
+}
+
+.page-cab-new .log {
+  & .CLASS{
+
+  }
+}

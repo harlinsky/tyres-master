@@ -1,0 +1,289 @@
+
+
+.page-cab-new .log {
+  & .check-tab {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    @include clearfix;
+    margin-bottom: 70px;
+
+    background-color: #464649;
+
+    @media #{$mobile} {
+      // display: none;
+      margin-bottom: 150px;
+    }
+
+    position: relative;
+
+
+    & .no-orders {
+      content: 'У вас ещё не было заказов';
+
+      background: url('../img/cab_table-bg-no-orders.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: #353538;
+
+      position: absolute;
+      // top: 50%;
+      top: 110px;
+      left: 50%;
+      width: 220px;
+      height: 160px;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      user-select: none;
+      @include font(italic, 600, 16px, 24px, 'Georgia');
+      color: #f39552;
+      &-text {
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+
+.page-cab-new .log {
+  & .col {
+    @include clearfix;
+    float: left;
+    & .CLASS{
+
+    }
+  }
+}
+
+
+.page-cab-new .log {
+  & .cell {
+    // float: left;
+    min-height: 212px;
+    text-align: center;
+    margin-bottom: 3px;
+    background: #353538;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.page-cab-new .log {
+  & .col.photo .cell{
+    width: 115px;
+    padding-top: 30px;
+
+    & .cell-img {
+      width: 69px;
+      height: 69px;
+    }
+  }
+  & .col.photo {
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+}
+
+.page-cab-new .log {
+  & .col.name .cell{
+    @include font(italic, 400, 18px, 27px, 'Arial');
+    color: #cfdee7;
+    width: 270px;
+    padding-top: 50px;
+
+    @media #{$tablet} {
+      width: 230px;
+    }
+
+    @media #{$mobile} {
+      width: 157px;
+      padding-left: 25px;
+    }
+    &.first {
+      @media #{$mobile} {
+        text-align: left;
+        padding-left: 25px;
+      }
+    }
+  }
+}
+
+
+.page-cab-new .log {
+  & .col.size .cell{
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #0ba360;
+    width: 130px;
+    padding-top: 50px;
+  }
+  & .col.size {
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+}
+
+
+.page-cab-new .log {
+  & .col.category .cell{
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #0ba360;
+    width: 170px;
+    padding-top: 50px;
+
+    @media #{$tablet} {
+      width: 120px;
+    }
+
+    &:nth-child(2) {
+
+          background: url('../img/cab_table-bg-no-orders.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-color: #353538;
+    }
+  }
+  & .col.category {
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+}
+
+
+
+.page-cab-new .log {
+  & .col.num .cell{
+    width: 230px;
+    padding-top: 40px;
+
+    @media #{$tablet} {
+      width: 184px;
+    }
+  }
+  & .col.num {
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+}
+
+
+.page-cab-new .log {
+  & .col.price .cell{
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #f39552;
+    width: 170px;
+    padding-top: 50px;
+
+    @media #{$tablet} {
+      width: 120px;
+    }
+    @media #{$mobile} {
+      width: 157px;
+      padding-right: 25px;
+    }
+
+    &.first {
+      @media #{$mobile} {
+        text-align: right;
+        padding-right: 25px;
+      }
+    }
+  }
+}
+
+
+.page-cab-new .log {
+  & .col.del .cell{
+    // width: 115px;
+    width: 119px;
+    padding-top: 52px;
+
+    position: relative;
+
+    & .remove-btn {
+      cursor: pointer;
+      width: 17px;
+      height: 16px;
+      margin: 0 auto;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAYAAADwMZRfAAABgklEQVQ4T5WUPS9EQRSGn7Mf9qJQiR+g1QnRUlnZu1G4ClGRKFYihIIoJAqhIKHwkdBssRGrkJ0rxOdPUpEbmzUy9rqZxX6Y7s4955kz73nPiHbdAyAH+MCUKPVGk6U9r4sguABGgB3RrlsGEmHeM44zKsXiez1OCLgDBsOYFwM5BWatJIXjTPwF0ul0N8nkDVr3W/G7oj0vThDkzVUagb4AicQT0BfFaX2E78+L2WgG0tlsD1o/1ACMFkqtmvwviAUqAJM1FX18LBKLGQ16rf0tUWr9+zuChKA2guAScK2Sy4gkLcCaKLVtC18DqQuKjpQVKZV2f3auHuQKSP/R5g1RarMhRHve7+vAK9BpJUaC/tKkDqBApbJMPH7/o7X7+P6SgI66E7bYCDpuCXpOe/u0FIuV0CPXwED0X+SYUilnQK2brTovtt1BJE8qNWNsfwLMtWT7KugWGLLiz0RnMu+WDx5xnLGGA+i6HeHED1ddqsumkj1g4V9PQRVk3J0BDj8BE+u2d4CTHlUAAAAASUVORK5CYII=') no-repeat;
+    }
+
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+}
+
+.page-cab-new .log {
+  & .col .cell.first {
+    padding: 0;
+    min-height: 78px;
+    @include font(italic, 400, 16px, 78px, 'Georgia');
+    color: #cfdee7;
+    text-align: center;
+    background: transparent;
+
+    @media #{$mobile} {
+
+      text-align: initial;
+    }
+  }
+}
+
+
+.page-cab-new .log {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cab-new .log {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cab-new .log {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cab-new .log {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cab-new .log {
+  & .CLASS{
+
+  }
+}
+
+
+
+.page-cab-new .log {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cab-new .log {
+  & .CLASS{
+
+  }
+}

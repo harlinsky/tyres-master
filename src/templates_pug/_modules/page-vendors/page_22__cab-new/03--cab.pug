@@ -1,0 +1,52 @@
+// cab
+section.cab
+  .shell
+      .container
+        .range
+          .cab-wrapper
+            //- content
+            .cab-content
+
+              .profile
+                .profile-title
+                  .profile-title-essence Данные для будущих заказов
+                  .profile-subtitle Информацию будет использована только для ускорения оформления заказа. <br>Вы сможете поменять её в любое время.
+                .profile-content
+
+                  .delivery
+                    .delivery-title Данные о заказчике
+                    form.delivery-name
+                      .delivery-name__first.delivery-item
+                        label Ваше Имя
+                        input(type="text" placeholder="Имя")
+                      .delivery-name__last.delivery-item
+                        label Фамилия
+                        input(type="text" placeholder="Фамилия")
+                      .delivery-name__phone.delivery-item
+                        label Ваш номер телефона
+                        input(type="text" placeholder="+7 (__) ___ __ __")
+
+                    form.delivery-type
+                      .delivery-type__select
+                        .title Выбор способа доставки
+                        .item
+                          input#delivery01(type="radio" name="delivery" checked)
+                          span.radio-indicator
+                          label(for="delivery01") Самовывоз
+                        .item
+                          input#delivery02(type="radio" name="delivery")
+                          span.radio-indicator
+                          label(for="delivery02") Доставка
+                      .delivery-type__free
+                        .left
+                          .left-text
+                            span БЕСПЛАТНО&nbsp;
+                            | по алматы
+                        .right
+                          .right-text Доставка Бесплатно в пределах административных&nbsp;границ города Алматы
+
+                    .btn-next
+                      .btn-next-text Сохранить
+
+
+// cab end

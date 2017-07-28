@@ -1,0 +1,278 @@
+.page-services-item .order {
+  background: #262627;
+}
+
+
+.page-services-item .order {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      // min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-bottom: 50px;
+  }
+
+  & .order-wrapper {
+    //
+  }
+
+  & .order-essence {
+    //
+  }
+}
+
+.page-services-item .order {
+  & .CLASS{
+
+  }
+}
+
+.page-services-item .order {
+  & .order-send{
+    height: 264px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
+    border-radius: 2px;
+    border: 3px solid #464649;
+    margin-bottom: 70px;
+
+    @media #{$mobile} {
+      padding: 30px 22px 40px;
+      height: auto;
+    }
+  }
+}
+
+.page-services-item .order {
+  & .order-send__wrap{
+    width: 970px;
+    margin: 0 auto;
+    @include clearfix;
+    padding-top: 65px;
+
+    @media #{$mobile} {
+      padding-top: 0;
+      width: auto;
+    }
+  }
+  & .CLASS{
+
+  }
+  & .CLASS{
+
+  }
+}
+
+.page-services-item .order {
+  & .order-send__left{
+    float: left;
+    width: 200px;
+    margin-top: 30px;
+
+    @media #{$mobile} {
+      margin-top: 0;
+      float: none;
+      margin-bottom: 20px;
+    }
+  }
+  & .order-send__left-text{
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+    color: #cfdee7;
+  }
+  & .order-send__left-subtext{
+    display: none;
+
+    @media #{$mobile} {
+      display: block;
+
+      @include font(italic, 400, 14px, 21px, 'Georgia');
+      color: #cfdee7;
+    }
+  }
+}
+
+
+.page-services-item .order {
+  & .order-send__mid{
+    float: left;
+    width: 470px;
+    margin-right: 30px;
+    @include clearfix;
+
+    @media #{$mobile} {
+      float: none;
+      width: auto;
+      margin-right: 0;
+    }
+  }
+  & .order-send__mid-name {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 15px;
+
+    @media #{$mobile} {
+      margin-right: 0;
+      float: none;
+    }
+
+    & > input {
+      width: 170px;
+      padding-left: 15px;
+
+      @media #{$mobile} {
+        width: 100%;
+      }
+    }
+  }
+  & .order-send__mid-phone {
+    float: right;
+
+    @media #{$mobile} {
+      float: none;
+    }
+    & > input {
+      width: 270px;
+      padding-left: 15px;
+
+      @media #{$mobile} {
+        width: 100%;
+      }
+    }
+  }
+  & .order-send__mid-label{
+    display: block;
+    margin-bottom: 10px;
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+  }
+  & .order-send__mid-input{
+    /* Style for "Прямоуголь" */
+    width: 170px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid #464649;
+    background-color: #353538;
+
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+    color: rgba(207, 222, 231, 1);
+    color: hsla(203, 33%, 86%, 1);
+
+    transition: 50ms ease-out;
+    outline: none;
+    &:focus {
+      border: 1px solid #cfdee7;
+    }
+
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &::placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &:-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+  }
+  & .order-send__mid-desc{
+    width: 400px;
+    float: left;
+    clear: both;
+    @include font(italic, 400, 14px, 21px, 'Georgia');
+    color: #cfdee7;
+
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+}
+
+
+.page-services-item .order {
+  & .order-send__right{
+    width: 270px;
+    float: right;
+    margin-top: 30px;
+  }
+  & .order-send__right-btn{
+    @include font(normal, 400, 18px, 40px, 'Arial');
+    /* Style for "Прямоуголь" */
+    width: 270px;
+    height: 40px;
+    text-align: center;
+
+
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+    border-radius: 2px;
+    background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
+    color: #ffffff;
+    text-transform: uppercase;
+
+    // ---
+    transition: background 50ms;
+    background-size: 100% auto;
+    background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+      background-size: 200% auto;
+      background-position: bottom center; /* change the direction of the change here */
+    }
+    &:active {
+      top: 1px;
+    }
+    &.inactive {
+      opacity: 0.5;
+    }
+    // ---
+  }
+}
+
+
+.page-services-item .order {
+  & .CLASS{
+
+  }
+}

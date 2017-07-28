@@ -1,0 +1,54 @@
+// header
+header.header
+  .shell
+    .container
+      .range
+        .header-wrap
+          //- .header-logo
+          .header-logo
+            a(href='index.html')
+              img.header-logo-essence(src="img/logo.png")
+
+          //- .header-content
+          .header-desc
+            .desc
+             | Шины, Диски <br>
+             | и Масла с доставкой <br>
+             | по всему Казахстану <br>
+            .dealer
+
+
+          //- .user-block
+          .user-block
+            #phone.phone +7(727)394-04-58
+              .phone-tooltip
+                .phone-tooltip-item Магазин
+                .phone-tooltip-num +7 (727) 394-04-58
+                .phone-tooltip-item Сервис
+                .phone-tooltip-num +7 (727) 394-04-58
+
+            .row
+              .search
+                .search-essence
+              .cart
+                .cart-essence
+              a.login#login(href="#") Войти/регистрация
+
+          .header-mobile
+            .header-mobile-wrap
+              .header-mobile__burger
+                .header-mobile__burger-container
+                  input#click(name='exit', type='checkbox')
+                  label(for='click')
+                    span.burger
+
+                //- .header-mobile__burger-essence
+                //-   input#click(name='exit', type='checkbox')
+                //-   label(for='click')
+                //-     span.header-mobile__burger-lines
+              .header-mobile__logo
+              .header-mobile__cart
+
+
+include 003__menu
+// header end

@@ -1,0 +1,200 @@
+.page-about-us .article {
+  // bg 1
+}
+
+
+.page-about-us .article {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-bottom: 150px;
+
+    @media #{$mobile} {
+      padding-bottom: 100px;
+    }
+  }
+
+  & .article-wrapper {
+    //
+  }
+
+  & .article-essence {
+    //
+  }
+}
+
+
+// .page-about-us .article {
+//   & .article-thumb {
+//     margin-bottom: 35px;
+//
+//     background: url('../img/question_article-thumb.jpg');
+//
+//     @media #{$mobile} {
+//       width: 320px;
+//       height: 190px;
+//       background: url('../img/question_article-thumb.jpg');
+//       background-size: auto;
+//
+//     }
+//   }
+// }
+
+
+.page-about-us .article {
+  & .article-content {
+      width: 770px;
+      margin: 0 auto 30px;
+
+      @media #{$mobile} {
+        width: auto;
+        margin-bottom: 0;
+        // padding-left: 25px;
+        // padding-right: 25px;
+      }
+  }
+}
+
+
+.page-about-us .article {
+  & .article-content__text {
+    @include font(normal, 400, 18px, 30px, 'Arial');
+    color: #cfdee7;
+    text-indent: 30px;
+
+    @media #{$mobile} {
+      padding-left: 25px;
+      padding-right: 25px;
+
+      &:nth-of-type(1) {
+        margin-bottom: 40px;
+      }
+    }
+
+    & strong {
+      color: #0ba360;
+    }
+  }
+
+  & .article-content__list {
+    margin-top: 30px;
+
+    @media #{$mobile} {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    &-title {
+
+      @include font(normal, 400, 18px, 30px, 'Arial');
+      color: #cfdee7;
+      text-indent: 30px;
+
+    }
+    & strong {
+      color: #0ba360;
+    }
+  }
+  & .article-content__item {
+    @include font(normal, 400, 18px, 30px, 'Arial');
+    color: #cfdee7;
+    text-indent: 30px;
+  }
+}
+
+
+.page-about-us .article {
+  & .article-triangle__img {
+
+    // position: absolute;
+    // transform: skewX(-55.98deg);
+
+    & .article-content__img {
+      // transform: skewX(55.98deg);
+      // transform-origin: inherit;
+      -webkit-clip-path: polygon(0 50%, 100% 100%, 99% 0);
+      clip-path: polygon(0 50%, 100% 100%, 99% 0);
+      shape-outside: polygon(0 50%, 100% 100%, 99% 0);
+      width: 368px;
+      height: 425px;
+      float: right;
+      margin-right: -100px;
+
+      overflow: hidden;
+
+      @media #{$mobile} {
+        width: 270px;
+        height: 310px;
+        margin-right: 25px;
+      }
+    }
+  }
+
+
+  & .article-content__img {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    &.right {
+      float: right;
+    }
+
+    &:nth-of-type(1) {
+      margin-top: 0;
+    }
+
+  }
+  & .article-content__img + .article-content__text {
+    // float: right;
+  }
+}
+
+
+.page-about-us .article {
+  & .article-content {
+
+  }
+}
+
+
+.page-about-us .article {
+  & .CLASS {
+
+  }
+}
+
+
+.page-about-us .article {
+  & .CLASS {
+
+  }
+}

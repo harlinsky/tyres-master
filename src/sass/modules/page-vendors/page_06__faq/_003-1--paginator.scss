@@ -1,0 +1,89 @@
+.page-faq .faq-paginator {
+  width: 210px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-faq .faq-paginator-controls {
+
+}
+
+.page-faq .faq-paginator-controls__left,
+.page-faq .faq-paginator-controls__right {
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 24px;
+
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  transform: translateY(-50%) scale(1);
+  &:hover {
+    transform: translateY(-50%) scale(1.2);
+  }
+  &:active {
+    transform: translateY(-50%) scale(0.9);
+  }
+}
+
+.page-faq .faq-paginator-controls__left {
+  left: -14px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAYCAYAAADKx8xXAAABY0lEQVQ4T52UTUvDQBCGZzaxjcQWqSCBUi1YoRcJgkgRBC9iRf0D/s0iKCIVhOLBD3roKZYcYqkI9lAIjTXZkaZuSLUfdve28D7MuzPvDsIc59F6LQGyLQDexP9wRITPVnufGBQHeiLgM0EiYk/N1gEAK0RFONxNBUPopX0ICOs/EDEMbrc3ctZEsFolNbXWOkJiWWFvIWA3ZtGwB/exYKPRSHwmlsuEaIQiJN8nuN4tZB1h9w9YtW0tFSTLCLA6FPE+qf7VTj7fjjdyBKw5zqLm4QkhywztcE8B9dIsGO+/ux+B9fqbHujBGQGmQ4ig52nBxV4u1xk3shC8tz7SKvNOkXApFCG4XzxZKW2udCfNGWuOk0n2lWMg0IcMdRVXqZim4U4LBz40W+eiEhLveBoN7PVmJUoelLYq3RzxFqlxCFgqAAKWipyApUIeVZb5VgKW+sgj8LyrIwbPv6zimY2vx2+txekFO9Wz1QAAAABJRU5ErkJggg==');
+
+
+
+}
+
+.page-faq .faq-paginator-controls__right {
+  right: -14px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAZCAYAAAABmx/yAAABW0lEQVQ4T53UzUrDQBAA4JndXnwAwdpaNbYqihhiFASxFBXER/UBRFApip4a48mCNqlI21TiC4i2O7KNG7QSkm5uYedjf+YHT4n4evN9KgynP2o1HEDGD91Wv0pIKwDiMwe5s83yTJjFousHNhFYMhiRBvA1PLdWS0EaRnlUo907RmKFSTDKYCJirtc/AoT5GCNeWcbsa9LOI6jwvRccIuJC9A+CcbhIwjH8wej6vRoAKysMMKjblZI/vvMfqLDjdasM+bI6DMCwvlWe837jf1AtOn6whwRrCgtGN9tG4UmtJ0IZ4La6u4RsIw4mvLUq+eboAdPy1Wh3dpjgporjhHdmJf+YCiVwWoGFCLbCQvDLTFCCht85YcSLUZ6Fnwlq7ah1R61XHc8jR3FtLhWfE/NIRPjgve1HPRqVcWrlSDRxrcrWcl6CAyZwMXN3aPWj9gTQnjnaU053rn4DQmHpTL1eEtwAAAAASUVORK5CYII=');
+}
+
+
+.page-faq .faq {
+  & .faq-paginator__list {
+    display: flex;
+    justify-content: center;
+
+    @media #{$mobile} {
+      margin-bottom: 15px;
+    }
+
+  }
+  & .faq-paginator__item {
+      margin-right: 9px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active .faq-paginator__link {
+      color: #f67519;
+    }
+    &.skip-next {
+      margin-right: 30px;
+      position: relative;
+
+      &::before {
+        content: '...';
+        position: absolute;
+        bottom: 4px;
+        right: -22px;
+        color: #cfdee7;
+      }
+    }
+  }
+  & .faq-paginator__link {
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #cfdee7;
+    text-decoration: none;
+
+    transition: 0.3s ease-out;
+    &:hover {
+      color: #fff;
+    }
+  }
+  & .CLASS {
+
+  }
+}

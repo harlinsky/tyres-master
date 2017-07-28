@@ -1,0 +1,158 @@
+.page-search .result {
+  // bg 1
+}
+
+
+.page-search .result {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-bottom: 145px;
+  }
+
+  & .result-wrapper {
+    //
+  }
+
+  & .result-essence {
+    //
+  }
+}
+
+@import '004-1--result_item';
+@import '004-2--result_loadMore';
+
+
+.page-search .result {
+  & .CLASS {
+
+  }
+}
+
+.page-search .result {
+  & .result-content{
+    @include clearfix;
+
+    @media #{$tablet} {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media #{$mobile} {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+.page-search .result {
+  & .result-title {
+    @include clearfix;
+    margin-bottom: 10px;
+    @media #{$mobile} {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  & .result-title-text {
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #cfdee7;
+    float: left;
+  }
+  & .result-title-query {
+    color: #0ba360;
+    float: left;
+    @include font(normal, 400, 18px, 27px, 'Arial');
+  }
+}
+
+
+.page-search .result {
+  & .CLASS {
+
+  }
+}
+
+
+.page-search .result {
+  & .divider {
+    /* Style for "Прямоуголь" */
+    max-width: 870px;
+    height: 2px;
+    background-color: #353538;
+
+    display: block;
+        margin: 0;
+    margin-bottom: 30px;
+
+    padding: 0;
+
+    outline: 0;
+    border: 0;
+
+    @media #{$mobile} {
+      width: auto;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}
+
+
+.page-search .result {
+  & .CLASS{
+
+  }
+}
+
+
+.page-search .result {
+  & .CLASS{
+
+  }
+}
+
+
+.page-search .result {
+  & .CLASS{
+
+  }
+}
+
+
+.page-search .result {
+  & .CLASS{
+
+  }
+}

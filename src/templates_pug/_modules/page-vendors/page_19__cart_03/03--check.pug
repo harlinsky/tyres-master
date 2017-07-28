@@ -1,0 +1,78 @@
+// check
+section.check
+  .shell
+    .container
+      .range
+        .check-wrapper
+
+          .check-title Корзина
+          .steps
+            .steps__control.active
+            .steps-control-text Ваши заказы
+            ul.steps__list
+              li.steps__list-item.done
+                a.steps__list-item-link(href="#")
+                  .steps__list-item-text Ваши заказы
+              li.steps__list-item.done
+                .arrow
+                a.steps__list-item-link(href="#")
+                  .steps__list-item-text Контактные данные
+                .arrow-f
+              li.steps__list-item.current
+                .arrow
+                a.steps__list-item-link(href="#")
+                  .steps__list-item-text Оплата
+            .steps__progress
+              .steps__progress-text
+                span.current 1
+                | /3
+
+
+          form.step-third
+            .refactor
+              .title Проверьте ваши контактные данные и выберите способ оплаты
+              .desc
+                .row
+                  .left Оплата и доставка:
+                  .right Курьерская служба
+                .row
+                  .left Адрес:
+                  .right Жамбылская обл., г.Тараз, ул. Мамбет батыра, 19 Ш
+                .row
+                  .left Получатель:
+                  .right Марк Цукенберг
+                .row
+                  .left Телефон:
+                  .right +7 555 486 54 12
+                .row
+                  .left E-mail:
+                  .right Mark@mail.com
+
+            .payment
+              .title Выбор способа оплаты 
+              .desc
+                .row
+                  .left
+                    input#pay01(type='radio', name='payment' checked)
+                    span.radio-indicator
+                    label(for='pay01') Оплата наличными
+
+                  .right Курьеру при получении
+                .row
+                  .left
+                    input#pay02(type='radio', name='payment')
+                    span.radio-indicator
+                    label(for='pay02') Безналичный расчет
+                  .right С помощью банковского перевода
+                .row
+                  .left
+                    input#pay03(type='radio', name='payment')
+                    span.radio-indicator
+                    label(for='pay03') Онлайн оплата
+                  .right через онлайн оплату epay
+
+            .checkout-btn
+              .checkout-btn-text Оформить
+
+
+// check end

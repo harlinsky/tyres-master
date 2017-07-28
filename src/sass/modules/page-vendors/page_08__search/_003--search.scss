@@ -1,0 +1,174 @@
+.page-search .search {
+  // bg 1
+}
+
+
+.page-search .search {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+  }
+
+  & .search-wrapper {
+    //
+  }
+
+  & .search-essence {
+    //
+  }
+}
+
+
+.page-search .search {
+  & .search-form {
+    @include clearfix;
+    width: 971px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    @media #{$mobile} {
+      width: auto;
+    }
+  }
+}
+
+
+.page-search .search {
+  & .search-form__field {
+    width: 69.07216494845361%; /* 670 / 970 */
+    margin-right: 3.0927835051546393%; /* 30 / 970 */
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid #464649;
+    background-color: #353538;
+
+    outline: none;
+    border: none;
+    display: block;
+
+    @include font(normal, 400, 18px, 40px, 'Arial');
+    color: #cfdee7;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+    @media #{$tablet-wide} {
+      float: left;
+    }
+
+    @media #{$mobile} {
+      width: 270px;
+      margin: 0 auto 20px;
+    }
+  }
+}
+
+
+.page-search .search {
+  & .search-form__send-btn {
+    width: 27.835051546391754%; /* 270 / 970 */
+
+    height: 40px;
+    @include font(normal, 400, 18px, 40px, 'Arial');
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+    border-radius: 2px;
+    background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
+
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media #{$tablet-wide} {
+      float: left;
+    }
+
+    @media #{$mobile} {
+      width: 270px;
+      margin: 0 auto;
+    }
+
+    // ---
+    transition: background 0.5s;
+    background-size: 100% auto;
+    background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+      background-size: 200% auto;
+      background-position: bottom center; /* change the direction of the change here */
+    }
+    &:active {
+      top: 1px;
+    }
+    &.inactive {
+      opacity: 0.5;
+    }
+    // ---
+  }
+}
+
+
+
+
+
+.page-search .search {
+  & .CLASS{
+
+  }
+}
+
+
+.page-search .search {
+  & .CLASS{
+
+  }
+}
+
+
+.page-search .search {
+  & .CLASS{
+
+  }
+}
+
+
+.page-search .search {
+  & .CLASS{
+
+  }
+}
+
+
+.page-search .search {
+  & .CLASS{
+
+  }
+}

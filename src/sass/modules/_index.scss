@@ -1,0 +1,49 @@
+@import "global-modules/index0";
+
+/* ================================================
+   pages
+   ================================================ */
+
+/* ~tmp | dev
+================================================ */
+@import "page-vendors/tmp-links"; // чтоб могли посмотреть-проклацать страницы, которые уже готовы;
+@import "page-vendors/sandbox"; // чтоб могли посмотреть-проклацать страницы, которые уже готовы;
+
+
+/* index | home | page 01
+================================================ */
+@import "page-vendors/page_01__home/001--index";
+@import "page-vendors/page_02__promo/001--index";
+@import "page-vendors/page_03__promo-item/001--index";
+@import "page-vendors/page_04__services/001--index";
+@import "page-vendors/page_05__services-item/001--index";
+// 06
+@import "page-vendors/page_06__faq/001--index";
+// 07
+@import "page-vendors/page_07__404/001--index";
+// 08
+@import "page-vendors/page_08__search/001--index";
+@import "page-vendors/page_09__question/001--index";
+@import "page-vendors/page_10__about-us/001--index";
+
+@import "page-vendors/page_12__product-page/001--index";
+
+@import "page-vendors/page_13__catalog-tire/001--index";
+@import "page-vendors/page_14__catalog-disk/001--index";
+@import "page-vendors/page_15__catalog-parts/001--index";
+@import "page-vendors/page_16__catalog-oil/001--index";
+
+@import "page-vendors/page_17__check/001--index";
+@import "page-vendors/page_18__check-02/001--index";
+@import "page-vendors/page_19__check-03/001--index";
+@import "page-vendors/page_20__check-last/001--index";
+@import "page-vendors/page_21__module/001--index";
+
+
+@import "page-vendors/page_22__cab-new/001--index";
+@import "page-vendors/page_23__cab/001--index";
+// @import "page-vendors/page_03__promo-items/001--index";
+// @import "page-vendors/page_04__services/001--index";
+// @import "page-vendors/page_05__services-item/001--index";
+
+// page 02  |  vendor 1 - plastic windows

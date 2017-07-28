@@ -1,0 +1,157 @@
+.page-services-item .service {
+  // bg 1
+  background: #262627;
+}
+
+
+.page-services-item .service {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      padding: 0 25px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding: 90px 0 75px 0;
+  }
+
+  & .service-wrapper {
+    //
+  }
+
+  & .service-essence {
+    //
+  }
+}
+
+
+.page-services-item .service {
+  & .CLASS{
+
+  }
+  & .service-title{
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #f39552;
+    max-width: 770px;
+    margin: 0 auto 20px;
+    text-align: center;
+    @media #{$mobile} {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+
+.page-services-item .service {
+  & .service__item {
+    @include clearfix;
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media #{$mobile} {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+
+.page-services-item .service {
+  & .service__item .left {
+    width: 180px;
+    margin-right: 20px;
+    padding-top: 7px;
+    float: left;
+    @include clearfix;
+
+    @media #{$mobile} {
+      float: none;
+      margin-bottom: 10px;
+    }
+  }
+  & .service__item .left-thumb{
+    float: right;
+    @media #{$mobile} {
+      float: none;
+    }
+  }
+  & .service__item .right{
+    float: left;
+    max-width: 770px;
+
+    @media #{$mobile} {
+      float: none;
+    }
+  }
+}
+
+
+.page-services-item .service {
+
+  & .service__item .right {
+
+  }
+  & .service__item .right-title {
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #0ba360;
+    margin-bottom: 10px;
+  }
+  & .service__item .right-text {
+    /* Style for "Использова" */
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #cfdee7;
+  }
+}
+
+
+.page-services-item .service {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .service {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .service {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .service {
+  & .CLASS{
+
+  }
+}

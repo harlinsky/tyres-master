@@ -1,0 +1,39 @@
+
+
+.page-index .filter .tabs {
+  overflow: hidden;
+}
+
+.page-index .filter .tabs__item {
+  // float: left;
+  // margin: 0 5px 0;
+
+  &.is-active {
+    & .tabs__link {
+      // background: #000;
+      // color: #fff;
+    }
+  }
+}
+
+.page-index .filter .tabs__link {
+  display: block;
+  // padding: 10px 20px;
+  // background: #ddd;
+  // color: #000;
+  // text-decoration: none;
+
+  @media #{$mobile} {
+    // padding: 10px;
+  }
+}
+
+.page-index .filter .tabs-content {
+  display: none;
+  // margin: 5px 0
+  // padding: 20px
+  // border: 1px solid #000
+  &:first-child {
+    display: block;
+  }
+}

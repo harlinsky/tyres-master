@@ -1,0 +1,195 @@
+
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+
+
+.page-product .product {
+  & .params__title {
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+    color: #cfdee7;
+
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+
+.page-product .product {
+  & .params__dimensions{
+    border-top: 2px solid #464649;
+    border-bottom: 2px solid #464649;
+    max-width: 562px;
+    margin: 0 auto;
+
+    @media #{$mobile} {
+      width: auto;
+    }
+
+    &-wrap {
+      min-height: 50px;
+      // @include clearfix;
+      // text-align: center;
+      // vertical-align: middle;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-text {
+      display: inline-block;
+      @include font(italic, 400, 16px, 24px, 'Georgia');
+      color: #cfdee7;
+
+
+
+    }
+    &-essence {
+      display: inline-block;
+      @include font(normal, 400, 14px, 21px, 'Arial');
+      color: #0ba360;
+    }
+  }
+}
+.page-product .product {
+  & .params__row {
+    // @include clearfix;
+    margin-bottom: 40px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media #{$mobile} {
+      margin-bottom: 25px;
+    }
+  }
+  & .params__unit {
+    width: 280px;
+    min-height: 80px;
+    padding-top: 15px;
+
+    @media #{$mobile} {
+      min-height: 70px;
+    }
+
+    &:first-child {
+      // float: left;
+      border-right: 2px solid #464649;
+    }
+    &:last-child {
+      // float: left;
+    }
+  }
+
+  & .params__unit-title {
+    @include font(italic, 400, 16px, 24px, 'Georgia');
+    color: #cfdee7;
+    text-align: center;
+  }
+  & .params__unit-param {
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #0ba360;
+    text-align: center;
+  }
+}
+
+
+.page-product .product {
+  & .params__vendors {
+    @include clearfix;
+    @media #{$mobile} {
+      margin-bottom: 20px;
+    }
+  }
+  & .params__vendors__item {
+      @media #{$tablet-wide} {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      @media #{$mobile} {
+        margin-bottom: 20px;
+      }
+  }
+  & .params__vendors__name {
+    @include font(italic, 400, 16px, 24px, 'Georgia');
+    color: #cfdee7;
+
+    @media #{$tablet-wide} {
+      width: 280px;
+      padding-right: 15px;
+      text-align: right;
+    }
+
+    @media #{$mobile} {
+      text-align: center;
+      @include font(italic, 600, 16px, 24px, 'Georgia');
+    }
+
+
+  }
+  & .params__vendors__value {
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #0ba360;
+
+    @media #{$tablet-wide} {
+      width: 280px;
+      padding-left: 15px;
+      text-align: left;
+    }
+
+    @media #{$mobile} {
+      text-align: center;
+    }
+  }
+}
+
+
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+
+
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+
+
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+
+
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+
+
+.page-product .product {
+  & .CLASS{
+
+  }
+}

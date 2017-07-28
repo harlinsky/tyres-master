@@ -1,0 +1,156 @@
+.page-question .article {
+  // bg 1
+}
+
+
+.page-question .article {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-bottom: 150px;
+  }
+
+  & .article-wrapper {
+    //
+  }
+
+  & .article-essence {
+    //
+  }
+}
+
+
+.page-question .article {
+  & .article-thumb {
+    margin-bottom: 35px;
+
+    background: url('../img/question_article-thumb.jpg');
+
+    @media #{$mobile} {
+      width: 320px;
+      height: 190px;
+      background: url('../img/question_article-thumb.jpg');
+      background-size: auto;
+
+    }
+  }
+}
+
+
+.page-question .article {
+  & .article-content {
+      width: 770px;
+      margin: 0 auto 30px;
+
+      @media #{$mobile} {
+        width: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+  }
+}
+
+
+.page-question .article {
+  & .article-content__text {
+    @include font(normal, 400, 18px, 30px, 'Arial');
+    color: #cfdee7;
+    text-indent: 30px;
+  }
+}
+
+
+.page-question .article {
+  & .article-content__img {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  & .article-content__img + .article-content__text {
+    // float: right;
+  }
+}
+
+
+.page-question .article {
+  & .article-content {
+
+  }
+}
+
+
+.page-question .article {
+  & .CLASS {
+
+  }
+}
+
+
+.page-question .article {
+  & .CLASS {
+
+  }
+}
+
+.page-question .article {
+  & .article__back {
+    width: 770px;
+    margin: 0 auto;
+    padding-left: 30px;
+
+    position: relative;
+
+    text-decoration: none;
+    display: block;
+
+    @media #{$mobile} {
+      //
+      
+      margin-left: 25px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAYCAYAAADKx8xXAAABY0lEQVQ4T52UTUvDQBCGZzaxjcQWqSCBUi1YoRcJgkgRBC9iRf0D/s0iKCIVhOLBD3roKZYcYqkI9lAIjTXZkaZuSLUfdve28D7MuzPvDsIc59F6LQGyLQDexP9wRITPVnufGBQHeiLgM0EiYk/N1gEAK0RFONxNBUPopX0ICOs/EDEMbrc3ctZEsFolNbXWOkJiWWFvIWA3ZtGwB/exYKPRSHwmlsuEaIQiJN8nuN4tZB1h9w9YtW0tFSTLCLA6FPE+qf7VTj7fjjdyBKw5zqLm4QkhywztcE8B9dIsGO+/ux+B9fqbHujBGQGmQ4ig52nBxV4u1xk3shC8tz7SKvNOkXApFCG4XzxZKW2udCfNGWuOk0n2lWMg0IcMdRVXqZim4U4LBz40W+eiEhLveBoN7PVmJUoelLYq3RzxFqlxCFgqAAKWipyApUIeVZb5VgKW+sgj8LyrIwbPv6zimY2vx2+txekFO9Wz1QAAAABJRU5ErkJggg==');
+    }
+  }
+  & .article__back-text{
+    @include font(normal, 400, 24px, 27px, 'PTSans-Narrow');
+    color: #fefefe;
+  }
+}

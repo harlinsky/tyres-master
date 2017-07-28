@@ -1,0 +1,214 @@
+
+
+// catalog
+section.catalog
+  .shell
+      .container
+        .range
+          .catalog-wrapper
+
+            .left-col
+              .top-title-container
+                .left-col__title#filter
+                  .left-col__title-text Фильтр:
+                .left-col__back.js-filter-back
+                  .left-col__title-text Назад
+              form.form-filter
+                .item
+                  .item__title.faq Ширина:
+                  ul.item__units
+                    li.item__unit
+                      input#a01(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a01') 6.5
+                      .param (1499)
+                    li.item__unit
+                      input#a02(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a02') 33
+                      .param (11)
+                    li.item__unit
+                      input#a03(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a03') 55
+                      .param (10879)
+                    li.item__unit
+                      input#a04(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a04') 122
+                      .param (175)
+                    .item__unit-expand еще
+                .item
+                  .item__title Диаметр:
+                  ul.item__units
+                    li.item__unit
+                      input#a05(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a05') 14
+                      .param (1589)
+                    li.item__unit
+                      input#a06(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a06') 15
+                      .param (11)
+                    li.item__unit
+                      input#a07(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a07') 16
+                      .param (10879)
+                    li.item__unit
+                      input#a08(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a08') 17
+                      .param (9)
+                    .item__unit-expand еще
+                .item
+                  .item__title Цена
+                  .item__range-filter
+                    .price-controls
+                      .left
+                        .text от
+                        input.min-price(type="text" placeholder="444")
+                      .right
+                        .text до
+                        input.max-price(type="text" placeholder="12 689")
+                    .range-controls
+                      .scale
+                        .bar
+                      .toggle.min-toggle
+                      .toggle.max-toggle
+                .item
+                  .item__title Бренд
+                  ul.item__units
+                    li.item__unit
+                      input#a18(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a18') STARK
+                      .param (1499)
+                    li.item__unit
+                      input#a09(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a09') NITRO
+                      .param (11)
+                    li.item__unit
+                      input#a10(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a10') YAMATO
+                      .param (10879)
+                    li.item__unit
+                      input#a11(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a11') ALCASTA
+                      .param (9)
+                    .item__unit-expand еще
+                .item
+                  .item__title Цвет
+                  ul.item__units
+                    li.item__unit
+                      input#a12(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a12') Черный
+                      .param (1499)
+                    li.item__unit
+                      input#a13(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a13') SFTP
+                      .param (11)
+                    li.item__unit
+                      input#a14(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a14') HSFP
+                      .param (10879)
+                .item
+                  .item__title PCD
+                  ul.item__units
+                    li.item__unit
+                      input#a16(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a16') 5x122
+                      .param (1499)
+                    li.item__unit
+                      input#a17(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a17') 6x98
+                      .param (11)
+                    li.item__unit
+                      input#a28(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a28') 4x114
+                      .param (10879)
+                    li.item__unit
+                      input#a19(type='checkbox', name='1st')
+                      span.checkbox-indicator
+                      label(for='a19') 5x140
+                      .param (10879)
+
+              .left-col__back.js-filter-back
+                .left-col__title-text Назад
+              .filter-selected-params Выбрано параметров:
+                span  10
+
+            .right-col
+              .result__title-container
+                .total-found
+                  | Результат:&nbsp;
+                  span 101 товар
+                .sorting
+                  .sorting-text Сортировка по:
+                  select.sorting-input(type="select" placeholder="От дешёвых к дорогим" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                    option(value='volvo') От дешевых к дорогим
+                    option(value='saab') Saab
+                    option(value='mercedes') Mercedes
+                    option(value='audi') Audi
+
+              .result-content
+                //- item
+                include item
+                include item
+                include item
+                include item
+
+                include item
+                include item
+                include item
+                include item
+
+                include item
+                include item
+                include item
+                include item
+
+              .catalog-list
+                //- item
+                .catalog-item
+                a.catalog-item-more
+                  .btn
+                  .one-click-purchase
+
+
+                //- VIEW ALL
+              .catalog-load-more
+                a.catalog-load-more__up(href='javascript:void(0)')
+                  .catalog-load-more__up-text Загрузить еще 5
+                .catalog-load-more__paginator
+                  a.catalog-load-more__paginator__next-btn(href="#")
+                    .catalog-load-more__paginator__next-btn-text Следующая страница
+                  ul.catalog-load-more__paginator-list
+                    li.catalog-load-more__paginator-item
+                      a.catalog-load-more__paginator-item-link(href="#") 1
+                    li.catalog-load-more__paginator-item
+                      a.catalog-load-more__paginator-item-link(href="#") 2
+                    li.catalog-load-more__paginator-item.active
+                      a.catalog-load-more__paginator-item-link(href="#") 3
+                    li.catalog-load-more__paginator-item
+                      a.catalog-load-more__paginator-item-link(href="#") 4
+                    li.catalog-load-more__paginator-item.skip-next
+                      a.catalog-load-more__paginator-item-link(href="#") 5
+                    li.catalog-load-more__paginator-item
+                      a.catalog-load-more__paginator-item-link(href="#") 10
+                  a.catalog-load-more__paginator__prev-btn(href="#")
+                    .catalog-load-more__paginator__prev-btn-text Предыдущая страница
+
+
+
+// catalog end

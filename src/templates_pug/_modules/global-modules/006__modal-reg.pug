@@ -1,0 +1,110 @@
+section.modal-reg
+  .wrap
+
+    // BEGIN tabs list
+    ul.tabs.js-tabs-simple
+      li.tabs__item.tab-login.tabs-btn.active
+        .tabs-btn-essence
+          a.tabs__link.tabs-btn-wrap(href='#')
+            .tabs-btn-text Вход в кабинет
+      li.tabs__item.tab-reg.tabs-btn
+        .tabs-btn-essence
+          a.tabs__link.tabs-btn-wrap(href='#')
+            .tabs-btn-text Регистрация
+    // END tabs list
+    div.tabs-container
+      // BEGIN tabs content
+      .tabs-content.js-tabs-simple-content.tab-login.tabs-content-item
+        .left
+          //- content
+          form.form-login
+
+            .title Авторизируйтесь
+            .email
+              label.email-label Укажите ваш Имейл
+              input.email-input(type="text" placeholder="Email")
+            .password
+              label.email-label Введите пароль
+              input.email-input(type="password" placeholder="Пароль")
+            a.recover#recover(href="#") Восстановить пароль
+
+            .btn-wrap
+              a.btn-login(href="#")
+                .btn-login-text Вход
+              a.btn-reg(href="#")
+                .btn-reg-text Регистрация
+
+          //- eof content
+
+        .right.socials
+          .title Войти с помощью:
+          a.socials-item.vk(href="#")
+            .socials-item-text Вконтакте
+          a.socials-item.fb(href="#")
+            .socials-item-text Facebook
+          a.socials-item.gp(href="#")
+            .socials-item-text Google plus
+
+
+
+
+      .tabs-content.js-tabs-simple-content.tab-reg.tabs-content-item
+        .left
+          //- content
+          form.form-register
+
+            .title Зарегистрируйтесь:
+            .email
+              label.email-label Укажите ваш Имейл
+              input.email-input(type="text" placeholder="Email")
+            .password
+              label.email-label Введите пароль
+              input.email-input(type="password" placeholder="Пароль")
+
+            a.btn-login(href="#")
+              button.btn-login-text(type="button") Регистрация
+
+          //- eof content
+
+        .right.socials
+          .title Регистрация с помощью:
+          a.socials-item.vk(href="#")
+            .socials-item-text Вконтакте
+          a.socials-item.fb(href="#")
+            .socials-item-text Facebook
+          a.socials-item.gp(href="#")
+            .socials-item-text Google plus
+      // END tabs content
+
+      .tabs-content.js-tabs-simple-content.tab-recover.tabs-content-item
+        .left
+          //- content
+          form.form-register
+
+            .title Восстановление пароля:
+            .email
+              label.email-label Введите email для восстановления пароля
+              .email-wrap
+                input.email-input(type="text" placeholder="Email")
+                .remembered
+                  .remembered-text Я вспомнил пароль
+
+            a#remembered.btn-recover(href="#")
+              button.btn-recover-text(type="button") Отправить
+
+      .tabs-content.js-tabs-simple-content.tab-instructions.tabs-content-item
+        .left
+          //- content
+          form.form
+
+            .title Инструкции высланы:
+            .subtitle Проверьте вашу почту с инструкциями по смене пароля
+
+            .text-title Не получили электронное сообщение?
+            .text-essence Проверьте, нет ли письма в папке, предназначенной для спама и рекламных сообщений (Spam/Junk). <a href="#">Отправить повторно</a>
+
+            a.btn(href="#")
+              button.btn-text(type="button") Перейти на почту
+
+
+.modal-reg-overlay

@@ -1,0 +1,113 @@
+
+.modal-reg {
+  & .tab-instructions {
+
+  }
+}
+
+
+.modal-reg {
+  & .tab-instructions .left {
+
+    @media #{$tablet-wide} {
+      width: 570px;
+      padding-right: 100px;
+    }
+  }
+}
+
+
+.modal-reg {
+  & .tab-instructions .subtitle {
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+    margin-bottom: 30px;
+  }
+}
+
+
+.modal-reg {
+  & .tab-instructions .text-title {
+    @include font(italic, 400, 16px, 24px, 'Georgia');
+    margin-bottom: 10px;
+    color: #0ba360;
+  }
+  & .tab-instructions .text-essence {
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+    margin-bottom: 30px;
+    & a {
+      @include font(italic, 700, 16px, 24px, 'Georgia');
+      color: #cfdee7;
+    }
+  }
+}
+
+
+
+
+
+.modal-reg {
+  & .tab-instructions .btn {
+    /* Style for "Прямоуголь" */
+      display: block;
+    width: 270px;
+    height: 40px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+    border-radius: 2px;
+    background-image: linear-gradient(to top, #f67519 0%, #fd9d58 100%);
+    // opacity: 0.5;
+    position: relative;
+
+    &-text {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      white-space: nowrap;
+
+      @include font(normal, 400, 18px, 27px, 'Arial');
+      // opacity: 0.5;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
+
+
+.modal-reg {
+  & .tab-instructions {
+
+  }
+}
+
+
+.modal-reg {
+  & .tab-instructions {
+
+  }
+}
+
+
+.modal-reg {
+  & .tab-instructions {
+
+  }
+}
+
+
+.modal-reg {
+  & .tab-instructions {
+
+  }
+}
+
+
+.modal-reg {
+  & .tab-instructions {
+
+  }
+}

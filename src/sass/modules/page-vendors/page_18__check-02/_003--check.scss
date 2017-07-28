@@ -1,0 +1,90 @@
+.page-check-second .check {
+  // bg 1
+}
+
+
+.page-check-second .check {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+
+    @media #{$mobile} {
+      padding-bottom: 150px;
+    }
+  }
+
+  & .check-wrapper {
+    //
+    @include clearfix;
+  }
+
+  & .check-essence {
+    //
+  }
+}
+
+@import '003-1--check__title';
+@import '003-2--check__steps';
+@import '003-3--check__profile';
+@import '003-4--check__delivery';
+
+.page-check-second {
+  & .cart-title-line{
+    background: #2f2f31 url(../img/menu_bg--cart.png) repeat-x;
+        position: relative;
+        z-index: 1;
+
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+  & .cart-title-line-wrap{
+    width: 1020px;
+    margin: 0 auto;
+  }
+  & .cart-title-line-text{
+
+    @include font(normal, 400, 24px, 60px, 'PTSans-Narrow');
+    text-align: center;
+    color: #cfdee7;
+    height: 60px;
+  }
+}
+
+
+
+
+
+.page-check-second .check {
+  & .CLASS{
+
+  }
+}

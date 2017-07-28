@@ -1,0 +1,488 @@
+
+
+.page-catalog-tire .catalog {
+
+  & .top-title-container {
+    @media #{$mobile} {
+      position: relative;
+      width: 270px;
+      height: 50px;
+      margin: 0 auto 15px;
+
+    }
+  }
+
+  & .left-col__title {
+    @include font(normal, 400, 24px, 27px, 'PTSans-Narrow');
+    color: #f67519;
+
+    @media #{$tablet-wide} {
+
+      margin-bottom: 25px;
+    }
+    @media #{$mobile} {
+      position: relative;
+
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      @include font(normal, 400, 24px, 50px, 'PTSans-Narrow');
+      /* Style for "Прямоуголь" */
+      width: 270px;
+      margin: 0 auto;
+      height: 50px;
+      box-shadow: 0 5px 10px rgba(37, 19, 6, 0.36);
+      border-radius: 2px;
+      border: 2px solid #6b6b72;
+      background-image: radial-gradient(circle 114px at center, #464649 0%, #3a3a3d 100%);
+      // text-align: center;
+
+      margin-bottom: 15px;
+      cursor: pointer;
+
+      &-text {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15px;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAYCAYAAAAh8HdUAAABGklEQVQ4T63UMUsDMRQH8P9DEHr3BZqb+llEBMGptIuDo3Ry8aKCa8GS3lwEN8HVQZyd7fcQj1s75BQhT3LkSnuN7d1htkfeD16S90JaimcAx8y4CJP0ATUWaSm+AewDMEQ466j0aZcjfdW9BFPiEmtBssm5jG4YfFdCEIaBSm3Z3lWgAsbilgljF/4w0SBUny8+tUR2U8fdCYiulxCmH06z1ypcQx6YE5uTTpK9rcINVEAZTQGOy8qr0IsYoC8pZgyMSggyB4HK3m3sRXajChlYEJujIMnmf6IVeM/AuYsXMHy4FRWJQ+zlPfEI4NSV+vH/yJ2rfnmNL6LVles4UiCWtR+30n+726hxwzYejcZD2Grc230sLb6wX3OxvFHAujB7AAAAAElFTkSuQmCC');
+        /* Style for "Векторный" */
+        width: 13px;
+        height: 24px;
+      }
+    }
+  }
+  & .left-col__back {
+    display: none;
+
+
+    @include font(normal, 400, 24px, 27px, 'PTSans-Narrow');
+    color: #f67519;
+
+    @media #{$tablet-wide} {
+
+      // margin-bottom: 25px;
+    }
+    @media #{$mobile} {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+
+      @include font(normal, 400, 24px, 50px, 'PTSans-Narrow');
+      /* Style for "Прямоуголь" */
+      width: 270px;
+      margin: 0 auto;
+      height: 50px;
+      box-shadow: 0 5px 10px rgba(37, 19, 6, 0.36);
+      border-radius: 2px;
+      border: 2px solid #6b6b72;
+      background-image: radial-gradient(circle 114px at center, #464649 0%, #3a3a3d 100%);
+      // text-align: center;
+
+      position: relative;
+      margin-bottom: 15px;
+      cursor: pointer;
+
+      &-text {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        left: 15px;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAYCAYAAAAh8HdUAAABGklEQVQ4T63UMUsDMRQH8P9DEHr3BZqb+llEBMGptIuDo3Ry8aKCa8GS3lwEN8HVQZyd7fcQj1s75BQhT3LkSnuN7d1htkfeD16S90JaimcAx8y4CJP0ATUWaSm+AewDMEQ466j0aZcjfdW9BFPiEmtBssm5jG4YfFdCEIaBSm3Z3lWgAsbilgljF/4w0SBUny8+tUR2U8fdCYiulxCmH06z1ypcQx6YE5uTTpK9rcINVEAZTQGOy8qr0IsYoC8pZgyMSggyB4HK3m3sRXajChlYEJujIMnmf6IVeM/AuYsXMHy4FRWJQ+zlPfEI4NSV+vH/yJ2rfnmNL6LVles4UiCWtR+30n+726hxwzYejcZD2Grc230sLb6wX3OxvFHAujB7AAAAAElFTkSuQmCC');
+        /* Style for "Векторный" */
+        width: 13px;
+        height: 24px;
+      }
+    }
+  }
+
+
+}
+
+
+.page-catalog-tire .catalog {
+  & .item__title {
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #0ba360;
+    margin-bottom: 10px;
+
+
+    &.faq {
+      display: inline-block;
+      position: relative;
+
+      &::after {
+        content: '?';
+        position: absolute;
+        @include font(normal, 400, 14px, 21px, 'Arial');
+        color: #f67519;
+        top: -7px;
+        right: -10px;
+        width: 7px;
+        height: 11px;
+      }
+    }
+  }
+}
+
+
+.page-catalog-tire .catalog {
+  & .item__unit {
+    @include font(italic, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+    margin-bottom: 10px;
+    // margin-left: 38px;
+
+    padding: 0 10px;
+
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include clearfix;
+
+    & label {
+      // float: left;
+      display: block;
+      max-width: 180px;
+      float: left;
+      padding-left: 38px;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    & .param {
+      float: right;
+    }
+  }
+}
+
+
+.page-catalog-tire .catalog {
+  & .item__unit-expand {
+
+    position: relative;
+    width: 45px;
+    // margin-left: 30px;
+    margin-left: 45px;
+    @include font(italic, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+    text-decoration: underline;
+
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      color: #fff;
+    }
+
+    &::before {
+      content: '';
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAdElEQVQYV2P8Vip5noGBwYABE1xg/FomFcD4//96dLn/jIyBjP8ZGBi/l0qeQ9N9gbP7uREjSAe6bpAu7q5nG8CSIPCtVPIEAwODOQMDw0mu7ucWIDG45JdSSQ8mBobt/xgYPHm6n+9AkYTqnsDV/bwAZhoABo4mMNK2g+YAAAAASUVORK5CYII=');
+      width: 7px;
+      height: 7px;
+      position: absolute;
+    }
+
+  }
+}
+
+
+.page-catalog-tire .catalog {
+  & .CLASS{
+
+  }
+}
+
+
+.page-catalog-tire .catalog {
+  & .item {
+    margin-bottom: 25px;
+  }
+}
+
+
+.page-catalog-tire .catalog {
+  & .CLASS{
+
+  }
+}
+
+
+// PRICE filter
+
+.page-catalog-tire .catalog {
+  & .item__range-filter{
+
+  }
+}
+
+.page-catalog-tire .catalog {
+  & .price-controls {
+    @include clearfix;
+    margin-bottom: 20px;
+  }
+  & .left {
+    float: left;
+    width: 100px;
+    margin-right: 30px;
+  }
+  & .right {
+    float: left;
+    width: 100px;
+  }
+  & .price-controls .text {
+    // @include clearfix;
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+    padding-left: 10px;
+    margin-bottom: 5px;
+  }
+  & .price-controls input {
+    @include font(italic, 400, 14px, 21px, 'Arial');
+    opacity: 0.4;
+    color: #cfdee7;
+    outline: 0;
+    padding: 0 10px;
+
+    /* Style for "Прямоуголь" */
+    width: 100px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid #464649;
+    background-color: #353538;
+  }
+}
+
+.page-catalog-tire .catalog {
+  & .range-controls{
+    width: 256px;
+    height: 36px;
+    position: relative;
+    // overflow: hidden;
+  }
+  & .range-controls .scale {
+    position: absolute;
+    top: 50%;
+    /* Style for "Прямоуголь" */
+    width: 100%;
+    background-color: #87878e;
+    background-color: rgba(135, 135, 142, 0.4);
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      /* Style for "Прямоуголь" */
+      width: 1px;
+      height: 15px;
+      background-color: #4d4d50;
+      top: 2px;
+    }
+    &::before {
+      left: 0;
+    }
+    &::after {
+      right: 0;
+    }
+  }
+  & .range-controls .bar {
+    /* Style for "Прямоуголь" */
+    width: 186px;
+    margin-left: 50px;
+    height: 4px;
+    background-color: #f67519;
+  }
+  & .range-controls .toggle {
+    /* Style for "Векторный" */
+    width: 12px;
+    height: 16px;
+    position: absolute;
+    // top: 8px;
+    // left: 6px;
+    top: 1px;
+    // left: -6px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAABSElEQVQ4T42STysFYRTGnzMX3TFjoaiZKEWkbG5iKVYk8gF8CBteC4qxcFNjIx/Cmkh2lB3l7si/LGhuKTZ3/si9c/ROcyf3urlzNu97znt+5zlPvYQ42OrWA7dlCcAiA0OyTMA9GAdZvbxH1nsprgGB6B0MEZ4CPFAdUHvSkwJlNmu/PhCvdnX43FoA0N+4Oak+q/SdI18YGwzaatIcPRN4kzxh3gIYTgMAuJNAGUAmJVCRgAdATQn45AnjEKCFdAAfUSDM6RA4SwMowAzJRk+Y5wAmm0AX7bYzFQEl0ZNTEF7/Y74SQhnT7bdCBMhwhblNwFojFQbymu2sJ19DXtgaafPdj0sA43XQlRpoE7T/+FUDyMRfNvtYwQ2Azhj6pAyPqjvFl+qQZKVktRVjjoiOI1XmeW23ePJb8Q8QKQkz8qLaTr7e0w8pXGP+SR6o3AAAAABJRU5ErkJggg==') no-repeat;
+  }
+  & .range-controls .min-toggle {
+    left: 44px;
+  }
+  & .range-controls .max-toggle {
+    right: 14px;
+  }
+}
+
+
+.page-catalog-tire .catalog {
+  & .CLASS{
+
+  }
+}
+
+// eof PRICE filter
+
+.page-catalog-tire .catalog {
+  & .CLASS{
+
+  }
+}
+
+
+.page-catalog-tire .catalog {
+  & .CLASS{
+
+  }
+}
+
+
+// checkboxes
+
+// .form-filter input[type="checkbox"] {
+//   display: none;
+// }
+
+
+.page-catalog-tire,
+.page-catalog-disk,
+.page-catalog-parts,
+.page-catalog-oil {
+
+
+  & .form-filter input[type="checkbox"],
+  & .form-filter input[type="radio"] {
+    display: none;
+  }
+
+  & .form-filter {
+    position: relative;
+
+    @media #{$mobile} {
+      display: none;
+      width: 270px;
+      margin: 0 auto;
+
+      position: relative;
+      right: -300px;
+    }
+    // padding-left: 43px;
+    // cursor: pointer;
+  }
+
+  & .form-filter input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAc0lEQVQ4T+2UsQqDQBAF57WxzmemCaS4QtK5WHjB39RWW18gkDRBhGtsbuvdYXdYniJeT9geoIai8gr06rq8SlyKGL8hT4rIG6CU7iqBRWQDrqB9e9XR8WdVR+c4GpbyLPpu/ImRobV1k7geH/LfYTNLHt8x7oK1lurnWAAAAABJRU5ErkJggg==') no-repeat;
+    height: 19px;
+    width: 18px;
+    // left: 0;
+    // left: -21px;
+    left: 17px;
+    top: 0;
+    background-position: center bottom;
+  }
+
+  & .form-filter input[type="checkbox"]:checked + .checkbox-indicator {
+    position: absolute;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAYAAACdkl3yAAABYklEQVQ4T8WUP0sDQRDF31wCKay1sRDSi1ioCH4LCwuxSB3EZEVyeyC56jZHuI1eYaOViKCfwErBMtaCNinERgI25sCTIyOLikGMSQ7FrbaY92Pe/CMA8H09nyQ8Zv6jvmyWokpFNEmpRhXobgGUCgRwZHIhpYJOeshb/sx4IKV0FwBJKWhUWyZeKc2G9b8gpYJlwAqlLE+mzsjzdIEIB8xcdpzNMBXI84ISETWYceo4YiVVjZQKXICqAG7iODfnusXOSCBmJt/f0cxcAhARYcG2xfVHh/taUyo4AqxLovgkn893Wq37fWYUjJAIq7YtjnvH5AeQPgSwBuAZwC2AmXfhnpSi+HXW+oLCMMxFUXIBYPFTxFdx/LTkuu7L0CATWK/XJ5Ik0wQwxYxHy8rM2vbG3XeTP7D9tZqeZsa5sSmlOOu3PgNBw+7dX4B+5Yy0zT3aZqZ1IowPa6c3jhltIt59BQFd5rT4yDT5AAAAAElFTkSuQmCC') no-repeat;
+    background-position: center bottom;
+  }
+
+  // eof filter checkbox
+  // start filter radio
+  & .form-filter input[type="radio"] {
+    display: none;
+  }
+
+  & .form-filter input[type="radio"] + .radio-indicator {
+    position: absolute;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABYklEQVQ4T61UPUvEQBB975ocFmKp+AesBLG1UazvUARBtPEfnBFNDoQFIYlicv/Axg8QRDhr0cZWhKv8A3qWcsVxaTKSXFZD4PyA3W52Zt6+NzM7ROkopSqWNV4XwRqJRQBTeUhXBA8kruO411ZKJcVUFg3fP5kHKqcAZssPlOwOkGy77u6Tvv8C8rywRvIKQDV39gHekclLaotUZgBZBjCW+wcist5s2repnQHlTB41CMloMMChUo2PIhOlWhPVKg5EZEeDAclCyox5TZ61HFK2HMc+/0laEISbIjzLYzpx3Juj70crAG4yemTkOA37l/pk7iBohQVmq/S86ILEBoB+HHO6LGcUaCrTsuQ1rZkILlNGb8MW89Z1G/W/sNExvt9qA1ID0E2BZChLjh3H3v8PUBCERyLcy/JNApmRZrLYZtpvbCCNfRHdbiOf9nvADKwRDVZabEsAJnPfuwjuRy22T3St56knrJFQAAAAAElFTkSuQmCC') no-repeat;
+    height: 19px;
+    width: 18px;
+    // left: 0;
+    // left: -21px;
+    left: 17px;
+    top: 0;
+    background-position: center bottom;
+  }
+
+  & .form-filter input[type="radio"]:checked + .radio-indicator {
+    position: absolute;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABqUlEQVQ4T62UPUvDUBSG35MKLQriqPgHnBRx1EVxrvgBgiiCm062sZpYhAvSJlqTOukmiB8gWKGdRRcdRezkH9A6SkFpwObIrYmUoJ2S6Z6ce5+87zm5hxB4hBBKNNo5wYwZIowC6PG2VJhxS4RLx6kWhRBu81FqDgxjbwhQjgD0Bz8QiMuAu6Traw/++19QNmvFiegCQMxLfgJ0TeQ+y5hZ6QN4HEC7l68x8+zmplqScQPkKbnzIURk12rYFiLx3qxEiHxXLIYtZk76MMAdkcrIq8mjb4eIFzRNPZUbM5n9/kikPizX9XrkPp1eLcu1aVrzzHTiwcqOUx0kw7AnAVw15BHZmpZQc7lcx9dX5BjAdKA2hba2+mIqlfowzbzVpGyKsln7jAhzAD4dh3qlHcOwL/+A+MyCridnpM1olF9kzZhxLhW9/rSYSrqemJB2FMV9atU111UGpE3DyBcBjgOoSBD/2OJdTVM3TNNaZqaDViAiXtE09dA0rR1mWm+cDxMUjrUwix1O+0P7IUO7In6bQ7m0PiyUMeLDAoNtDEC3l3tjxs1/g+0b8XszuA6K+T0AAAAASUVORK5CYII=') no-repeat;
+    background-position: center bottom;
+  }
+
+  & .form-filter input[type="radio"]:active + .radio-indicator {
+    position: absolute;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABjUlEQVQ4T61UPUjDQBT+XoemOIjgoji4OgnS1UVxblEEQXRxVJc2oklAOBCSKCZd1NHFHyiI0M6ii6sInVwdtC6CdCiNQ56kvbMxoC657f3cd9/33rtHSBwhREbTBovMWCTCDIBRmdJkxh0RroKgVRNChPGrFDcc5zAPZE4BTCYfSNgNIFwzza0H5f8Gsm2vQERVADkZbAN0QxQ+RTZzZgLgOQADMt5h5iXL0uuR3QWSTO4VCBH5nQ72hCh9xJkIURnK5bDLzGUFBoTTETOSNXlUcoh41TD087+kua63wkxnMqcRBK0pchx/HsB1lx6Rbxgl/Z/6dMOuW/FizBbItv0LIiwDaAcBjcXl2PbRMNHnUq9G2aplbb6rRyKZmsYvUc2YcRkxeu21mOqmWSqqRAkSdWVc+p6Zs/k4mONUagAXADQjIO7J4gPD0HcUkOP46wCOEzI3TLN8onyu6+0z03b3fppA6UhLs9jptD+1gUzti/TnJoVP25+dFNZIf/R/LLZZACMy9saM298W2xfdLRO4gkNR0QAAAABJRU5ErkJggg==') no-repeat;
+    background-position: center bottom;
+  }
+
+}
+
+
+
+
+// catalog items | tile
+
+// EOF checkboxes
+
+
+
+.page-catalog-tire .catalog {
+  & .filter-selected-params {
+    display: none;
+
+    @media #{$mobile} {
+      display: block;
+      width: 270px;
+      margin: 0 auto;
+    }
+
+    @include font(normal, 400, 18px, 21px, 'Arial');
+    color: #cfdee7;
+
+    & span {
+      @include font(italic, 400, 16px, 21px, 'Georgia');
+      color: #0ba360;
+    }
+  }
+}
+
+.page-catalog-tire .catalog {
+  & .CLASS{
+
+  }
+}
+
+.page-catalog-tire .catalog {
+  & .CLASS{
+
+  }
+}

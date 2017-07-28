@@ -1,0 +1,207 @@
+.page-check-third .step-third {
+  @include clearfix;
+}
+
+
+.page-check-third .payment {
+
+  @media #{$tablet-wide} {
+    padding: 0 100px;
+    margin-bottom: 60px;
+  }
+
+  @media #{$mobile} {
+    padding: 0 25px;
+    margin-bottom: 40px;
+  }
+
+}
+
+
+.page-check-third .payment {
+  & .title {
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+    color: #f39552;
+    margin-bottom: 25px;
+  }
+}
+
+.page-check-third .payment {
+  & .desc {
+
+  }
+}
+
+
+.page-check-third .payment {
+  & .row {
+    @include clearfix;
+    margin-bottom: 25px;
+    @media #{$mobile} {
+      margin-bottom: 15px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.page-check-third .payment {
+  & .left {
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #cfdee7;
+
+    @media #{$tablet-wide} {
+      width: 230px;
+      float: left;
+    }
+
+    @media #{$mobile} {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+.page-check-third .payment {
+  & .right {
+
+    @include font(italic, 400, 14px, 21px, 'Georgia');
+    color: #0ba360;
+    text-align: left;
+
+    @media #{$wide} {
+      float: right;
+    }
+
+    @media #{$tablet-wide} {
+      width: 740px;
+    }
+
+    @media #{$mobile} {
+      padding-left: 30px;
+    }
+  }
+}
+
+
+.page-check-third .check {
+  & .checkout-btn {
+
+    position: relative;
+    /* Style for "Прямоуголь" */
+    width: 370px;
+    height: 40px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+    border-radius: 2px;
+
+
+    @media #{$tablet-wide} {
+      float: right;
+    }
+
+    @media #{$mobile} {
+      width: 270px;
+      margin: 0 auto;
+    }
+
+    // ---
+    transition: background 0.5s;
+    background-size: 100% auto;
+    // background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
+    background-image: linear-gradient(to top, #138b56 0%, #139c60 51%, #15ae6b 100%);
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+      background-size: 200% auto;
+      background-position: bottom center; /* change the direction of the change here */
+    }
+    &:active {
+      top: 1px;
+    }
+    &.inactive {
+      opacity: 0.5;
+    }
+    // ---
+  }
+  & .checkout-btn-text {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+
+
+
+// start filter radio
+.page-check-third .payment input[type="radio"] {
+  display: none;
+}
+
+.page-check-third .payment input[type="radio"] + .radio-indicator {
+  position: absolute;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABYklEQVQ4T61UPUvEQBB975ocFmKp+AesBLG1UazvUARBtPEfnBFNDoQFIYlicv/Axg8QRDhr0cZWhKv8A3qWcsVxaTKSXFZD4PyA3W52Zt6+NzM7ROkopSqWNV4XwRqJRQBTeUhXBA8kruO411ZKJcVUFg3fP5kHKqcAZssPlOwOkGy77u6Tvv8C8rywRvIKQDV39gHekclLaotUZgBZBjCW+wcist5s2repnQHlTB41CMloMMChUo2PIhOlWhPVKg5EZEeDAclCyox5TZ61HFK2HMc+/0laEISbIjzLYzpx3Juj70crAG4yemTkOA37l/pk7iBohQVmq/S86ILEBoB+HHO6LGcUaCrTsuQ1rZkILlNGb8MW89Z1G/W/sNExvt9qA1ID0E2BZChLjh3H3v8PUBCERyLcy/JNApmRZrLYZtpvbCCNfRHdbiOf9nvADKwRDVZabEsAJnPfuwjuRy22T3St56knrJFQAAAAAElFTkSuQmCC') no-repeat;
+  height: 19px;
+  width: 18px;
+  // left: 0;
+  // left: -21px;
+  left: 0px;
+  bottom: 5px;
+  background-position: center bottom;
+}
+
+.page-check-third .payment input[type="radio"]:checked + .radio-indicator {
+  position: absolute;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABqUlEQVQ4T62UPUvDUBSG35MKLQriqPgHnBRx1EVxrvgBgiiCm062sZpYhAvSJlqTOukmiB8gWKGdRRcdRezkH9A6SkFpwObIrYmUoJ2S6Z6ce5+87zm5hxB4hBBKNNo5wYwZIowC6PG2VJhxS4RLx6kWhRBu81FqDgxjbwhQjgD0Bz8QiMuAu6Traw/++19QNmvFiegCQMxLfgJ0TeQ+y5hZ6QN4HEC7l68x8+zmplqScQPkKbnzIURk12rYFiLx3qxEiHxXLIYtZk76MMAdkcrIq8mjb4eIFzRNPZUbM5n9/kikPizX9XrkPp1eLcu1aVrzzHTiwcqOUx0kw7AnAVw15BHZmpZQc7lcx9dX5BjAdKA2hba2+mIqlfowzbzVpGyKsln7jAhzAD4dh3qlHcOwL/+A+MyCridnpM1olF9kzZhxLhW9/rSYSrqemJB2FMV9atU111UGpE3DyBcBjgOoSBD/2OJdTVM3TNNaZqaDViAiXtE09dA0rR1mWm+cDxMUjrUwix1O+0P7IUO7In6bQ7m0PiyUMeLDAoNtDEC3l3tjxs1/g+0b8XszuA6K+T0AAAAASUVORK5CYII=') no-repeat;
+  background-position: center bottom;
+}
+
+.page-check-third .payment input[type="radio"]:active + .radio-indicator {
+  position: absolute;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABjUlEQVQ4T61UPUjDQBT+XoemOIjgoji4OgnS1UVxblEEQXRxVJc2oklAOBCSKCZd1NHFHyiI0M6ii6sInVwdtC6CdCiNQ56kvbMxoC657f3cd9/33rtHSBwhREbTBovMWCTCDIBRmdJkxh0RroKgVRNChPGrFDcc5zAPZE4BTCYfSNgNIFwzza0H5f8Gsm2vQERVADkZbAN0QxQ+RTZzZgLgOQADMt5h5iXL0uuR3QWSTO4VCBH5nQ72hCh9xJkIURnK5bDLzGUFBoTTETOSNXlUcoh41TD087+kua63wkxnMqcRBK0pchx/HsB1lx6Rbxgl/Z/6dMOuW/FizBbItv0LIiwDaAcBjcXl2PbRMNHnUq9G2aplbb6rRyKZmsYvUc2YcRkxeu21mOqmWSqqRAkSdWVc+p6Zs/k4mONUagAXADQjIO7J4gPD0HcUkOP46wCOEzI3TLN8onyu6+0z03b3fppA6UhLs9jptD+1gUzti/TnJoVP25+dFNZIf/R/LLZZACMy9saM298W2xfdLRO4gkNR0QAAAABJRU5ErkJggg==') no-repeat;
+  background-position: center bottom;
+}
+
+// catalog items | tile
+
+.page-check-third {
+  & .payment .left {
+    // @include font(italic, 400, 14px, 21px, 'Arial');
+    // color: #cfdee7;
+    // margin-bottom: 10px;
+    // // margin-left: 38px;
+    //
+    // padding: 0 10px;
+
+    position: relative;
+
+
+    @include clearfix;
+
+    & label {
+      // float: left;
+      display: block;
+      // max-width: 180px;
+      // float: left;
+      padding-left: 30px;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    & .param {
+      float: right;
+    }
+  }
+}
+
+// EOF checkboxes

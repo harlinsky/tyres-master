@@ -1,0 +1,34 @@
+
+
+.page-check-first {
+  & .check-title{
+    @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
+    color: #cfdee7;
+    text-transform: uppercase;
+    text-align: center;
+
+    padding-top: 90px;
+    padding-bottom: 65px;
+
+    @media #{$mobile} {
+      @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+      padding-top: 30px;
+      padding-bottom: 20px;
+
+    }
+  }
+}
+
+
+.page-check-first .check {
+  & .CLASS{
+
+  }
+}
+
+
+.page-check-first .check {
+  & .CLASS{
+
+  }
+}

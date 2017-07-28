@@ -1,0 +1,213 @@
+
+.page-index .promo {
+  & .promo-item__left{
+    float: left;
+    width: 470px;
+    width: 40.17094017094017%; /* 470 / 1170 */
+    margin-right: 30px;
+    margin-right: 2.564102564102564%; /* 30 / 1170 */
+
+    @media #{$mobile} {
+      width: 320px;
+      margin-right: 0;
+    }
+  }
+}
+
+
+.page-index .promo {
+  & .CLASS{
+
+  }
+}
+
+//- RIGHT
+.page-index .promo {
+  & .promo-item__right{
+    float: right;
+    width: 670px;
+    width: 57.26495726495726%; /* 670 / 1170 */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media #{$tablet} {
+      padding-top: 0;
+    }
+    @media #{$mobile} {
+      width: 320px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+
+.page-index .promo {
+  & .promo-title{
+    color: #f39552;
+    @include font(normal, 400, 24px, 27px, 'PTSans-Narrow');
+    margin-bottom: 15px;
+  }
+}
+
+
+.page-index .promo {
+  & .promo-text{
+    color: #cfdee7;
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    margin-bottom: 20px;
+  }
+}
+
+
+.page-index .promo {
+  & .promo-link-container{
+    @include clearfix;
+    position: relative;
+  }
+}
+
+
+.page-index .promo {
+  & .promo-link-more{
+    float: left;
+    margin-right: 30px;
+
+    @include font(normal, 400, 18px, 40px, 'Arial');
+    text-transform: uppercase;
+    color: #fefefe;
+
+    /* Style for "Прямоуголь" */
+    text-align: center;
+    width: 270px;
+    height: 40px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+    border-radius: 2px;
+    background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
+
+    @media #{$mobile} {
+      margin-bottom: 10px;
+    }
+
+    // ---
+    transition: background 0.5s;
+    background-size: 100% auto;
+    background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+      background-size: 200% auto;
+      background-position: bottom center; /* change the direction of the change here */
+    }
+    &:active {
+      top: 1px;
+    }
+    &.inactive {
+      opacity: 0.5;
+    }
+    // ---
+  }
+}
+
+
+.page-index .promo {
+  & .promo-desc{
+    float: left;
+    @include font(italic, 400, 16px, 24px, 'Georgia-Italic');
+    color: #cfdee7;
+    // font-family: Georgia;
+    // font-size: 16px;
+    // font-style: italic;
+    // line-height: 24px;
+
+
+    width: 370px;
+    width: 55.22388059701493%; /* 370 / 670 */
+    height: 40px;
+    position: relative;
+
+    @media #{$mobile} {
+      width: 100%;
+    }
+
+
+    &-text {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+
+      @media #{$mobile} {
+        position: relative;
+        top: 0;
+        transform: none;
+        text-align: left;
+      }
+    }
+  }
+}
+
+
+.page-index .promo {
+  & .CLASS {
+
+  }
+}
+
+
+.page-index .promo {
+  & .promo-show-btn {
+    color: #fefefe;
+    text-align: center;
+    width: 270px;
+    margin: 0 auto;
+    height: 50px;
+    box-shadow: 0 5px 10px rgba(37, 19, 6, 0.36);
+    border-radius: 2px;
+    border: 2px solid #6b6b72;
+    background-color: #3a3a3d;
+
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+    &-text {
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include font(normal, 400, 24px, 32px, 'PTSans-Narrow');
+
+    }
+
+    &:hover {
+      background-color: #464649;
+    }
+
+    &:active {
+      background-color: #3a3a3d;
+    }
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 25px;
+      width: 14px;
+      height: 25px;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAZCAYAAAABmx/yAAABW0lEQVQ4T53UzUrDQBAA4JndXnwAwdpaNbYqihhiFASxFBXER/UBRFApip4a48mCNqlI21TiC4i2O7KNG7QSkm5uYedjf+YHT4n4evN9KgynP2o1HEDGD91Wv0pIKwDiMwe5s83yTJjFousHNhFYMhiRBvA1PLdWS0EaRnlUo907RmKFSTDKYCJirtc/AoT5GCNeWcbsa9LOI6jwvRccIuJC9A+CcbhIwjH8wej6vRoAKysMMKjblZI/vvMfqLDjdasM+bI6DMCwvlWe837jf1AtOn6whwRrCgtGN9tG4UmtJ0IZ4La6u4RsIw4mvLUq+eboAdPy1Wh3dpjgporjhHdmJf+YCiVwWoGFCLbCQvDLTFCCht85YcSLUZ6Fnwlq7ah1R61XHc8jR3FtLhWfE/NIRPjgve1HPRqVcWrlSDRxrcrWcl6CAyZwMXN3aPWj9gTQnjnaU053rn4DQmHpTL1eEtwAAAAASUVORK5CYII=');
+    }
+  }
+}
+
+
+.page-index .promo {
+  & .CLASS {
+
+  }
+}

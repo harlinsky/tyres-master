@@ -1,0 +1,124 @@
+.page-not-found .content {
+  // bg 1
+}
+
+
+.page-not-found .content {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-top: 90px;
+    padding-bottom: 135px;
+
+    @media #{$mobile} {
+      padding-top: 80px;
+      padding-bottom: 150px;
+    }
+  }
+
+  & .content-wrapper {
+    //
+  }
+
+  & .content-essence {
+    //
+  }
+}
+
+
+.page-not-found .content {
+  & .content-wrapper {
+
+  }
+}
+
+
+.page-not-found .content {
+  & .content-thumb {
+    background: url('../img/404.jpg') no-repeat;
+    background-size: cover;
+    display: block;
+    width: 675px;
+    height: 276px;
+    margin: 0 auto 35px;
+
+    @media #{$mobile} {
+      width: 271px;
+      height: 111px;
+    }
+  }
+}
+
+
+.page-not-found .content {
+  & .content-title {
+
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+    color: #cfdee7;
+    text-align: center;
+    margin-bottom: 15px;
+
+    @media #{$mobile} {
+      width: 250px;
+      margin: 0 auto 10px;
+    }
+  }
+}
+
+
+.page-not-found .content {
+  & .content-subtitle {
+
+    @include font(italic, 400, 16px, 24px, 'Georgia');
+    color: #0ba360;
+    text-align: center;
+
+
+    @media #{$mobile} {
+      width: 250px;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+.page-not-found .content {
+  & .CLASS{
+
+  }
+}
+
+
+.page-not-found .content {
+  & .CLASS{
+
+  }
+}

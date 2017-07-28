@@ -1,0 +1,24 @@
+{
+  "name": "frontend-workflow",
+  "description": "",
+  "main": "",
+  "authors": [
+    "vdyshkant <yong.knox@yandex.ru>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.0.0",
+    "normalize-css": "latest",
+    "reset-css": "latest",
+    "font-awesome": "latest",
+    "modernizr": "latest"
+  }
+}

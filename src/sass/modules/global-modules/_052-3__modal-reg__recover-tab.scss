@@ -1,0 +1,128 @@
+
+.modal-reg {
+  & .tab-recover {
+
+  }
+}
+
+
+.modal-reg {
+  & .tab-recover .title {
+
+  }
+}
+
+
+.modal-reg {
+  & .tab-recover .email-wrap {
+    @include clearfix;
+    margin-bottom: 5px;
+    @media #{$tablet-wide} {
+      margin-bottom: 20px;
+    }
+  }
+  & .tab-recover .email-input {
+    float: left;
+    width: 270px;
+  }
+}
+
+
+.modal-reg {
+  & .tab-recover .remembered {
+
+    float: left;
+    width: 200px;
+    white-space: nowrap;
+
+     display: block;
+     float: left;
+     height: 40px;
+     width: 200px;
+     position: relative;
+     cursor: pointer;
+
+     &-text {
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+
+       @include font(italic, 400, 16px, 24px, 'Georgia');
+       color: #cfdee7;
+       text-decoration: underline;
+
+       @media #{$tablet-wide} {
+         left: 50%;
+       }
+
+        @media #{$mobile} {
+          @include font(italic, 600, 16px, 24px, 'Georgia');
+          letter-spacing: 1px;
+       }
+     }
+  }
+}
+
+
+.modal-reg {
+  & .tab-recover .btn-recover {
+    /* Style for "Прямоуголь" */
+      display: block;
+    width: 270px;
+    height: 40px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+    border-radius: 2px;
+    background-image: linear-gradient(to top, #f67519 0%, #fd9d58 100%);
+    // opacity: 0.5;
+    position: relative;
+
+    &-text {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include font(normal, 400, 18px, 27px, 'Arial');
+      // opacity: 0.5;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
+
+
+.modal-reg {
+  & .tab-recoverp {
+
+  }
+}
+
+
+.modal-reg {
+  & .tab-recover {
+
+  }
+}
+
+
+.modal-reg {
+  & .tab-recover {
+
+  }
+}
+
+
+.modal-reg {
+  & .tab-recover {
+
+  }
+}
+
+
+.modal-reg {
+  & .tab-recover {
+
+  }
+}

@@ -1,0 +1,54 @@
+// result
+section.result
+  .shell
+    .container
+      .range
+        .result-wrapper
+          //- titele
+          .result-title
+            .result-title-text Результат поиска для&nbsp;
+            .result-title-query ”<span>колесо на мой миникупер</span>”:
+          hr.divider
+          //- content
+          .result-content
+            //- item
+
+            include item
+            include item
+            include item
+            include item
+
+            include item
+            include item
+            include item
+            include item
+
+            include item
+            include item
+            include item
+            include item
+
+          //- VIEW ALL
+          .result-more
+            a.result-more__up(href='#')
+              .result-more__up-text Загрузить еще 12
+            .result-more__paginator
+              a.result-more__paginator__next-btn(href="#")
+                .result-more__paginator__next-btn-text Следующая страница
+              ul.result-more__paginator-list
+                li.result-more__paginator-item
+                  a.result-more__paginator-item-link(href="#") 1
+                li.result-more__paginator-item
+                  a.result-more__paginator-item-link(href="#") 2
+                li.result-more__paginator-item.active
+                  a.result-more__paginator-item-link(href="#") 3
+                li.result-more__paginator-item
+                  a.result-more__paginator-item-link(href="#") 4
+                li.result-more__paginator-item.skip-next
+                  a.result-more__paginator-item-link(href="#") 5
+                li.result-more__paginator-item
+                  a.result-more__paginator-item-link(href="#") 10
+              a.result-more__paginator__prev-btn(href="#")
+                .result-more__paginator__prev-btn-text Предыдущая страница
+
+// result end

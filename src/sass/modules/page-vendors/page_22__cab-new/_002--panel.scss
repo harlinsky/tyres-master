@@ -1,0 +1,269 @@
+.page-cab-new .panel {
+  // bg 1
+
+  /* Style for "Прямоуголь" */
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
+    border-radius: 2px;
+    background-color: #353538;
+}
+
+
+.page-cab-new .panel {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background: url('../img/cab_panel-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top 25px;
+
+    @media #{$mobile} {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    //
+  }
+
+  & .panel-wrapper {
+    //
+  }
+
+  & .panel-essence {
+    //
+  }
+}
+
+
+.page-cab-new .panel {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cab-new .panel {
+  & .panel {
+
+    background-color: #353538;
+  }
+}
+
+
+.page-cab-new .panel {
+  & .panel-content{
+    width: 770px;
+    margin: 0 auto;
+    @include clearfix;
+
+    @media #{$mobile} {
+      width: auto;
+    }
+  }
+}
+
+// thumb
+// eof thumb
+.page-cab-new .panel {
+  & .thumb {
+    width: 96px;
+    height: 96px;
+    margin-right: 20px;
+    float: left;
+
+    position: relative;
+    border-radius: 50%;
+
+    background-color: #1f5583;
+
+    @media #{$mobile} {
+      float: none;
+      margin: 0 auto;
+    }
+    &.name {
+      background-color: #36ac68;
+    }
+  }
+  & .thumb-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    @include font(normal, 400, 45px, 27px, 'Arial');
+    color: #feffff;
+  }
+}
+
+// mail:
+.page-cab-new .panel {
+  & .mail{
+    @include clearfix;
+
+    @media #{$tablet-wide} {
+      padding-top: 30px;
+      float: left;
+      width: 480px;
+    }
+
+    @media #{$mobile} {
+      padding-top: 10px;
+    }
+  }
+  & .mail-prefix{
+    @include font(italic, 600, 16px, 42px, 'Georgia');
+    color: #0ba360;
+    float: left;
+    width: 65px;
+    @media #{$mobile} {
+      @include font(italic, 600, 16px, 27px, 'Georgia');
+      float: none;
+      width: 85px;
+      margin: 0 auto;
+      // text-align: center;
+    }
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      right: 0px;
+      width: 16px;
+      height: 17px;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAABsElEQVQ4T5WTMUgbYRTH//8vWpOjtgqF3EUUxKG0o3O0Q0s7dLM6OegkOOjSXLILadMkm64iOJVQEBQcmqE0QsGtYwUnIRcVS1G8u4jmnniQNL1GE7/xfe//e//vvfcR9zgC0E3oH0EuADihyAzvoYeT0DMgUw2NyH7HAJlCqDpsJEXwoanoVUcAJ2EsUvF1WOufcM9/L/11IZttAa6pzwq45lclCxHNmq7axjKAePWyZ+xOgGMa7wAUAKi6bSFWNa0yd1odetyXOfhzK+A8ZbxRHrYAdAcaXa6JN9qbPzr2TbWagpuKxcWTrwAigfsTRcbDWWuvHv8PYJuxUUC+EXjULBbgTKBePMyVfzbH/wFcJI1nNUEJwJNAZReKr7RP1o+g4wbATUSHhWoHwEAg6VKRb8NZq9jquT7ATg7GKLUSICOBJA+CSS1f2bhtY33AxXv9eU3xe9A6ITOR3OH6XetO29TnAbVLel0iLDaaRy5oWWul3V+hY+qfAb4MEeOeJ1EhtylIR/KVdDuxvweOafwC8BRAmeKNUYUeNM+5HeQGYAOyT3KXgi/hXOVmgTo+15MTkHT4x1z7AAAAAElFTkSuQmCC');
+      background-repeat: no-repeat;
+
+      @media #{$tablet-wide} {
+        display: none;
+      }
+    }
+  }
+  & .mail-essence{
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+    color: #cfdee7;
+    float: left;
+    position: relative;
+    @media #{$mobile} {
+      float: none;
+      width: auto;
+      text-align: center;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      right: -36px;
+      width: 16px;
+      height: 17px;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAARCAYAAADUryzEAAABsElEQVQ4T5WTMUgbYRTH//8vWpOjtgqF3EUUxKG0o3O0Q0s7dLM6OegkOOjSXLILadMkm64iOJVQEBQcmqE0QsGtYwUnIRcVS1G8u4jmnniQNL1GE7/xfe//e//vvfcR9zgC0E3oH0EuADihyAzvoYeT0DMgUw2NyH7HAJlCqDpsJEXwoanoVUcAJ2EsUvF1WOufcM9/L/11IZttAa6pzwq45lclCxHNmq7axjKAePWyZ+xOgGMa7wAUAKi6bSFWNa0yd1odetyXOfhzK+A8ZbxRHrYAdAcaXa6JN9qbPzr2TbWagpuKxcWTrwAigfsTRcbDWWuvHv8PYJuxUUC+EXjULBbgTKBePMyVfzbH/wFcJI1nNUEJwJNAZReKr7RP1o+g4wbATUSHhWoHwEAg6VKRb8NZq9jquT7ATg7GKLUSICOBJA+CSS1f2bhtY33AxXv9eU3xe9A6ITOR3OH6XetO29TnAbVLel0iLDaaRy5oWWul3V+hY+qfAb4MEeOeJ1EhtylIR/KVdDuxvweOafwC8BRAmeKNUYUeNM+5HeQGYAOyT3KXgi/hXOVmgTo+15MTkHT4x1z7AAAAAElFTkSuQmCC');
+      background-repeat: no-repeat;
+
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+  }
+}
+
+// logout block
+.page-cab-new .panel {
+  & .logout{
+    width: 170px;
+    float: right;
+    padding-top: 15px;
+
+    @media #{$mobile} {
+      float: none;
+      margin: 0 auto;
+    }
+  }
+  & .logout-btn{
+    width: 170px;
+    height: 40px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
+    border-radius: 2px;
+    border: 2px solid #6b6b72;
+      background-color: #3a3a3d;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 15px;
+    &:active {
+      top: 1px;
+    }
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      background-color: #464649;
+    }
+
+    &:active {
+      background-color: #3a3a3d;
+    }
+  }
+  & .logout-btn-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    text-align: center;
+    user-select: none;
+
+    color: #ffffff;
+  }
+  & .change-pass{
+    @include font(italic, 400, 16px, 24px, 'Georgia');
+    color: #cfdee7;
+    text-decoration: underline;
+    text-align: center;
+
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+
+
+.page-cab-new .panel {
+  & .CLASS{
+
+  }
+}

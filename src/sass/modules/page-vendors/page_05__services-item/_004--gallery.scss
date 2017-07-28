@@ -1,0 +1,175 @@
+.page-services-item .gallery {
+  // bg 1
+  background: #262627;
+}
+
+
+.page-services-item .gallery {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-bottom: 50px;
+  }
+
+  & .gallery-wrapper {
+    //
+  }
+
+  & .gallery-essence {
+    //
+  }
+}
+
+
+.page-services-item .gallery {
+  & .gallery-content {
+    @include clearfix;
+  }
+  & .gallery-content .left{
+    float: left;
+    width: 570px;
+    margin-right: 30px;
+
+    @media #{$tablet} {
+      float: none;
+      margin: 0 auto;
+    }
+
+    @media #{$mobile} {
+      float: none;
+      margin: 0 auto;
+      width: 270px;
+
+    }
+  }
+  & .gallery-content .right{
+    float: right;
+    width: 570px;
+
+    @media #{$tablet} {
+      float: none;
+      margin: 0 auto;
+    }
+
+    @media #{$mobile} {
+      float: none;
+      margin: 0 auto;
+      width: 270px;
+
+    }
+  }
+}
+
+
+.page-services-item .gallery-content {
+  & .item {
+    margin-bottom: 30px;
+
+    @media #{$mobile} {
+      margin-bottom: 15px;
+    }
+
+    &.half {
+
+    }
+    &.quad {
+
+    }
+
+  }
+  & .item-img {
+
+  }
+  & .row {
+    @include clearfix;
+
+    & > .item {
+      @media #{$mobile} {
+        width: 128px;
+      }
+      &:first-child {
+        float: left;
+      }
+      &:last-child {
+        float: right;
+      }
+    }
+  }
+}
+
+
+.page-services-item .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .gallery {
+  & .CLASS{
+
+  }
+}

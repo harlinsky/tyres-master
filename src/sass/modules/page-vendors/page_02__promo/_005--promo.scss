@@ -1,0 +1,97 @@
+.page-promo .promo {
+  // bg 1
+  background: #262627;
+}
+
+
+.page-promo .promo {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding: 0px 0 150px;
+
+    @media #{$mobile} {
+      // padding-top: 70px;
+      padding-bottom: 80px;
+    }
+  }
+
+  & .promo-wrapper {
+    //
+  }
+
+  & .promo-essence {
+    //
+  }
+}
+
+
+.page-promo .promo {
+  & .CLASS{
+
+  }
+}
+
+
+.page-promo .promo {
+  & .promo-item{
+    margin-bottom: 70px;
+    @include clearfix;
+  }
+}
+
+@import '005-2--promo__right';
+@import '005-3--promo__loadMore';
+
+
+.page-promo .promo {
+  & .CLASS{
+
+  }
+}
+
+
+.page-promo .promo {
+  & .CLASS{
+
+  }
+}
+
+
+.page-promo .promo {
+  & .CLASS{
+
+  }
+}
+
+.page-promo .promo {
+  & .CLASS{
+
+  }
+}

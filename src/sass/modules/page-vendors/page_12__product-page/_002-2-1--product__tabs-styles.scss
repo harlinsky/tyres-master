@@ -1,0 +1,134 @@
+.page-product .product {
+  & .tabs {
+    @include clearfix;
+  }
+
+  & .tabs-btn {
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    /* Style for "Прямоуголь" */
+    width: 215px;
+    margin-right: 20px;
+    height: 50px;
+
+    @media #{$mobile} {
+      width: 170px;
+
+      &.tab-login {
+        display: inline-block;
+        width: 100px;
+      }
+    }
+
+    &.active {
+      border: none;
+      background-color: #353538;
+
+      & .tabs-btn-wrap {
+        box-shadow: none;
+        border-radius: none;
+        border: none;
+        background: #353538;
+      }
+
+    }
+
+    & .tabs-btn-wrap {
+      display: block;
+      height: 40px;
+      width: 100%;
+      position: relative;
+
+      box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
+      border-radius: 2px;
+      border: 2px solid #6b6b72;
+      background: #262526;
+    }
+    & .tabs-btn-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      @include font(normal, 400, 18px, 27px, 'Arial');
+      color: #feffff;
+    }
+  }
+}
+
+// eof btns
+
+
+.page-product .product {
+
+}
+
+
+.page-product .product {
+
+}
+
+
+.page-product .product .tabs {
+  overflow: hidden;
+}
+
+.page-product .product .tabs__item {
+  float: left;
+  // margin: 0 5px 0;
+  transition: 0.3s ease-out;
+
+  &:not(.active):hover .tabs__link {
+    background-color: #353538;
+  }
+
+  &.is-active {
+    & .tabs__link {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+
+.page-product .product .tabs__link {
+  display: block;
+  padding: 10px 20px;
+  // background: #ddd;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s ease-out;
+
+  @media #{$mobile} {
+    padding: 10px;
+  }
+}
+
+.page-product .product .tabs-content {
+  display: none;
+  // margin: 5px 0
+  // padding: 20px
+  // border: 1px solid #000
+  &:first-child {
+    display: block;
+  }
+}
+
+.page-product .product-overlay {
+  position: fixed;
+  z-index: 16;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1004;
+
+  // background-color: #120f41;
+  // opacity: 0.4;
+  background-color: rgba(19, 16, 66, 0.4);
+  background-color: rgba(38, 38, 39, 1);
+  // background-color: hsla(244, 62%, 16%, 0.4);
+  background-color: hsla(240, 1%, 15%, 1)
+
+}

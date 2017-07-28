@@ -1,0 +1,35 @@
+// maps
+section.maps
+  .shell
+      .container
+        .range
+          .maps-wrapper
+            //- titele
+            h2.maps-title.wheel-title Как нас найти?
+
+            //- content
+            .maps-content
+              .top-row
+                a.unit(href="#city01")
+                  .unit-text Алматы
+                a.unit(href="#city02")
+                  .unit-text Астана
+                a.unit(href="#city03")
+                  .unit-text Тараз
+                a.unit(href="#city04")
+                  .unit-text Шымкент
+                a.unit(href="#city05")
+                  .unit-text Актау
+              //- maps instance
+              .instance#city01
+                include 04-1--maps__instance
+              .instance#city02
+                include 04-1--maps__instance
+              .instance#city03
+                include 04-1--maps__instance
+              .instance#city04
+                include 04-1--maps__instance
+              .instance#city05
+                include 04-1--maps__instance
+
+// maps end

@@ -1,0 +1,119 @@
+.page-module .module {
+  // bg 1
+
+  @media #{$tablet-wide} {
+    background: url('../img/module_bg.png') no-repeat;
+    background-position: center bottom -25px;
+  }
+}
+
+
+.page-module .module {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1210px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-bottom: 150px;
+  }
+
+  & .module-wrapper {
+    //
+    background-color: #464649;
+  }
+
+  & .module-essence {
+    //
+  }
+}
+
+
+.page-module .module {
+  & .CLASS {
+
+  }
+}
+
+
+.page-module .module {
+  & .content{
+    width: 770px;
+    margin: 0 auto;
+
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    @media #{$mobile} {
+      width: auto;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}
+
+
+.page-module .module {
+  & .module-title {
+    @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
+    color: #cfdee7;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+    @media #{$mobile} {
+      @include font(normal, 400, 26px, 34px, 'PTSans-Narrow');
+    }
+  }
+}
+
+@import '002-1--size';
+@import '002-2--disk';
+@import '002-3--dropDownSelect';
+
+
+.page-module .module {
+  & .CLASS{
+
+  }
+}
+
+
+.page-module .module {
+  & .CLASS{
+
+  }
+}
+
+
+.page-module .module {
+  & .CLASS{
+
+  }
+}

@@ -1,0 +1,194 @@
+
+
+.page-catalog-parts .catalog {
+  & .jcf-select {
+    width: 270px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #6b6b72;
+    background-color: #353538;
+    margin-bottom: 0;
+
+    transition: 300ms ease-out;
+    cursor: pointer;
+
+    @media #{$wide} {
+      margin-left: 20px;
+    }
+
+    &:hover {
+      border: 1px solid #cfdee7 !important; // !important >> bugfix for rendering css
+    }
+
+    &.jcf-drop-active {
+      border-radius: 2px 2px 0 0;
+      // border: none;
+      border-left: 1px solid #cfdee7 !important; // !important >> bugfix for rendering css
+      border-right: 1px solid #cfdee7 !important; // !important >> bugfix for rendering css
+      border-top: 1px solid #cfdee7 !important; // !important >> bugfix for rendering css
+    }
+  }
+}
+
+.page-catalog-parts .catalog {
+  .jcf-range.jcf-focus .jcf-active-handle {
+      border: 1px solid #6b6b72;
+      margin: -5px 0 0 -1px
+  }
+}
+
+.page-catalog-parts .catalog {
+  .jcf-focus,
+  .jcf-focus * {
+      border-color: #6b6b72!important
+  }
+}
+
+
+
+.page-catalog-parts .catalog {
+
+  & .jcf-select-opener {
+   position: absolute;
+   text-align: center;
+   background: transparent;
+   width: 26px;
+   bottom: 0;
+   right: 0;
+   top: 0;
+
+   &::before {
+     position: absolute;
+     content: '';
+     top: 11px;
+     right: 11px;
+     // transform: translate(-50%, -50%);
+     width: 8px;
+     height: 7px;
+     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAHCAYAAAA1WQxeAAAAdElEQVQYV2NkIAAYQfLn7z0/wMDAYI+p9v9GiIL7zxUY/jPcx1DAyKAIVgBWdPd5AwMjQz1c0X+GRkNlyQaEgvvvBf7/+/GAkZGB/z8Dw0NGRg4DQ0XBD3AFUKsSGP4zzGdgZEg0VJRcABJDUQCzCmQ0zCoA2UIkABiG5zIAAAAASUVORK5CYII=') !important;
+     background-repeat: no-repeat;
+     background-position: center center;
+   }
+ }
+
+  & .jcf-drop-active { //- WHEN FIELD is ACTIVE:
+    & .jcf-select-opener {
+      &::before {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAAZElEQVQYV2NkYGBgOH/v+QEGRoYEQ0XJByA+DDBCJf+DBRgZGhgYOCYaKgp+gHAhOiGSEPAApMhQUXIhNkmIkv8MjRiS//8zfGRkYigwVJRcgCr5n6GRgYljArqduF2L7HxkNgBjLCocDH1G3wAAAABJRU5ErkJggg==') !important;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+  }
+}
+
+
+
+.page-catalog-parts {
+  & .jcf-select-drop .jcf-select-drop-content {
+    // border: 1px solid red;
+    /* Style for "Прямоуголь" */
+    border-radius: 0 0 2px 2px;
+    border: none;
+    border-left: 1px solid #cfdee7;
+    border-right: 1px solid #cfdee7;
+    border-bottom: 1px solid #cfdee7;
+    // border: 1px solid #cfdee7;
+    background-color: #353538;
+  }
+
+  & .jcf-list {
+    background: #353538;
+  }
+
+  & .jcf-select-drop .jcf-hover {
+    background: #6b6b72;
+    // @include font(italic, 400, 12px, 21px, 'Georgia');
+  }
+
+  & .jcf-list .jcf-option {
+    @include font(italic, 400, 12px, 21px, 'Georgia');
+    color: #cfdee7;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 21px;
+    min-height: 21px;
+    cursor: pointer;
+  }
+
+  // scroll essence:
+  & .jcf-scrollbar-vertical .jcf-scrollbar-handle {
+    /* Style for "Прямоуголь" */
+        width: 5px;
+    height: 16px;
+    border-radius: 2px;
+        background: #cfdee7;
+  }
+  // eof scroll essence:
+
+  & .jcf-scrollbar-vertical {
+    background: transparent;
+    /* Style for "Прямоуголь" */
+    width: 5px;
+    right: 12px;
+    // height: 208px;
+    border-radius: 2px;
+    // background-color: #464649;
+    background-color: transparent;
+  }
+
+  & .jcf-scrollbar-slider {
+    background: #464649;
+    border-radius: 2px;
+  }
+
+  & .jcf-select-text {
+    // @include font(normal, 400, 12px, 30px, 'Georgia');
+    @include font(italic, 400, 12px, 30px, 'Arial');
+    color: #cfdee7;
+    color: rgba(207, 222, 231, 0.4);
+    color: hsla(203, 33%, 86%, 0.4);
+    margin-left: 0px;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+
+  & .jcf-scrollbar-vertical .jcf-scrollbar-dec,
+  & .jcf-scrollbar-vertical .jcf-scrollbar-inc {
+    // display: none;
+    height: 5px; //- AKA BUG-FIX
+    background: transparent;
+    opacity: 0.00001;
+    user-select: none;
+  }
+}
+
+
+.page-catalog-parts .catalog {
+  & .jcf-hidden{
+    -webkit-appearance: none;
+    position: absolute;
+    left: -9999px;
+    height: 1px;
+    width: 1px;
+    margin: 0px !important;
+    border-width: 0px !important;
+  }
+}
+
+
+.page-catalog-parts .catalog {
+  & .jcf-unselectable{
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}
+
+// custom styles for select option tags:
+.page-catalog-parts .catalog {
+  & .jcf-unselectable{
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}

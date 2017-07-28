@@ -1,0 +1,192 @@
+
+
+.page-check-first .check {
+  & .fast{
+
+
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
+    border-radius: 2px;
+    border: 3px solid #464649;
+    background-color: #464649;
+    margin-bottom: 150px;
+
+    @media #{$tablet-wide} {
+      height: 150px;
+    }
+
+    @media #{$mobile} {
+
+    }
+
+  }
+}
+
+
+.page-check-first .check {
+  & .fast__wrapper{
+    width: 970px;
+    padding-top: 30px;
+    margin: 0 auto;
+    @include clearfix;
+
+    @media #{$mobile} {
+      width: auto;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+
+.page-check-first .check {
+  & .fast__desc{
+
+    @media #{$tablet-wide} {
+      margin-right: 30px;
+      float: left;
+        width: 470px;
+    }
+
+    @media #{$mobile} {
+      margin-bottom: 25px;
+    }
+  }
+  & .fast__phone{
+    width: 270px;
+    margin-right: 30px;
+    float: left;
+
+    @media #{$mobile} {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  & .fast__btn {
+  float: right;
+    width: 170px;
+    height: 40px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+    border-radius: 2px;
+    background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
+    position: relative;
+    cursor: pointer;
+    margin-top: 35px;
+
+    @media #{$mobile} {
+      float: none;
+      width: 100%;
+    }
+    // ---
+    transition: background 0.5s;
+    background-size: 100% auto;
+    background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+      background-size: 200% auto;
+      background-position: bottom center; /* change the direction of the change here */
+    }
+    &:active {
+      top: 1px;
+    }
+    &.inactive {
+      opacity: 0.5;
+    }
+    // ---
+  }
+  & .fast__btn-text {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+
+
+.page-check-first .check {
+  & .fast__desc-title{
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+    color: #0ba360;
+  }
+  & .fast__desc-text{
+    @include font(italic, 400, 14px, 21px, 'Georgia');
+    color: #cfdee7;
+  }
+}
+
+
+.page-check-first .check {
+  & .fast__phone-title{
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+    margin-bottom: 15px;
+    display: block;
+  }
+  & .fast__phone-field{
+    /* Style for "Прямоуголь" */
+    width: 100%;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid #464649;
+    background-color: #353538;
+
+
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    // opacity: 0.4;
+    color: #cfdee7;
+    color: rgba(207, 222, 231, 1);
+    color: hsla(203, 33%, 86%, 1);
+
+    transition: 0.3s ease-out;
+    outline: none;
+    &:focus {
+      border: 1px solid #cfdee7;
+    }
+
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &::placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &::-webkit-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &::-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &:-moz-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+    &:-ms-input-placeholder {
+      @include font(italic, 400, 14px, 21px, 'Arial');
+      color: hsla(203, 33%, 86%, 0.4);}
+  }
+  & .CLASS{
+
+  }
+}
+
+
+
+.page-check-first .check {
+  & .CLASS{
+
+  }
+}

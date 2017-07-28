@@ -1,0 +1,159 @@
+.page-catalog-oil .viewed {
+  // bg 1
+}
+
+
+.page-catalog-oil .viewed {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-bottom: 50px;
+  }
+
+  & .viewed-wrapper {
+    //
+  }
+
+  & .viewed-essence {
+    //
+  }
+}
+
+@import '004-1--viewed__item';
+
+.page-catalog-oil .viewed {
+  & .CLASS{
+
+  }
+}
+
+
+
+
+.page-catalog-oil .viewed {
+  & .viewed-controls{
+    width: 112px;
+    margin: 30px auto 0;
+    @include clearfix;
+
+    @media #{$mobile} {
+      margin-top: 5px;
+    }
+
+    & .bx-prev, & .bx-next {
+      display: block;
+      width: 16px;
+      height: 29px;
+    }
+  }
+  & .viewed-controls__left,
+  & .viewed-controls__right {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAdCAYAAACjbey/AAABBklEQVRIS7WVOwrCQBCG/4kQxCbWtvEINtoJIlp4Ac/kNQQLCwU7PYGkTSVpRNNbRBRDVjYmEh9rdlhMueT75rGPITA/LwgckVRnBNEDaEIc3gvDGkXJWgCdjIu1BRJGlKwAdAtB11oCBbyFde2XCn7BLdc9/RSUwbIUpUAHVgp04a8CDvwh4MIvAt/37YvtLAQwLOxzulWy26oDlzZRwmfbmRMw4sBpBiZwKvB2xykgxtzI+f/k7Q4xgEq2cINlNVtuY697ycwzMO6B8S7ktT4yqS8JYsBp6MtlMjqJeVSu5Ot15kj+8x5wyvnvm6iTSWkGJRK9uVCUiCjZENBmT6an5G023gEW3u0E8rBDnQAAAABJRU5ErkJggg==');
+    width: 16px;
+    height: 29px;
+    cursor: pointer;
+
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    transform: scale(1);
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  & .viewed-controls__left {
+    float: left;
+  }
+  & .viewed-controls__right {
+    float: right;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAdCAYAAACjbey/AAABBElEQVRIS63VsQ7BQBgH8P/XENIO9g4WY1fxBLpJGAwexDt4Ey9gICKxsfQNqhtmXUQqenItQrTua0/n/n/35e67+8jzDxNAjAVoRcZl1G61QhT4yPP3VwAVmRHAliyj27btM9eQwBKA+xZYwzJ6XIS8IGggrkmkUwYhGdJBEkAHeQFlkQ+gDPIFFEUygSJILpCHCNDCjE59x3Ei+c9PIB/BzIzCoUSUgAphAfl7QlM2kCLHJuJ4B6D66L8bG8hud2YFWWGBdCOVFfwKK08hK0zAvB6FA2UfcK/4/+8Cd+XnO/K/96Doyh8VlA0nt1EnnALac+FtMhGwEZbhcofKowK92XgHZ3bXEXNmwowAAAAASUVORK5CYII=') no-repeat;
+  }
+}
+
+// title
+
+    .page-catalog-oil .viewed {
+      & .viewed-title{
+        /* Style for "Оказываем" */
+        @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
+        color: #cfdee7;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 65px;
+        letter-spacing: 0.8px;
+
+        @media #{$mobile} {
+          @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+          width: 250px;
+          margin: 0 auto 25px;
+        }
+
+        &.wheel-title {
+          position: relative;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 32px;
+            height: 32px;
+            background: url('data:image/png;base64,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');
+          }
+        }
+      }
+    }
+
+// eof title
+
+
+.page-catalog-oil .viewed {
+  & .CLASS{
+
+  }
+}
+
+
+.page-catalog-oil .viewed {
+  & .CLASS{
+
+  }
+}
+
+
+.page-catalog-oil .viewed {
+  & .CLASS{
+
+  }
+}

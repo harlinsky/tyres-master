@@ -1,0 +1,258 @@
+.page-services-item .prices {
+  // bg 1
+  background: #262627;
+}
+
+
+.page-services-item .prices {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-bottom: 100px;
+
+    @media #{$mobile} {
+      padding-bottom: 70px;
+    }
+  }
+
+  & .prices-wrapper {
+    //
+  }
+
+  & .prices-essence {
+    //
+  }
+}
+
+
+.page-services-item .prices {
+  & .prices-wrapper{
+    width: 770px;
+    margin: 0 auto;
+    @media #{$mobile} {
+      width: auto;
+    }
+  }
+}
+
+
+.page-services-item .prices {
+  & .prices-title {
+    @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
+    color: #cfdee7;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+    position: relative;
+
+    @media #{$mobile} {
+      @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+      padding-left: 15px;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      /* Style for "Прямоуголь" */
+      width: 100%;
+      height: 6px;
+      background-color: #353538;
+    }
+  }
+}
+
+
+.page-services-item .prices-content {
+  & .item{
+    position: relative;
+    min-height: 80px;
+    cursor: pointer;
+    background: transparent;
+    transition: 0.3s ease-out;
+    &:last-child{
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        /* Style for "Прямоуголь" */
+        width: 100%;
+        height: 6px;
+        background-color: #353538;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      /* Style for "Прямоуголь" */
+      width: 100%;
+      height: 3px;
+      background-color: #353538;
+    }
+
+
+    &.is-opened {
+      background: #353538;
+      .item-title {
+        &::after {
+          width: 17px;
+          height: 4px;
+          background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAECAYAAABodtTSAAAAJklEQVQoU2P8XCJ5mIGRwYaBXPCf4Qjj51LJ/+Tqh+mjkiFU8A4AGvUNi36p9sAAAAAASUVORK5CYII=');
+        }
+      }
+    }
+
+
+
+
+  }
+}
+
+
+.page-services-item .prices-content {
+  & .item-title {
+    padding-left: 12px;
+    background: transparent;
+    transition: .3s ease-out;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 80px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    @media #{$mobile} {
+      padding-left: 25px;
+    }
+
+    &:hover {
+      background: #464649;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+      width: 17px;
+      height: 17px;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAtUlEQVQ4T2NkwAO+lslK/WH6z8Xyj/Ebd9fjZ7iUMuKS+FYkJfuX+f8jmDzzX0Y5rr5nj7Gpx2nI+woJBZa/jPdhmv4w/1cU7HjxYKQYAgrEn2z/mJH9y/yfSYbx3//DMLH/TIy2fxn/PUFWw/6L6S8osBm/FohI/mNlxRl9+JIASA4Ua4zosUBIE7r8P2ZmVeq4BGQyxWGCy/kjPbFhCxeq5GKQweDA/cfI+Yfp/3dcORikDgCfII35F/Z7BQAAAABJRU5ErkJggg==');
+
+      @media #{$mobile} {
+        right: 25px;
+      }
+    }
+
+
+
+
+  }
+  & .item-title-text {
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #cfdee7;
+  }
+}
+
+
+.page-services-item .prices-content {
+  & .item-content{
+    display: none;
+  }
+}
+
+
+.page-services-item .prices {
+  & .item-list{
+
+  }
+  & .item-unit{
+    @include clearfix;
+    padding: 12px 0 12px 30px;
+    &:nth-child(odd) {
+      background: #464649;
+    }
+    &:nth-child(even) {
+      background: #353538;
+    }
+  }
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .item-unit {
+  & .left {
+    float: left;
+  }
+  & .left-text {
+    @include font(italic, 400, 16px, 24px, 'Georgia');
+    color: #cfdee7;
+
+    @media #{$mobile} {
+      max-width: 220px;
+    }
+  }
+  & .right {
+    float: right;
+    padding-right: 30px;
+  }
+  & .right-text {
+    @include font(normal, 400, 18px, 27px, 'Myriad Pro');
+    color: #0ba360;
+  }
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .prices {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .prices {
+  & .CLASS{
+
+  }
+}

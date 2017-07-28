@@ -1,0 +1,326 @@
+.page-services-item .map {
+  // bg 1
+}
+
+
+.page-services-item .map {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1600px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      // max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-bottom: 150px;
+  }
+
+  & .map-wrapper {
+    //
+  }
+
+  & .map-essence {
+    //
+  }
+}
+
+
+.page-services-item .map {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .map {
+  & .map-title{
+    /* Style for "Оказываем" */
+    @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
+    color: #cfdee7;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+
+    @media #{$mobile} {
+      @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    &.wheel-title {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 32px;
+        height: 32px;
+        background: url('data:image/png;base64,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');
+      }
+    }
+  }
+}
+
+
+.page-services-item .map {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .map {
+  & .map-content {
+    min-height: 616px;
+    background: url('../img/p-services__map--wide.jpg');
+    background-repeat: no-repeat;
+    background-position: center top 0;
+
+    position: relative;
+
+    @media #{$mobile} {
+      min-height: 300px;
+      width: 320px;
+      margin: 0 auto;
+      background: url('../img/p-services__map--mobile.jpg');
+      background-repeat: no-repeat;
+      background-position: center top 0;
+    }
+
+    & .map__item-pointer {
+      background: url('data:image/png;base64,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');
+      width: 28px;
+      height: 38px;
+      position: absolute;
+      cursor: pointer;
+
+      &:nth-of-type(1){
+        top: 71%;
+        left: 57.7%;
+
+        @media #{$mobile} {
+          display: none;
+        }
+
+        &:hover {
+          @media #{$tablet-wide} {
+            & + .map__item {
+              opacity: 1;
+              display: block;
+            }
+          }
+        }
+      }
+      &:nth-of-type(2){
+        top: 58%;
+        left: 49.4%;
+
+        @media #{$mobile} {
+          display: none;
+        }
+
+        &:hover {
+          @media #{$tablet-wide} {
+            & + .map__item {
+              opacity: 1;
+              display: block;
+            }
+          }
+        }
+      }
+      &:nth-of-type(3){
+        top: 64%;
+        left: 40%;
+
+        @media #{$mobile} {
+          top: 170px;
+          left: 82px;
+        }
+
+        &:hover {
+          @media #{$tablet-wide} {
+            & + .map__item {
+              opacity: 1;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.page-services-item .map {
+  & .map__item {
+    padding: 15px;
+    background: #262627;
+    width: 580px;
+    min-height: 220px;
+    position: relative;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.3s ease-out;
+
+    &::after {
+    	top: 100%;
+    	left: 60px;
+    	border: solid transparent;
+    	content: " ";
+    	height: 0;
+    	width: 0;
+    	position: absolute;
+    	pointer-events: none;
+    	border-color: rgba(38, 38, 39, 0);
+    	border-top-color: #262627;
+    	border-width: 16px;
+    	margin-left: -16px;
+    }
+
+    &:nth-of-type(1){
+      position: absolute;
+      top: 29%;
+      left: 54.7%;
+
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+    &:nth-of-type(2){
+      position: absolute;
+      top: 16.4%;
+      left: 46.5%;
+
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+    &:nth-of-type(3){
+      position: absolute;
+      top: 22%;
+      left: 37%;
+
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+  }
+  & .map__item-essence {
+    @include clearfix;
+  }
+  & .map__item-thumb {
+    display: block;
+    width: 188px;
+    height: 188px;
+  }
+}
+
+
+.page-services-item .map {
+  & .map__item-left{
+    float: left;
+    width: 188px;
+    margin-right: 15px;
+  }
+}
+
+
+.page-services-item .map {
+  & .map__item-right{
+    float: left;
+    width: 300px;
+  }
+}
+
+
+.page-services-item .map {
+  & .map__item-title{
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+    color: #cfdee7;
+    margin-bottom: 5px;
+  }
+}
+
+
+.page-services-item .map {
+  & .map__item-subtitle{
+    @include font(italic, 400, 14px, 18px, 'Arial');
+    color: #0ba360;
+    margin-bottom: 15px;
+  }
+}
+
+
+.page-services-item .map {
+  & .map__item-text{
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+    margin-bottom: 12px;
+  }
+}
+
+
+.page-services-item .map {
+  & .map__item-contacts{
+
+  }
+}
+
+
+.page-services-item .map {
+  & .map__item-phone{
+    @include font(normal, 400, 14px, 21px, 'Arial');
+    color: #cfdee7;
+    & > span {
+    color: #f39552;
+
+    }
+  }
+}
+
+
+.page-services-item .map {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .map {
+  & .CLASS{
+
+  }
+}
+
+
+.page-services-item .map {
+  & .CLASS{
+
+  }
+}

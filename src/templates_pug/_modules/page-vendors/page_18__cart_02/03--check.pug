@@ -1,0 +1,103 @@
+// check
+section.check
+  .shell
+    .container
+      .range
+        .check-wrapper
+
+          .check-title Корзина
+          .steps
+            .steps__control.active
+            .steps-control-text Ваши заказы
+            ul.steps__list
+              li.steps__list-item.done
+                a.steps__list-item-link(href="#")
+                  .steps__list-item-text Ваши заказы
+              li.steps__list-item.current
+                .arrow
+                a.steps__list-item-link(href="#")
+                  .steps__list-item-text Контактные данные
+                .arrow-f
+              li.steps__list-item
+                .arrow
+                a.steps__list-item-link(href="#")
+                  .steps__list-item-text Оплата
+            .steps__progress
+              .steps__progress-text
+                span.current 1
+                | /3
+
+
+          .profile
+            .profile-title
+              .profile-title-essence У меня есть личный профиль
+              .profile-subtitle Если у вас есть профиль в tyreplus, вы можете воспользоваться автозаполнением
+            .profile-content
+
+              div.tabs-container
+                // BEGIN tabs content
+                .tabs-content.tab-slide
+                  .left
+                    //- content
+                    form.form-login
+
+                      .title Авторизируйтесь
+                      .email
+                        label.email-label Укажите ваш Имейл
+                        input.email-input(type="text" placeholder="Email")
+                      .password
+                        label.email-label Введите пароль
+                        input.email-input(type="password" placeholder="Пароль")
+                      a.recover#recover(href="#") Напомнить пароль
+
+                      .btn-wrap
+                        a.btn-login.inactive(href="#")
+                          .btn-login-text Вход
+
+                    //- eof content
+
+                  .right.socials
+                    .title Войти с помощью:
+                    a.socials-item.vk(href="#")
+                      .socials-item-text Вконтакте
+                    a.socials-item.fb(href="#")
+                      .socials-item-text Facebook
+                    a.socials-item.gp(href="#")
+                      .socials-item-text Google plus
+
+          .delivery
+            .delivery-title Пожалуйста, введите данные необходимые для заказа
+            form.delivery-name
+              .delivery-name__first.delivery-item
+                label Ваше Имя
+                input(type="text" placeholder="Имя")
+              .delivery-name__last.delivery-item
+                label Фамилия
+                input(type="text" placeholder="Фамилия")
+              .delivery-name__phone.delivery-item
+                label Ваш номер телефона
+                input(type="text" placeholder="+7 (__) ___ __ __")
+
+            form.delivery-type
+              .delivery-type__select
+                .title Выбор способа доставки
+                .item
+                  input#delivery01(type="radio" name="delivery")
+                  span.radio-indicator
+                  label(for="delivery01") Самовывоз
+                .item
+                  input#delivery02(type="radio" name="delivery")
+                  span.radio-indicator
+                  label(for="delivery02") Доставка
+              .delivery-type__free
+                .left
+                  .left-text
+                    span БЕСПЛАТНО&nbsp;
+                    | по алматы
+                .right
+                  .right-text Доставка Бесплатно в пределах административных&nbsp;границ города Алматы
+
+          .btn-next
+            .btn-next-text следующий шаг
+
+// check end

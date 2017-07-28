@@ -1,0 +1,87 @@
+.page-check-first .check {
+  // bg 1
+}
+
+
+.page-check-first .check {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1210px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+  }
+
+  & .check-wrapper {
+    //
+  }
+
+  & .check-essence {
+    //
+  }
+}
+
+@import '003-1--check__title';
+@import '003-2--check__steps';
+@import '003-3--check__table';
+@import '003-4--check__fast';
+@import '003-5--check__tab-mobile';
+@import '003-6--check__less-more';
+
+.page-check-first {
+  & .cart-title-line{
+    background: #2f2f31 url(../img/menu_bg--cart.png) repeat-x;
+        position: relative;
+        z-index: 1;
+
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+  & .cart-title-line-wrap{
+    width: 1020px;
+    margin: 0 auto;
+  }
+  & .cart-title-line-text{
+
+    @include font(normal, 400, 24px, 60px, 'PTSans-Narrow');
+    text-align: center;
+    color: #cfdee7;
+    height: 60px;
+  }
+}
+
+
+
+
+
+.page-check-first .check {
+  & .CLASS{
+
+  }
+}

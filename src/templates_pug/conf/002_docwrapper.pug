@@ -1,0 +1,130 @@
+block 001_config
+  include 001_config
+
+include 004_mixins
+
+doctype
+html( lang="en" )
+  include 003_head
+
+
+  body(class=bodyClasses)
+
+    if fb
+      #fb-root
+      script
+        include fb.js
+
+    include if-ie-8.html
+
+    //- body content here
+    //- --------------------------------------------------------------
+
+
+
+    block content
+
+      block header
+
+
+    //- --------------------------------------------------------------
+
+
+
+
+    //- This will load jQuery, but only if you switch it on in config
+    if jQuery
+      script( src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js' )
+      //- script( src='//code.jquery.com/jquery-2.2.4.min.js' )
+      //- !! use jQ v2.n, because 3 works wierd in lots of cases
+      //- script( src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' async)
+      //- script( src='js/jquery3.1.0.min.js' )
+
+    if jQueryUI
+      script( src='//code.jquery.com/ui/1.12.0/jquery-ui.min.js' async)
+
+    if masonry
+      script( src='http://masonry.desandro.com/masonry.pkgd.js' defer)
+
+    if jQueryEasing
+      //- script( src='http://cdn.jsdelivr.net/bxslider/4.1.1/plugins/jquery.easing.1.3.js' async)
+      script( src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js' defer)
+
+    if jQueryMousewheel
+      script( src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js' defer)
+
+    if jQkinetic
+      script( src='https://rawgit.com/davetayls/jquery.kinetic/master/jquery.kinetic.min.js' defer)
+
+    if jQsmoothDivScroll
+      script( src='https://rawgit.com/tkahn/Smooth-Div-Scroll/master/js/jquery.smoothdivscroll-1.3-min.js' defer)
+
+    if jQueryFancybox
+      script( src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js' defer)
+
+    if blurJs
+      script( src='https://cdnjs.cloudflare.com/ajax/libs/background-blur/0.1.3/background-blur.min.js' defer)
+
+    if jcf
+      script( src='js/jcf.js')
+
+    if jcfselect
+      script( src='js/jcf.select.js')
+
+    if jcfcheckbox
+      script( src='js/jcf.checkbox.js')
+
+    if jcfscrollable
+      script( src='js/jcf.scrollable.js')
+
+    if animateNumber
+      script( src='//nextendweb.com/demo/smartslider2/modules/mod_frontpage2/jquery.animateNumber.min.js' defer)
+
+    if bxSlider
+      script( src=bxSliderJsSrc )
+
+    if flexmenu
+      script( src='https://cdnjs.cloudflare.com/ajax/libs/flexMenu/1.4.2/flexmenu.min.js' )
+      script.
+        $('#mainNavbar').flexMenu({
+          linkText: 'Больше'
+        });
+
+        $('.flexMenu-viewMore a').click(function() {
+            $(this).toggleClass('opened');
+        });
+
+    if bxSliderRahisified
+      script( src=bxSliderRahisifiedJsSrc )
+
+    if flickity
+      script( src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js' )
+
+    if TimeCircles
+      script( src='js/TimeCircles.js' defer)
+
+    if waterwheelCarousel
+      //- dependency:
+      script( src='js/TweenMax.min.js' defer)
+      //- script itself:
+      script( src='js/jquery.waterwheelCarousel.js' defer)
+
+    if wowJs
+      script( src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js' defer)
+      //-script( src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js' defer)
+      script new WOW().init();
+
+    if googleMaps
+      //- script(src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCWdlNyjf2AqOuqPZHE8AuA7v9UsQUj7pk" defer)
+      //- script(src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCqQD7v4UaLbWW9Y8R-7BbmmNvzySVkorw" defer)
+      script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqQD7v4UaLbWW9Y8R-7BbmmNvzySVkorw&callback=initMap" async defer)
+
+    if mainJs
+      script( src= mainJsSrc )
+
+    if googleAnalytics
+      // Google Analytics: change UA-XXXXX-X to be your site's ID.
+
+      <script>
+      include googleAnalytics.js
+      |     </script>

@@ -1,0 +1,416 @@
+// filter
+section.filter
+  .shell
+      .container
+        .range
+          .filter-wrapper
+            //- titele
+            h2.filter-title Воспользуйтесь фильтром поиска шин
+            //- hr
+
+
+            //- content
+            .filter-content
+              .filter-tabs
+
+
+                // BEGIN tabs list
+                .filter-essence__title.dimmed Выберите тип продукции:
+                ul.tabs.js-tabs-simple.filter-essence__left
+                  li.tabs__item
+                    a.tabs__link(href='#tab1-panel')
+                      .tabs__link-substrate
+                      .tabs__link-text Легковые/suv4x4 шины
+                  li.tabs__item
+                    a.tabs__link(href='#tab2-panel')
+                      .tabs__link-substrate
+                      .tabs__link-text Коммерческие шины
+                  li.tabs__item
+                    a.tabs__link(href='#tab3-panel')
+                      .tabs__link-substrate
+                      .tabs__link-text Грузовые шины
+                  li.tabs__item
+                    a.tabs__link(href='#tab4-panel')
+                      .tabs__link-substrate
+                      .tabs__link-text Диски
+                // END tabs list
+                div.filter-essence__right
+                  // BEGIN tabs content
+                  .tabs-content.js-tabs-simple-content
+                    #tab1.tab-cont
+                      .tab-cont-wrapper
+                        .handy-title
+                          .handy-title-text Легковые/suv4x4 шины
+                        .tab-cont__left
+                          .filter-essence__title Подобрать шины по параметрам
+                          .filter-essence__subtitle Этим способом пользуются те кто знает необходимый размер
+                          //- .form-container если что, добавляем родитель и RIGHT-floated дочерний, для картинок
+                          form.form-suv4-left
+                            ul.form-suv4-left-list-label
+                              li.form-suv4-left-item
+                                label.tab-cont-label(for="doza") Ширина
+                              li.form-suv4-left-item
+                                label.tab-cont-label Высота
+                              li.form-suv4-left-item
+                                label.tab-cont-label Диаметр
+                              li.form-suv4-left-item
+                                label.tab-cont-label Бренд
+                              li.form-suv4-left-item
+                                label.tab-cont-label Сезон
+                            ul.form-suv4-left-list-select
+                              li.form-suv4-left-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' name='doza')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-left-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-left-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-left-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-left-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                            button.tab-cont-btn(type=button onClick="return false;") Подобрать
+
+                        .tab-cont__right
+                          .filter-essence__title Подобрать шины по автомобилю
+                          .filter-essence__subtitle Очень удобно для тех кто хочет узнать какие покрышки можно устанавливать на его модель автомобиля.
+                          //- .form-container если что, добавляем родитель и RIGHT-floated дочерний, для картинок
+                          form.form-suv4-right
+                            ul.form-suv4-right-list-label
+                              li.form-suv4-right-item
+                                label.tab-cont-label(for="doza") Марка
+                              li.form-suv4-right-item
+                                label.tab-cont-label Модель
+                              li.form-suv4-right-item
+                                label.tab-cont-label Год
+                              li.form-suv4-right-item
+                                label.tab-cont-label Модификация
+                            ul.form-suv4-right-list-select
+                              li.form-suv4-right-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' name='doza')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-right-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-right-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-right-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                            button.tab-cont-btn(type=button onClick="return false;") Подобрать
+
+
+                  .tabs-content.js-tabs-simple-content
+                    #tab2.tab2.tab-cont
+                      .tab-cont-wrapper
+                        .handy-title
+                          .handy-title-text Коммерческие шины
+                        .tab-cont__left
+                          .filter-essence__title Подобрать шины по параметрам
+                          .filter-essence__subtitle Этим способом пользуются те кто знает необходимый размер
+
+                          form.form-cols
+                            //- left
+                            .form-col-left
+                              ul.form-comm-list
+                                li.form-comm-item
+                                  label.tab-cont-label(for="doza") Ширина
+                                li.form-comm-item
+                                  label.tab-cont-label Диаметр
+
+                              ul.form-comm-list-select
+                                li.form-comm-item
+                                  select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' name='doza')
+                                    option(value='any' selected='selected') Любой
+                                    option(value='volvo') Volvo
+                                    option(value='saab') Saab
+                                    option(value='fiat') Fiat
+                                    option(value='audi') Audi
+                                li.form-comm-item
+                                  select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' name='doza')
+                                    option(value='any' selected='selected') Любой
+                                    option(value='volvo') Volvo
+                                    option(value='saab') Saab
+                                    option(value='fiat') Fiat
+                                    option(value='audi') Audi
+                            //- right
+                            .form-col-right
+                              ul.form-comm-list
+                                li.form-comm-item
+                                  label.tab-cont-label(for="doza") Бренд
+                                li.form-comm-item
+                                  label.tab-cont-label Сезон
+
+                              ul.form-comm-list-select
+                                li.form-comm-item
+                                  select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' name='doza')
+                                    option(value='any' selected='selected') Любой
+                                    option(value='volvo') Volvo
+                                    option(value='saab') Saab
+                                    option(value='fiat') Fiat
+                                    option(value='audi') Audi
+                                li.form-comm-item
+                                  select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' name='doza')
+                                    option(value='any' selected='selected') Любой
+                                    option(value='volvo') Volvo
+                                    option(value='saab') Saab
+                                    option(value='fiat') Fiat
+                                    option(value='audi') Audi
+                          .btn
+                            .btn-text Подобрать
+                          .thumb-wrap
+                            .thumb-item
+                            .thumb-item
+
+                  .tabs-content.js-tabs-simple-content
+                    #tab3.tab-cont
+                      .tab-cont-wrapper
+                        .handy-title
+                          .handy-title-text Грузовые шины
+                        .tab-cont__left
+                          .filter-essence__title Подобрать шины по параметрам
+                          .filter-essence__subtitle Этим способом пользуются те кто знает необходимый размер
+                          //- .form-container если что, добавляем родитель и RIGHT-floated дочерний, для картинок
+                          form.form-suv4-left
+                            ul.form-suv4-left-list-label
+                              li.form-suv4-left-item
+                                label.tab-cont-label(for="doza") Ширина
+                              //- li.form-suv4-left-item
+                                //- label.tab-cont-label Высота
+                              li.form-suv4-left-item
+                                label.tab-cont-label Диаметр
+                              li.form-suv4-left-item
+                                label.tab-cont-label Бренд
+                              li.form-suv4-left-item
+                                label.tab-cont-label Сезон
+                            ul.form-suv4-left-list-select
+                              li.form-suv4-left-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' name='doza')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-left-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              //- li.form-suv4-left-item
+                              //-   select.tab-cont-select
+                              //-     option(value='any' selected='selected') Любая
+                              //-     option(value='volvo') Volvo
+                              //-     option(value='saab') Saab
+                              //-     option(value='fiat') Fiat
+                              //-     option(value='audi') Audi
+                              li.form-suv4-left-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-left-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                            button.tab-cont-btn(type=button onClick="return false;") Подобрать
+
+                        .tab-cont__right
+                          .filter-essence__title Подобрать шины по автомобилю
+                          .filter-essence__subtitle Очень удобно для тех кто хочет узнать какие покрышки можно устанавливать на его модель автомобиля.
+                          //- .form-container если что, добавляем родитель и RIGHT-floated дочерний, для картинок
+                          form.form-suv4-right
+                            ul.form-suv4-right-list-label
+                              li.form-suv4-right-item
+                                label.tab-cont-label(for="doza") Марка
+                              li.form-suv4-right-item
+                                label.tab-cont-label Модель
+                              li.form-suv4-right-item
+                                label.tab-cont-label Год
+                              li.form-suv4-right-item
+                                label.tab-cont-label Модификация
+                            ul.form-suv4-right-list-select
+                              li.form-suv4-right-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' name='doza')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-right-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-right-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-right-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                            button.tab-cont-btn(type=button onClick="return false;") Подобрать
+
+                  .tabs-content.js-tabs-simple-content
+                    #tab4.tab-cont
+                      .tab-cont-wrapper
+                        .handy-title
+                          .handy-title-text Диски
+                        .tab-cont__left
+                          .filter-essence__title Подобрать шины по параметрам
+                          .filter-essence__subtitle Этим способом пользуются те кто знает необходимый размер
+                          //- .form-container если что, добавляем родитель и RIGHT-floated дочерний, для картинок
+                          form.form-suv4-left
+                            ul.form-suv4-left-list-label
+                              li.form-suv4-left-item
+                                label.tab-cont-label(for="doza") Диаметр
+                              //- li.form-suv4-left-item
+                                //- label.tab-cont-label Высота
+                              li.form-suv4-left-item
+                                label.tab-cont-label Ширина
+                              li.form-suv4-left-item
+                                label.tab-cont-label PCD
+                              li.form-suv4-left-item
+                                label.tab-cont-label Ступица
+                            ul.form-suv4-left-list-select
+                              li.form-suv4-left-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' name='doza')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-left-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              //- li.form-suv4-left-item
+                              //-   select.tab-cont-select
+                              //-     option(value='any' selected='selected') Любая
+                              //-     option(value='volvo') Volvo
+                              //-     option(value='saab') Saab
+                              //-     option(value='fiat') Fiat
+                              //-     option(value='audi') Audi
+                              li.form-suv4-left-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-left-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                            button.tab-cont-btn(type=button onClick="return false;") Подобрать
+
+                        .tab-cont__right
+                          .filter-essence__title Подобрать шины по автомобилю
+                          .filter-essence__subtitle Очень удобно для тех кто хочет узнать какие покрышки можно устанавливать на его модель автомобиля.
+                          //- .form-container если что, добавляем родитель и RIGHT-floated дочерний, для картинок
+                          form.form-suv4-right
+                            ul.form-suv4-right-list-label
+                              li.form-suv4-right-item
+                                label.tab-cont-label(for="doza") Марка
+                              li.form-suv4-right-item
+                                label.tab-cont-label Модель
+                              li.form-suv4-right-item
+                                label.tab-cont-label Год
+                              li.form-suv4-right-item
+                                label.tab-cont-label Модификация
+                            ul.form-suv4-right-list-select
+                              li.form-suv4-right-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}' name='doza')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-right-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-right-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                              li.form-suv4-right-item
+                                select.tab-cont-select.jcf-hidden(data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}')
+                                  option(value='any' selected='selected') Любая
+                                  option(value='volvo') Volvo
+                                  option(value='saab') Saab
+                                  option(value='fiat') Fiat
+                                  option(value='audi') Audi
+                            button.tab-cont-btn(type=button onClick="return false;") Подобрать
+                  // END tabs content
+
+
+// filter end

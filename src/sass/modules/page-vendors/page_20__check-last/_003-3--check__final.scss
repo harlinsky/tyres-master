@@ -1,0 +1,191 @@
+
+
+.page-check-last .final {
+
+}
+
+
+.page-check-last .final {
+  & .title {
+    @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
+    text-align: center;
+    color: #f39552;
+    text-transform: uppercase;
+
+    @media #{$mobile} {
+      @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+      padding: 0 25px;
+    }
+
+    & span {
+      @include font(normal, 400, 33px, 48px, 'MyriadPro-Regular');
+
+      @media #{$mobile} {
+        @include font(normal, 400, 24px, 36px, 'MyriadPro-Regular');
+      }
+    }
+  }
+}
+
+
+.page-check-last .final {
+  & .subtitle {
+    @include font(italic, 400, 16px, 24px, 'Georgia');
+    color: #0ba360;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media #{$mobile} {
+      padding: 0 25px;
+    }
+  }
+}
+
+
+.page-check-last .final {
+  & .back-btn {
+    width: 370px;
+    margin: 0 auto;
+    height: 40px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+    border-radius: 2px;
+    background-image: linear-gradient(to top, #f67519 0%, #fd9d58 100%);
+
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-bottom: 40px;
+
+    @media #{$mobile} {
+      width: 270px;
+      margin-bottom: 20px;
+
+    }
+
+    // ---
+    transition: background 0.5s;
+    background-size: 100% auto;
+    background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+      background-size: 200% auto;
+      background-position: bottom center; /* change the direction of the change here */
+    }
+    &:active {
+      top: 1px;
+    }
+    &.inactive {
+      opacity: 0.5;
+    }
+    // ---
+  }
+  & .back-btn-text {
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+
+
+.page-check-last .final {
+  & .contacts {
+
+    @include clearfix;
+    width: 570px;
+    margin: 0 auto;
+
+    @media #{$mobile} {
+      width: auto;
+    }
+
+    & > div {
+      @include font(normal, 400, 18px, 27px, 'Arial');
+      width: 270px;
+      color: #cfdee7;
+
+      text-align: center;
+
+      @media #{$mobile} {
+        width: auto;
+      }
+    }
+  }
+
+  & .contacts .phone {
+
+    @media #{$tablet-wide} {
+      float: left;
+      margin-right: 30px;
+    }
+
+    @media #{$mobile} {
+      margin-bottom: 10px;
+    }
+
+    & .phone-text {
+      position: relative;
+      padding-left: 40px;
+      display: inline-block;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+
+        width: 16px;
+        height: 21px;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAVCAYAAABPPm7SAAACmElEQVQ4T4WUSWhTQRjHf99LbcWNIkLxNXHJS1XEHswL4gKCoN68eagWPFhQLwW1F7eCSynaQw/iSeihbqh4FBQRe3ABaRpRDy59acX2PfXgUqvSVvM+mZBIipoMDMPM/Oc38/9mvhEKJeP5TQqngYWonHAb7M7iXLlWrqtG4kPvrorq9hKhQrjMTcS8ShDJZP3dqvQAn0EPAutA9oB2uono0coAz3+gsAFochP11/qHRtZYofUYGEk69mIR0bIWBjz/O1DzNTI1Z9PSpRNGPOD5L4HlWLLRjdv3KwEUZMxN2LVFYdoLTgl6TEW6U47dVgkwDszWWTInZds/0oNvHZHIVSAFet5NRPdWAjwE1ouwJenU3x0Y9F8grADeWBJuXe3EBssC0t5ouyAngXNuor51wPMngWoVWZxy7LcVb6Hfe7/KIvdc4EPN5JdFEzNrb6BsE+FQ0qk/UxFQiHq/8axCs4ZhYInVB3xUmXBSjjNW1oKZzHijuxTpRXn5ddRunBcLbgGbi7YqAvr6tGpeLHgKrBTVtpxU3bHIpc37QHSb60RvPhoZmW/9rJ6xNl73oRQoxU7/kL/FCrkDfMvByojJDZFuYFyRy4K2ADMU6Ugl7Pbiuj8AM5D2/CsCO4B7Wcfe6nhBL0JzQRwCplaVQqYDXgULJKLP8ikNXVnHPhLPBgcsiKkV9kjOWqLCDXMSYzXZEO2eBsgH9HWwUS29mz+uyOGUY5s/4k/JZP0dqlwCLBF2/gXIQ0pFysnVCft4aVZmPL9V4awon/4JyL+NbNCM6gWzE3BflQ7G3vVN1dXNrZ6yukQxQR3/L8BAzM1EQi4q1BU8/CoADXQSkZayALPoyfBwbS6s2SehNiE0Aib9b0Nuv/nyfgNlWQ30cRf46gAAAABJRU5ErkJggg==') no-repeat;
+
+        @media #{$mobile} {
+          left: 7px;
+        }
+      }
+    }
+
+
+  }
+  & .contacts .mail {
+
+    @media #{$tablet-wide} {
+      float: right;
+    }
+
+    & .mail-text {
+      position: relative;
+      padding-left: 40px;
+      display: inline-block;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+
+        width: 21px;
+        height: 13px;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAANCAYAAABGkiVgAAAB9UlEQVQ4T63TTUjUYRDH8e/v2XQVK7pUvmTY6h5CSNc8SZeuRUZhEEWRSR2C6hIIHYo6BEIdKujQm4EUQVFk1LVLeLJVA+mw7iaZu1aXqERX3WfiL60F4kvUHJ+BDzPPzCieTF8BTgMh/j1ywFXFk+mZX+BXzM4J9/1vbcOvQroIrAFyAWrAY2CHQco57YptKhteLtz3PlPlvT0XRICXQMssKlOrzA94p24g7GFvY3X566Xg3mR6m4MnQNZ5aza5OpN1zqGxmrJ7vcNfylxu+hlYPVJbQ6S8ayE4PpQ5jPxtUL8PFexurFqb6RvKHJmHBkDPyEhx0dSKu2D7QR2xSOlZST6Pm5nrS41dAmsHPZwsnDnaVFk5EeQXRIOkmak/NXbHsFZM3eFs6GBt7bofg4OfV2bDufvImoU66yOlbZKCmczGouib5Gir0A3gA1AJSphZu6QOsCgwAmw07MTW6orORdFEIhH+ppLrEseAB6ESdzw37jcDT4ENwEdgT6jEvcuN+5vAATNurbbxk9FoNDuvUnP2CgtWy+owzjTUVFzLVxC0PRWe3lKYLXgbfEP+PT40egpxGTSAaJHX9rlBYXQhdmKaFH5frKaiZ6l1+t3yaJPhHiErwniBOPTnRU2AXZC5T8sF5zZCfj3oPFCcv6j/fvs/AeAID4P90l6oAAAAAElFTkSuQmCC') no-repeat;
+      }
+    }
+
+
+  }
+}
+
+
+.page-check-last .final {
+  & .CLASS {
+
+  }
+}

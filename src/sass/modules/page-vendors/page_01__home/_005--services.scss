@@ -1,0 +1,310 @@
+.page-index .services {
+  // bg 1
+  background: #262627;
+}
+
+
+.page-index .services {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding-bottom: 135px;
+    padding-top: 60px;
+
+  }
+
+  & .services-wrapper {
+    //
+  }
+
+  & .services-essence {
+    //
+  }
+}
+
+
+.page-index .services {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .services {
+  & .services-title{
+    /* Style for "Оказываем" */
+    @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
+    color: #cfdee7;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+
+    @media #{$mobile} {
+      @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+      width: 250px;
+      margin: 0 auto;
+    }
+
+    &.wheel-title {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 32px;
+        height: 32px;
+        background: url('data:image/png;base64,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');
+      }
+    }
+  }
+}
+
+
+.page-index .services {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .services {
+  & .services-content{
+    position: relative;
+    @include clearfix;
+  }
+}
+
+
+.page-index .services__item-container {
+  @include clearfix;
+  position: relative;
+  padding-top: 75px;
+
+  &:nth-child(1) {
+    background: url('../img/home_services_bg-item-01.png') no-repeat;
+    @media #{$mobile} {
+      background: url('../img/home_services_bg-item-01--mobile.png') no-repeat;
+      background-position: left 70px top 25px;
+    }
+  }
+
+  &:nth-child(2) {
+    background: url('../img/home_services_bg-item-02.png') no-repeat;
+    background-position: left top 70px;
+    padding-top: 95px;
+    @media #{$mobile} {
+      background: url('../img/home_services_bg-item-02--mobile.png') no-repeat;
+      background-position: left 83px top 15px;
+    }
+  }
+
+  &:nth-child(3) {
+    background: url('../img/home_services_bg-item-03.png') no-repeat;
+    background-position: left top 70px;
+    padding-top: 120px;
+    @media #{$mobile} {
+      background: url('../img/home_services_bg-item-03--mobile.png') no-repeat;
+      background-position: left 75px top 80px;
+    }
+  }
+}
+
+
+.page-index .services {
+  & .services__item{
+    float: right;
+    width: 770px;
+    padding: 50px;
+    margin-bottom: 95px;
+
+    border-radius: 2px;
+    border: 2px solid #464649;
+
+    @media #{$mobile} {
+      width: 320px;
+      float: none;
+      margin: 0 auto;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.page-index .services {
+  & .services__item__title{
+    /* Style for "Шиномонтаж" */
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+    color: #f39552;
+    margin-bottom: 5px;
+  }
+  & .services__item__text{
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #cfdee7;
+    margin-bottom: 40px;
+  }
+  & .services__item__desc{
+    margin-bottom: 40px;
+  }
+  & .CLASS{
+
+  }
+  & .services__item__desc-title {
+    /* Style for "Наши услуг" */
+    color: #0ba360;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 10px;
+  }
+  & .services__item__desc-list {
+    /* Style for "- снятие/у" */
+    color: #cfdee7;
+    font-family: Georgia;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    width: 100%;
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-gap: 40px;
+    -moz-column-gap: 40px;
+    -webkit-column-gap: 40px;
+
+  }
+}
+
+
+.page-index .services {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .services {
+  & .services__item__subscribe{
+    float: left;
+    width: 270px;
+    margin-right: 80px;
+    /* Style for "ЗАПИСАТЬСЯ" */
+    width: 124px;
+    height: 15px;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+
+    /* Style for "Прямоуголь" */
+    width: 269px;
+    height: 40px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+    border-radius: 2px;
+    background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
+
+    @media #{$mobile} {
+      float: none;
+      margin-bottom: 20px;
+    }
+
+    // ---
+    transition: background 0.5s;
+    background-size: 100% auto;
+    background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+      background-size: 200% auto;
+      background-position: bottom center; /* change the direction of the change here */
+    }
+    &:active {
+      top: 1px;
+    }
+    &.inactive {
+      opacity: 0.5;
+    }
+    // ---
+  }
+}
+
+
+.page-index .services {
+  & .services__item__more{
+    width: 270px;
+    height: 40px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
+    border-radius: 2px;
+    border: 2px solid #6b6b72;
+    background-image: linear-gradient(27deg, #464649 0%, #3a3a3d 100%);
+
+    color: #fefefe;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+
+    float: left;
+    @media #{$mobile} {
+      float: none;
+    }
+
+
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      background: radial-gradient(circle 114px at center, #464649 0%, #464649 100%);
+    }
+
+    &:active {
+      background: #3a3a3d;
+    }
+
+    &-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

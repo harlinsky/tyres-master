@@ -1,0 +1,145 @@
+.page-catalog-tire .catalog {
+  // bg 1
+}
+
+
+.page-catalog-tire .catalog {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-top: 100px;
+    padding-bottom: 200px;
+
+    @media #{$mobile} {
+      padding-bottom: 75px;
+    }
+  }
+
+  & .catalog-wrapper {
+    //
+  }
+
+  & .catalog-essence {
+    //
+  }
+}
+
+@import '003-0--dropDownSelect';
+@import '003-1--catalog__left';
+@import '003-2--catalog__right';
+
+.page-catalog-tire .catalog {
+  & .catalog-wrapper{
+    @include clearfix;
+  }
+  & .left-col {
+
+
+    @media #{$tablet-wide} {
+      float: left;
+      width: 270px;
+          margin-left: 25px;
+    }
+
+    @media #{$mobile} {
+      overflow: hidden;
+    }
+
+    // outline: 2px dashed yellowgreen;
+    // outline-offset: -2px;
+
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background-color: #353538;
+
+      @media #{$mobile} {
+        content: none;
+      }
+    }
+  }
+  & .right-col {
+
+    @media #{$wide} {
+      float: right;
+      width: 870px;
+    }
+
+    @media #{$tablet} {
+      width: 720px;
+      float: right;
+    }
+
+    // outline: 2px dashed crimson;
+    // outline-offset: 3px;
+  }
+}
+
+
+.page-catalog-tire .catalog {
+  & .CLASS{
+
+  }
+}
+
+
+.page-catalog-tire .catalog {
+  & .CLASS{
+
+  }
+}
+
+
+.page-catalog-tire .catalog {
+  & .CLASS{
+
+  }
+}
+
+
+.page-catalog-tire .catalog {
+  & .CLASS{
+
+  }
+}
+
+
+.page-catalog-tire .catalog {
+  & .CLASS{
+
+  }
+}

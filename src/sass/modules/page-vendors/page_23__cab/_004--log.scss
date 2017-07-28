@@ -1,0 +1,72 @@
+.page-cab .log {
+  // bg 1
+}
+
+
+.page-cab .log {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1210px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-bottom: 150px;
+  }
+
+  & .log-wrapper {
+    //
+  }
+
+  & .log-essence {
+    //
+  }
+}
+@import '004-1--log_row';
+@import '004-2--log_table';
+@import '004-3--log_table--mobile';
+@import '004-4--log-paginator';
+
+.page-cab .log {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cab .log {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cab .log {
+  & .CLASS{
+
+  }
+}

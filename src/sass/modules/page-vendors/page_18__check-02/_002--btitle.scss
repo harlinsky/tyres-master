@@ -1,0 +1,162 @@
+.page-catalog-oil .breadcrumbs {
+  // bg 1
+  min-height: 250px;
+  background: #000 url('../img/p-catalog-oil__breadcrumbs_bg.jpg') no-repeat;
+  background-position: center bottom;
+  box-shadow: 2px 3px 8px 0 rgba(30, 30, 30, 0.35);
+
+  @media #{$mobile} {
+    box-shadow: 0 4px 8px 0 rgba(30, 30, 30, 0.35);
+  }
+}
+
+
+.page-catalog-oil .breadcrumbs {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1170px;
+    // max-width: 1600px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 1024px;
+      max-width: 1024px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+
+      padding: 0 25px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+    padding-top: 85px;
+
+    @media #{$mobile} {
+      padding-top: 75px;
+    }
+  }
+
+  & .breadcrumbs-wrapper {
+    //
+  }
+
+  & .breadcrumbs-essence {
+    //
+  }
+}
+
+
+.page-catalog-oil .breadcrumbs {
+  & .CLASS{
+
+  }
+  & .breadcrumbs-wrapper{
+
+  }
+}
+.page-catalog-oil .breadcrumbs {
+    // margin-bottom: 94px; // 90
+    // padding-top: 18px;
+
+    & .breadcrumbs-list {
+        font-size: 0;
+        text-align: center;
+        @media #{$mobile} {
+            white-space: nowrap;
+        }
+    }
+    & .breadcrumbs-item {
+        font-size: initial;
+        position: relative;
+        display: inline-block;
+        padding-left: 15px;
+        vertical-align: top;
+        &:first-child {
+            padding-left: 0;
+            &::before {
+                display: none;
+            }
+        }
+        &:not(:last-child) {
+            & a:hover {
+                text-decoration: none;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            top: 10px;
+            left: 5px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            content: '';
+
+            background: #cfdee7;
+        }
+    }
+    & .breadcrumbs-link {
+        text-decoration: none;
+        letter-spacing: .5px;
+        @include font(italic, 300, 16px, 24px, 'Georgia');
+        color: #cfdee7;
+        text-decoration: underline;
+    }
+}
+
+// eof breadcrumbs
+
+
+.page-catalog-oil .breadcrumbs {
+  & .breadcrumbs-title{
+
+  }
+  & .breadcrumbs-title-text{
+    @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
+    color: #cfdee7;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media #{$mobile} {
+      @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+      // width: 250px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.page-catalog-oil .breadcrumbs {
+  & .CLASS{
+
+  }
+}
+
+
+.page-catalog-oil .breadcrumbs {
+  & .CLASS{
+
+  }
+}
+
+
+.page-catalog-oil .breadcrumbs {
+  & .CLASS{
+
+  }
+}
