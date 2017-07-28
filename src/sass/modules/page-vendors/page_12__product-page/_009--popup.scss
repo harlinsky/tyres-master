@@ -1,6 +1,6 @@
 
 .page-product .popup {
-  display: block;
+  display: none;
   width: 830px;
 
 
@@ -543,7 +543,7 @@
 
 
 .popup-overlay {
-display: block;
+display: none;
   position: fixed;
   z-index: 16;
   top: 0;

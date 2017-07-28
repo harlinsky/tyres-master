@@ -30,7 +30,7 @@ footer.footer
                     a.col-left-address-text(href="about-us.html#city05" target="_blank") район Сарыарка ул.Складская
 
 
-            .col.col-mid
+            #formq.col.col-mid
               .col-mid__title Остались вопросы?
               .col-mid__desc Отправьте контактные данные и наш консультант с вами свяжется в ближайшее время
               form.col-mid__form
@@ -38,7 +38,9 @@ footer.footer
                 input(type="text" name="name" placeholder="Имя")
                 label Ваш номер телефона
                 input(type="text" name="name" placeholder="+7 (__) ___ __ __")
-                button.col-mid__form-btn(onclick="return false;") Отправить
+                button#formqb.col-mid__form-btn(onclick="#") Отправить
+                
+            
 
 
             .col.col-right

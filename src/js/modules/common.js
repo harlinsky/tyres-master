@@ -457,3 +457,15 @@ $(document).ready(function() {
     $('.tab-login .tabs-btn-text').text(origin);
   }
 /* eof ^^^ */
+
+
+
+$('#formqb').click(function(){
+  $('#formq').hide;
+  $('#thnx').show;})
+
+
+function bye(){
+  $('#thnx').hide;
+  $('#formq').show;
+}

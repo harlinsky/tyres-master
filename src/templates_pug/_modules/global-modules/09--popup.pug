@@ -1,0 +1,53 @@
+section.popup
+
+  //- header
+  .head
+    .shell-wide
+      .cart
+        .title В корзине:
+        .goods 6 товаров
+        .sum на сумму&nbsp;
+        .sum-total 180 000 тг.
+
+  //- main
+  .main
+    .left
+      img.thumb(src="img/popup_thumb.jpg")
+      .text Вы можете перейти к оформлению или
+      a.continue(href="#") продолжить покупки.
+
+    .right
+      .title Michelin snowtime М
+      .vendors
+        .count
+          .title Количество, шт.
+          .essence
+            label(for='addwin')
+            span.input-wrapper
+              a.info-right-form-minus(href='#') Less
+              input#addwin.people-number(type='text', pattern='[0-9]*', min='0', value='10')
+              a.info-right-form-plus(href='#') More
+
+        .sum
+          .title Общая сумма
+          .essence 120 000
+      .desc Наличие на складе уточнит менеджер
+      .btn
+        .btn-text оформить заказ
+
+
+
+  //- footer
+  .foot
+    .title Заказать без оформления
+    .text Можно не заполнять никаких форм, просто оставить телефон и консультант решит все вопросы по оформлению заказа.
+
+    .phone
+      label.label Ваш номер телефона
+      .phone-wrap
+        input.input(type="text" placeholder="+7 (__) ___ __ __")
+        .btn
+          .btn-text Отправить
+
+  .close
+.popup-overlay
