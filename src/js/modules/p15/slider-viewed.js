@@ -2,7 +2,7 @@
 
 $( document ).ready(function() {
 
-  if ((window.matchMedia("(min-width: 1600px)").matches)) {
+  if ((window.matchMedia("(min-width: 1190px)").matches)) {
     if($('body').is('.page-catalog-parts')){
       $("ul#viewed").bxSlider({
           speed: 300,
@@ -24,7 +24,7 @@ $( document ).ready(function() {
     }
   }
 
-  if ((window.matchMedia("(min-width: 1024px)").matches) && (window.matchMedia("(max-width: 1599px)").matches)) {
+  if ((window.matchMedia("(min-width: 1024px)").matches) && (window.matchMedia("(max-width: 1189px)").matches)) {
     if($('body').is('.page-catalog-parts')){
       $("ul#viewed").bxSlider({
           speed: 300,

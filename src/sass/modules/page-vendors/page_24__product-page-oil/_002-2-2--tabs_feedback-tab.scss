@@ -1,0 +1,210 @@
+
+
+.page-product .product {
+  & .feedback-tab__list {
+
+  }
+}
+
+
+.page-product .product {
+  & .feedback-tab__item {
+
+  }
+}
+
+
+.page-product .product {
+  & .feedback-tab__top-row {
+    @include clearfix;
+  }
+}
+
+.page-product .product {
+  & .feedback-tab__item {
+
+  }
+}
+
+
+.page-product .product {
+  & .feedback-tab__thumb {
+    float: left;
+    position: relative;
+    border-radius: 50%;
+
+    /* Style for "Эллипс 4" */
+    width: 69px;
+    height: 69px;
+    background-color: #1f5583;
+    &.name {
+      background-color: #36ac68;
+    }
+  }
+}
+
+
+.page-product .product {
+  & .feedback-tab__thumb-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    @include font(normal, 400, 32px, 19px, 'Arial');
+    color: #feffff;
+  }
+}
+
+
+.page-product .product {
+  & .feedback-tab__title {
+    @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
+    color: #cfdee7;
+    margin-left: 80px;
+  }
+}
+
+
+// VOTES
+.page-product .product {
+  // START
+  & .feedback-tab__stars {
+    float: left;
+    margin-left: 10px;
+
+    @include clearfix;
+    position: relative;
+    width: 200px;
+    // margin: 0 auto 20px;
+    margin-bottom: 20px;
+
+    &-five {
+      margin-right: 20px;
+      @include clearfix;
+      float: left;
+      padding-top: 2px;
+    }
+    &-item {
+      float: left;
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACKElEQVQ4T42TO2gUURSG/zOz6wQfg5BGMPgKxAc2WrhBiY1oqZXbaGG3nRtn1XBnN3Ahm7kEnYlrt52FNtuIdRBEUUwKBRFfEF9EsAnIGjTj7syRuy+TsAPebubc893//v+5hIQlpTQsy34EwAzD+piUMu63lZIASs1eAPhuu04Xhbhy778BUspNAwP2O2bsabUTPq+u1g9IKf9shPRV4Hn+ZSKqAHSn3cCXmDnvuoXbiQApZSqd3n6IKMoQkQdgG5E50mrn6AOAn8zsMpvzjcaPN1LKZkud581eJ+KzAI4A2LzmBF8I56r+Viq4CaCwpvYLwEsA90mpYAXAFgB1AM+YsQDw/ODg1rlcLtfQTdVqNb28vHIaoAwRjgE4DsAG8JuU8s8DVNOAODZPFIv510nJ6P/T05XDhhE9bQM42zLR83yHiHwAS1GE0VLJ+dYPUi4HO00TzwEMMXPBdQtBLwWlglsA8vpuQjhH+wGUCl50vKoI4Yy3TOxurNVq5uLiknZ7lxBOOgGgPfk6PDw0ks1mo3WAjtvfAYRCOLsTAF8AWEI4O7r1ngI9fZZlhzoJPfuWZZ8DWHRGWYVh/YFl2U90AmFYt7pT2QNMTd3Ym0qZHwG8B6AfzsENKt4CMADsbzajfZOT1z6tu4LnBWNEeNyTRnjITOX2W+ASM051a8w46bqOVvPPxE6+CwDNGUasJiYKOq7empnxR+PYEACfiWMjUyyOv9LFv4J00KIBWNnLAAAAAElFTkSuQmCC');
+      &.selected {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACJElEQVQ4T42TPUwUURDHf7MLknC7YGhgkSha4GejhRAMNkZLrbDRwspSVG4vwVhcYSThDhVLKwtttDDWxMRIJEIhifG7UDSnCw0Rdg8DcjvmLXAIuUt83Xsz85uP/zyhytEsVlT0nqPYjhP0SJa4kqtUA0QZ75wqD4xdhPPOUPDwvwGaPbitWJz7qNCeAGA6lWraJ9l3y1shFSsI094lhBFB7psARS+g9Ln54G5VgGapKUZtB2JKnSLcBNwaSzpMwEqsn4FQlWsW9kTKKbyXLCtJdQt+a0bQ08BhoH49gyLDDbmfaXNf8Fvzgvb/k30RmBLRJxL5XqSQMn4K44JMWsQT9fMzo3KPP0kLF6ldbGw5GWN1KnpUoBtoAH5L6Lf0gjwyADQ+5uZn31ZTxryH6eZDiPVyFaBnkyFGae+qCsNAwV6xu+pvF35UgixeadtRqim9AtpE6Xfywa2yCqHv3QH6EKbcoeBIJUCY8V6jyaxG3FxweU3iVVftxY7aPTPtnW4uqK0I8D0zk+/OdNAhjyltAiT9+d4MsOTmgl1VAN+AOjcXtKzbyy2Y7YuKc0so42b3w8g7gzCwWh6DrhM8jSJvDKHbSTXVrW9lGfAr3bzbFusL8AmSj7N/SxUfAAvYW9J4z/b87NdNLSz4Xo/Ai40gfYZyI7kL10FObCwZxxtywdgmwJq+k6Cjsehg49Cskat85jPNXZbKAMgpUbvTyRfeGONfke/LUp0tKoIAAAAASUVORK5CYII=');
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  & .feedback-tab__votes {
+    @include font(italic, 400, 16px, 24px, 'Georgia');
+    color: #cfdee7;
+  }
+}
+
+
+
+// eof VOTES
+
+
+.page-product .product {
+  & .feedback-tab__votes {
+
+  }
+}
+
+
+.page-product .product {
+  & .feedback-tab__content {
+
+    margin-bottom: 25px;
+  }
+  & .feedback-tab__content-text {
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #cfdee7;
+  }
+}
+
+
+// PAGINATOR
+
+.page-product .product {
+  & .000000 {
+
+  }
+}
+
+// eof PAGINATOR
+
+
+// FORM
+
+.page-product .product {
+  & .comment {
+
+  }
+}
+
+
+.page-product .product {
+  & .comment__name-label {
+
+  }
+}
+
+
+.page-product .product {
+  & .comment__name-input {
+
+  }
+}
+
+// comment STARS
+
+.page-product .product {
+  & .000000 {
+
+  }
+}
+
+// eof comment STARS
+
+
+
+.page-product .product {
+  & .comment__text-label {
+
+  }
+}
+
+
+.page-product .product {
+  & .comment__textarea {
+
+  }
+}
+
+
+.page-product .product {
+  & .comment__btn {
+
+  }
+}
+
+
+.page-product .product {
+  & .comment__btn-text {
+
+  }
+}
+
+
+.page-product .product {
+  & .000000 {
+
+  }
+}

@@ -13,11 +13,11 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
-    @media #{$wide} {
+    @media #{$wide1190h} {
       width: 1170px;
     }
 
-    @media #{$tablet} {
+    @media #{$wide1190} {
       min-width: 1024px;
       max-width: 1024px;
 
@@ -100,11 +100,11 @@
   & .partners-content{
     @include clearfix;
 
-    @media #{$wide} {
+    @media #{$wide1190h} {
 
     }
 
-    @media #{$tablet} {
+    @media #{$wide1190} {
       width: 630px;
       margin: 0 auto;
     }
@@ -121,7 +121,7 @@
     margin-right: 30px;
     text-align: center;
 
-    @media #{$tablet} {
+    @media #{$wide1190} {
 
       width: 300px;
       &:nth-child(2n) {
@@ -143,7 +143,7 @@
 
     &:nth-child(3n) {
 
-      @media #{$wide} {
+      @media #{$wide1190h} {
         margin-right: 0;
         margin-bottom: 50px;
       }
@@ -159,7 +159,7 @@
     }
 
     &:nth-child(4n) {
-      @media #{$wide} {
+      @media #{$wide1190h} {
         clear: left;
       }
     }

@@ -51,7 +51,7 @@
       }
     }
 
-    @media #{$wide} {
+    @media #{$wide1190h} {
       float: left;
     }
 
@@ -60,7 +60,7 @@
     }
 
     &:nth-child(4n) {
-      @media #{$wide} {
+      @media #{$wide1190h} {
         margin-right: 0;
       }
     }

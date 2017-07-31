@@ -13,7 +13,7 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
-    @media #{$tablet} {
+    @media #{$wide1190} {
       min-width: 1024px;
       max-width: 1024px;
 
@@ -127,7 +127,7 @@
 
     &.is-opened {
       background: #353538;
-      .item-title {
+      .item-titlepr {
         &::after {
           width: 17px;
           height: 4px;
@@ -144,7 +144,7 @@
 
 
 .page-services-item .prices-content {
-  & .item-title {
+  & .item-titlepr {
     padding-left: 12px;
     background: transparent;
     transition: .3s ease-out;
@@ -192,7 +192,7 @@
 
 
 .page-services-item .prices-content {
-  & .item-content{
+  & .item-contentpr{
     display: none;
   }
 }

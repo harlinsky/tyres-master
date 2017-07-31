@@ -95,7 +95,7 @@
 
 
     &-item {
-      @include font(normal, 400, 16px, 24px, 'Georgia');
+      @include font(normal, 400, 16px, 24px, 'Arial');
       color: #cfdee7;
     }
     &-num {
@@ -181,7 +181,7 @@
     width: 125px;
     padding-left: 35px;
 
-    @include font(normal, 400, 18px, 18px, 'Arial Narro');
+    @include font(normal, 400, 18px, 18px, 'Arial');
     color: #cfdee7;
     position: relative;
 

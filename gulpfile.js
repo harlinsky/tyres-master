@@ -68,7 +68,7 @@ gulp.task('pug', function() {
     'src/templates_pug/pages/catalog-disk.pug',
     'src/templates_pug/pages/catalog-parts.pug',
     'src/templates_pug/pages/catalog-oil.pug',
-
+    'src/templates_pug/pages/product-page-oil.pug',
 
     // 'src/templates_pug/pages/r444444444.pug',
     // 'src/templates_pug/pages/r444444444.pug',
@@ -125,6 +125,15 @@ gulp.task('js', function() {
       'src/js/modules/p12/popup.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p12/popup_less-more.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p12/less-more.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p24/fireFancyBox.js', // e.g. /path/to/mymodule/mymodule/*.js'
+
+      'src/js/modules/p24/breadcrumbs.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p24/slider-similars.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p24/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p24/tabs.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p24/popup.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p24/popup_less-more.js', // e.g. /path/to/mymodule/mymodule/*.js'
+      'src/js/modules/p24/less-more.js', // e.g. /path/to/mymodule/mymodule/*.js'
 
       'src/js/modules/p13/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'
       'src/js/modules/p14/slider-viewed.js', // e.g. /path/to/mymodule/mymodule/*.js'

@@ -5,7 +5,7 @@
     @include clearfix;
     margin-bottom: 15px;
 
-    @media #{$tablet} {
+    @media #{$wide1190} {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -45,11 +45,11 @@
       }
     }
 
-    @media #{$wide} {
+    @media #{$wide1190h} {
       float: left;
     }
 
-    @media #{$tablet} {
+    @media #{$wide1190} {
       float: left;
       display: flex;
       justify-content: center;
@@ -65,22 +65,22 @@
     }
 
     &:nth-child(3n) {
-      @media #{$wide} {
+      @media #{$wide1190h} {
         margin-right: 0;
       }
     }
     &:nth-child(2n) {
-      @media #{$tablet} {
+      @media #{$wide1190} {
         margin-right: 0;
       }
     }
     &:nth-child(3n + 1) {
-      @media #{$wide} {
+      @media #{$wide1190h} {
         clear: left;
       }
     }
     &:nth-child(2n) {
-      @media #{$tablet} {
+      @media #{$wide1190} {
         clear: left;
       }
     }

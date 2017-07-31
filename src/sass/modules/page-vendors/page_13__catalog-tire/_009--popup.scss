@@ -17,11 +17,14 @@
   @media #{$mobile} {
     // width: 270px;
     max-width: 95%;
-    position: absolute;
+    position: fixed;
+    bottom: 0;
+    overflow: auto;
+    top: 10px;
   }
 
   & .close {
-    position: absolute;
+    position: fixed;
     top: -15px;
     right: -48px;
     width: 50px;

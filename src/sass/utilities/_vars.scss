@@ -47,6 +47,8 @@
 
 $break-mobile: 320px;
 $break-tablet: 1024px;
+
+$break-widetab: 1230px;
 // $break-desktop: 1000px;
 // $break-laptop: 1200px;
 $break-wide: 1600px;
@@ -54,6 +56,7 @@ $break-wide: 1600px;
 
 $break-970: 970px;
 $break-1170: 1170px;
+$break-1190: 1190px;
 
 $head-break: "only screen and (min-width: "$break-970") and (max-width: "$break-1170 - 1")";
 
@@ -72,3 +75,7 @@ $mobile-tablet: "only screen and (max-width: "$break-wide - 1")";
 $wide: "only screen and (min-width: "$break-wide")";
 // $tablet-laptop:  "only screen and (min-width: "$break-tablet") and (max-width: "$break-wide - 1")";
 // $desktop-laptop:  "only screen and (min-width: "$break-desktop") and (max-width: "$break-wide - 1")";
+$widetab: "only screen and (min-width: "$break-tablet") and (max-width: "$break-widetab - 1")";
+$widetabmain: "only screen and (min-width: "$break-widetab")";
+$wide1190: "only screen and (min-width: "$break-tablet") and (max-width: "$break-1190 - 1")";
+$wide1190h: "only screen and (min-width: "$break-1190")";

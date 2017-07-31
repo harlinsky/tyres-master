@@ -1,0 +1,328 @@
+// product
+section.product
+  .shell
+      .container
+        .range
+          .product-wrapper
+
+            //- content
+            .product-content
+
+
+              //- RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT
+              .right
+
+                .breadcrumbs-wrapper
+                  ul.breadcrumbs-list
+                    li.breadcrumbs-item
+                      a.breadcrumbs-link(href="") Главная
+                    li.breadcrumbs-item
+                      a.breadcrumbs-link(href="" data-original="Каталог шин") Каталог масел
+                    li.breadcrumbs-item
+                      a.breadcrumbs-link(href="" data-original="Michelin snowtime M") BMW M TWINPOWDER TURBO
+
+                .subtitle 5w-40 BMW
+                .title BMW M TWINPOWDER TURBO
+                .subtitle BMW
+                .votes
+                  .votes-five
+                    .votes-item.selected
+                    .votes-item.selected
+                    .votes-item.selected
+                    .votes-item
+                    .votes-item
+
+                .desc Безопасность на зимней дороге немыслима без Michelin X-Ice North Xin 3. Эти зимние шипованные шины, разработанные как для легковых автомобилей, так и для кроссоверов, демонстрируют надежное поведение при самых сложных погодных условиях и впечатляющую износоустойчивость.
+                .item-imgs.mobile
+                  a.item-img.big(href="img/p-check_tab-photo-02.png")
+                    img(src="img/p-check_tab-photo-02.png")
+
+                  .item-img-row
+                    a.item-img.small(href="img/catalog_item-thumb--oil.jpg")
+                      img(src="img/catalog_item-thumb--oil.jpg")
+                    a.item-img.small(href="img/catalog_item-thumb--oil.jpg")
+                      img(src="img/catalog_item-thumb--oil.jpg")
+                    a.item-img.small(href="img/catalog_item-thumb--oil.jpg")
+                      img(src="img/catalog_item-thumb--oil.jpg")
+                .desc
+                .prices
+                  .prices-value
+                    .prices-value-wrap
+                      .prices-value-text Цена за шт
+                      .prices-value-essence 30 000
+                  .prices-pieces
+                    .prices-pieces-wrap
+                      .prices-pieces-text Количество, шт.
+                      .prices-pieces-essence
+                        label(for='addwin')
+                        span.input-wrapper
+                          a.info-right-form-minus(href='#') Less
+                          input#addwin.people-number(type='text', pattern='[0-9]*', min='0', value='4')
+                          a.info-right-form-plus(href='#') More
+                  .prices-sum
+                    .prices-sum-wrap
+                      .prices-sum-text Общая сумма
+                      .prices-sum-essence 30 000
+                .add
+                  #onebuyopentab.one-click-add-hide
+                    .add-text Укажите ваш номер телефона
+                    input.tel-number(type ="tel" placeholder="+7 505 ___ __ __" name="telnumb")
+                  #onebuyopen.one-click-add
+                    button#onebuyopenv.one-click-add-text Купить в один клик
+                  .add-to-cart
+                    .add-to-cart-text.onebuy добавить в корзину
+                  .add-text Наличие товара подтвердит наш менеджер
+
+                  //-   характеристики
+                  //-  .params__unit
+                  //-    .params__unit-title Вязкость
+                  //-    .params__unit-param 205
+                  //-  .params__unit
+                  //-    .params__unit-title Объём, л
+                    //-  .params__unit-param 60
+                  //-   характеристики
+
+
+
+                //- характеристики
+                .params
+                  .params__title Характеристики
+                  .params__dimensions
+                    .params__dimensions-wrap
+                      .params__dimensions-text Артикул:&nbsp;
+                      .params__dimensions-essence 872571
+                  .params__row
+                    .params__unit
+                      .params__unit-title Вязкость
+                      .params__unit-param 205
+                    .params__unit
+                      .params__unit-title Объём, л
+                      .params__unit-param 60                  
+                  .params__vendors
+                    .params__vendors__item
+                      .params__vendors__name Тип масла
+                      .params__vendors__value ...
+                    .params__vendors__item
+                      .params__vendors__name Тип основы масла
+                      .params__vendors__value ...
+                    .params__vendors__item
+                      .params__vendors__name Тип автомобиля
+                      .params__vendors__value 102
+                    .params__vendors__item
+                      .params__vendors__name Тип двигателя
+                      .params__vendors__value В
+                    
+
+                //- обратный звонок
+                .form-send
+
+                  form.form-send__init
+                    .title появились вопросы?
+                    .subtitle Вы можете заказать обратный звонок, и наши меджеры с радостью&nbsp;вам помогут
+                    .item
+                      label.label Ваше имя
+                      input(type="text" placeholder="Имя")
+                    .item
+                      label.label Ваш номер телефона
+                      input(type="text" placeholder="+ 7 (__) __ __ __")
+                    .btn
+                      .btn-text отправить
+
+                  .form-send__activated
+                    .title Спасибо
+                    .sub-title В ближайшее время вам перезвонит наш консультант
+                    .done-btn Готово
+
+
+
+              //-  LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT  в покрышках нет а в масах есть ряд картинок
+              .left
+                .item-imgs.wide
+                  a.item-img.big(href="img/p-check_tab-photo-02.png")
+                    img(src="img/p-check_tab-photo-02.png")
+
+                  .item-img-row              
+                    a.item-img.small(href="img/catalog_item-thumb--oil.jpg")
+                      img(src="img/catalog_item-thumb--oil.jpg")
+                    a.item-img.small(href="img/catalog_item-thumb--oil.jpg")
+                      img(src="img/catalog_item-thumb--oil.jpg")
+                    a.item-img.small(href="img/catalog_item-thumb--oil.jpg")
+                      img(src="img/catalog_item-thumb--oil.jpg")
+                .desc
+
+
+
+                  // BEGIN tabs list
+                  ul.tabs.js-tabs-simple
+                    li.tabs__item.tab-login.tabs-btns__item.active
+                      a.tabs__link.text-wrap(href='#')
+                        .text-essence Описание товара
+                    li.tabs__item.tab-reg.tabs-btns__item
+                      a.tabs__link.text-wrap(href='#')
+                        .text-essence Отзывы <span>(8)</span>
+                  // END tabs list
+                  div.tabs-container
+                    // BEGIN tabs content
+                    .tabs-content.js-tabs-simple-content.tabs-content-item.desc-tab
+                      .text Безопасность на зимней дороге немыслима без Michelin X-Ice North Xin 3. Эти зимние шипованные шины, разработанные как для легковых автомобилей, так и для кроссоверов, демонстрируют надежное поведение при самых сложных погодных условиях и впечатляющую износоустойчивость.
+                      .text Секрет успеха X-Ice North Xin 3— в особом составе резиновой смеси FLEX-ICE. Уникальные полимерные соединения, разработанные ведущими химиками компании Michelin, позволяют протектору сохранять эластичность в самый лютый мороз, обеспечивая выдающееся сцепление как на асфальте, так и на льду. Кроме того, смесь FLEX-ICE повышает износоустойчивость шины и снижает сопротивление качению, позволяя автомобилю расходовать меньше топлива.
+                      .text Особый дизайн плечевых зон «Step in/Step out» также повышает ходимость шин: некоторые блоки имеют больший выступ вовне, другие — меньший. Это улучшает ходовые качества в глубоком снегу.
+                      .text Инновационная дренажная система обеспечивает наискорейшее удаление воды, грязи и снеговой каши из пятна контакта X-Ice North 3 с дорогой. Мокрый асфальт, залитый талой водой или покрытый слякотью — не угроза вашей безопасности, с этими шинами вам не страшно ни аквапланирование ни слашплэнинг.
+                      .text На укатанном снегу или в гололед шинам не обойтись без шипов. Система «умный шип», внедренная при создании шин Икс-Айс Норт 3, не только обеспечивает надежное сцепление на льду, но и гарантирует защиту шипов от выпадания
+                      //- tab FEEDBACKS:
+                    .tabs-content.js-tabs-simple-content.tabs-content-item.feedback-tab
+
+                      .feedback-tab__list
+
+
+                        //- item
+                        .feedback-tab__item
+                          .feedback-tab__top-row
+                            .feedback-tab__thumb
+                              .feedback-tab__thumb-text M
+                            .feedback-tab__title MarkHeisenberg
+                            .feedback-tab__stars
+                              .feedback-tab__stars-five
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item
+                                .feedback-tab__stars-item
+
+                          .feedback-tab__content
+                            .feedback-tab__content-text Показательный пример – кризис выбирает психоз. Анима откровенна. Лидерство дает ускоряющийся бихевиоризм, как и предсказывает теория о бесполезном знании. В заключении добавлю, чувство потенциально. Страх теоретически возможен.
+
+                        //- item
+                        .feedback-tab__item
+                          .feedback-tab__top-row
+                            .feedback-tab__thumb
+                              .feedback-tab__thumb-text M
+                            .feedback-tab__title MarkHeisenberg
+                            .feedback-tab__stars
+                              .feedback-tab__stars-five
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item
+                                .feedback-tab__stars-item
+
+                          .feedback-tab__content
+                            .feedback-tab__content-text Показательный пример – кризис выбирает психоз. Анима откровенна. Лидерство дает ускоряющийся бихевиоризм, как и предсказывает теория о бесполезном знании. В заключении добавлю, чувство потенциально. Страх теоретически возможен.
+
+                        //- item
+                        .feedback-tab__item
+                          .feedback-tab__top-row
+                            .feedback-tab__thumb
+                              .feedback-tab__thumb-text M
+                            .feedback-tab__title MarkHeisenberg
+                            .feedback-tab__stars
+                              .feedback-tab__stars-five
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item
+                                .feedback-tab__stars-item
+
+                          .feedback-tab__content
+                            .feedback-tab__content-text Показательный пример – кризис выбирает психоз. Анима откровенна. Лидерство дает ускоряющийся бихевиоризм, как и предсказывает теория о бесполезном знании. В заключении добавлю, чувство потенциально. Страх теоретически возможен.
+
+
+                        //- item
+                        .feedback-tab__item
+                          .feedback-tab__top-row
+                            .feedback-tab__thumb.name
+                              .feedback-tab__thumb-text I
+                            .feedback-tab__title Ivan
+                            .feedback-tab__stars
+                              .feedback-tab__stars-five
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item
+                                .feedback-tab__stars-item
+
+                          .feedback-tab__content
+                            .feedback-tab__content-text Показательный пример – кризис выбирает психоз. Анима откровенна.
+
+                        //- item
+                        .feedback-tab__item
+                          .feedback-tab__top-row
+                            .feedback-tab__thumb.name
+                              .feedback-tab__thumb-text I
+                            .feedback-tab__title Ivan
+                            .feedback-tab__stars
+                              .feedback-tab__stars-five
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item
+                                .feedback-tab__stars-item
+
+                          .feedback-tab__content
+                            .feedback-tab__content-text Показательный пример – кризис выбирает психоз. Анима откровенна.
+
+                        //- item
+                        .feedback-tab__item
+                          .feedback-tab__top-row
+                            .feedback-tab__thumb.name
+                              .feedback-tab__thumb-text I
+                            .feedback-tab__title Ivan
+                            .feedback-tab__stars
+                              .feedback-tab__stars-five
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item.selected
+                                .feedback-tab__stars-item
+                                .feedback-tab__stars-item
+
+                          .feedback-tab__content
+                            .feedback-tab__content-text Показательный пример – кризис выбирает психоз. Анима откровенна.
+
+
+
+                      .paginator
+                        ul.paginator-list
+                          li.paginator-item
+                            a.paginator-item-link(href='#') 1
+                          li.paginator-item
+                            a.paginator-item-link(href='#') 2
+                          li.paginator-item.active
+                            a.paginator-item-link(href='#') 3
+                          li.paginator-item
+                            a.paginator-item-link(href='#') 4
+                          li.paginator-item.skip-next
+                            a.paginator-item-link(href='#') 5
+                          li.paginator-item
+                            a.paginator-item-link(href='#') 10
+                        .controls
+                          .controls__left
+                          .controls__right
+
+
+                      form.comment
+                        label.comment__name-label Имя
+                        .comment__name-input-wrap
+                          input.comment__name-input(placeholder="Ваш Имя")
+                          .comment__stars
+                            .comment__stars__votes Оценка
+                            .comment__stars-five
+                              .comment__stars-item.selected
+                              .comment__stars-item.selected
+                              .comment__stars-item.selected
+                              .comment__stars-item
+                              .comment__stars-item
+                        label.comment__text-label Ваш комментарий
+                        textarea.comment__textarea
+                        .comment__btn
+                          .comment__btn-text отправить
+
+
+                    // END tabs content
+
+
+
+
+
+
+
+// product end

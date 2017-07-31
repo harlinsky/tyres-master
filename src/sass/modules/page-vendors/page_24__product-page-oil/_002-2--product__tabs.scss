@@ -1,0 +1,171 @@
+
+.page-product .product {
+  & .left .desc {
+
+  }
+}
+
+
+.page-product .product {
+  & .tabs-btns {
+    @include clearfix;
+  }
+}
+
+
+.page-product .product {
+  & .tabs-btns__item {
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    /* Style for "Прямоуголь" */
+    width: 215px;
+    margin-right: 20px;
+    height: 50px;
+
+    @media #{$mobile} {
+      width: 170px;
+      margin-right: 10px;
+
+      &.tab-reg {
+        width: 140px;
+        margin-right: 0;
+      }
+    }
+
+    &.active {
+      border: none;
+      background-color: #464649;
+
+      & .text-wrap {
+        box-shadow: none;
+        border-radius: none;
+        border: none;
+      }
+
+    }
+
+    & .text-wrap {
+      display: block;
+      height: 40px;
+      width: 100%;
+      position: relative;
+
+      box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.36);
+      border-radius: 2px;
+      border: 2px solid #6b6b72;
+    }
+    & .text-essence {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      @include font(normal, 400, 18px, 27px, 'Arial');
+      color: #feffff;
+    }
+
+    &-text {
+
+    }
+  }
+}
+// content
+.page-product .product {
+  & .tabs-content {
+    background-color: #464649;
+    padding: 20px;
+  }
+}
+
+
+.page-product .product {
+  & .tabs-content-item {
+
+
+
+
+    &.active {
+
+
+    }
+
+    &.desc-tab {
+
+      & .text {
+        @include font(normal, 400, 18px, 27px, 'Arial');
+        color: #cfdee7;
+        margin-bottom: 30px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &.feedback-tab {
+
+    }
+  }
+
+  & .tabs-content-item-text {
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #feffff;
+
+
+  }
+}
+
+@import '002-2-1--product__tabs-styles';
+@import '002-2-2--tabs_feedback-tab';
+@import '002-2-4--tabs_paginator';
+@import '002-2-5--tabs_form-comment';
+
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+
+
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+
+
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+
+
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+
+
+.page-product .product {
+  & .CLASS{
+
+  }
+}
+
+
+.page-product .product {
+  & .CLASS{
+
+  }
+}

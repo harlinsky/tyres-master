@@ -10,7 +10,7 @@
     background: url('../img/home_tab2-bg-thumb.png') no-repeat,
                 url('../img/home_filter_tab-2_bg-thumb-btm.png') no-repeat;
     background-position: right 25px bottom 120px,
-                         left -5px bottom -300px;
+                         left -5px bottom -330px;
     background-color: #464649;
 
     @media #{$tablet-wide} {
@@ -18,7 +18,7 @@
       min-height: 630px;
     }
 
-    @media #{$tablet} {
+    @media #{$widetab} {
       width: 700px;
     }
 

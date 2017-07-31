@@ -171,7 +171,7 @@ RESET
 
 (function($) {
 
-  if($('body').is('.page-catalog-oil')){
+  if($('main').is('.main')){
 
     var target;
     var cutText;
@@ -185,14 +185,14 @@ RESET
       target.html( result );
 
       function start_and_end(str) {
-        if (str.length > 20) {
-          return str.substr(0, 5) + '...' + str.substr(str.length-5, str.length);
+        if (str.length > 10) {
+          return str.substr(0, 3) + '...' + str.substr(str.length-3, str.length);
         }
         return str;
       }
 
     }
-    if ((window.matchMedia("(min-width: 1024px)").matches)) {
+/*   if ((window.matchMedia("(min-width: 1024px)").matches)) {
 
       target = $('.breadcrumbs-item .breadcrumbs-link:last');
       cutText = target.attr( "data-original" );
@@ -206,7 +206,7 @@ RESET
         return str;
       }
 
-    }
+    }*/
 
   }
 
@@ -216,21 +216,21 @@ RESET
 
 
 (function() {
-  var contents = $('.item-content');
-  var titles = $('.item-title');
+  var contents = $('.item-contentpr');
+  var titles = $('.item-titlepr');
   titles.on('click',function(){
     var title = $(this);
     contents.filter(':visible').slideUp(function(){
       $(this).parent('.item').removeClass('is-opened');
     });
 
-    var content = title.next('.item-content');
+    var content = title.next('.item-contentpr');
 
     if (!content.is(':visible')) {
       content.slideDown(function(){title.parent('.item').addClass('is-opened')});
     }
   });
-})(); // eof autoFunction
+})(); // eof autoFunction */
 
 
 
@@ -458,14 +458,9 @@ $(document).ready(function() {
   }
 /* eof ^^^ */
 
-
-
-$('#formqb').click(function(){
-  $('#formq').hide;
-  $('#thnx').show;})
-
-
-function bye(){
-  $('#thnx').hide;
-  $('#formq').show;
-}
+$(document).ready(function() {
+$('#onebuyopen').on("click",function () {
+  $('#onebuyopentab').show();
+  $('#onebuyopenv').html("Купить")
+});
+});

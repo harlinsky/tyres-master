@@ -21,9 +21,9 @@ section.product
                     li.breadcrumbs-item
                       a.breadcrumbs-link(href="" data-original="Michelin snowtime M") Michelin snowtime M
 
-                .subtitle 5w-40
-                .title BMW M TwinPower Turbo
-                .subtitle BMW
+                .subtitle 205/55/R16 Michelin
+                .title Michelin snowtime M
+                .subtitle Michelin
                 .votes
                   .votes-five
                     .votes-item.selected
@@ -31,20 +31,13 @@ section.product
                     .votes-item.selected
                     .votes-item
                     .votes-item
-                  .votes-voices 5 голосов
 
                 .desc Безопасность на зимней дороге немыслима без Michelin X-Ice North Xin 3. Эти зимние шипованные шины, разработанные как для легковых автомобилей, так и для кроссоверов, демонстрируют надежное поведение при самых сложных погодных условиях и впечатляющую износоустойчивость.
                 .item-imgs.mobile
                   a.item-img.big(href="img/p-product__item-img.jpg")
                     img(src="img/p-product__item-img.jpg")
 
-                  .item-img-row
-                    a.item-img.small(href="img/p-product__item-img.jpg")
-                      img(src="img/p-product__item-img.jpg")
-                    a.item-img.small(href="img/p-product__item-img.jpg")
-                      img(src="img/p-product__item-img.jpg")
-                    a.item-img.small(href="img/p-product__item-img.jpg")
-                      img(src="img/p-product__item-img.jpg")
+                
                 .desc
                 .prices
                   .prices-value
@@ -65,11 +58,25 @@ section.product
                       .prices-sum-text Общая сумма
                       .prices-sum-essence 30 000
                 .add
-                  .one-click-add
-                    .one-click-add-text Купить в один клик
+                  #onebuyopentab.one-click-add-hide
+                    .add-text Укажите ваш номер телефона
+                    input.tel-number(type ="tel" placeholder="+7 505 ___ __ __" name="telnumb")
+                  #onebuyopen.one-click-add
+                    button#onebuyopenv.one-click-add-text Купить в один клик
                   .add-to-cart
-                    .add-to-cart-text добавить в корзину
+                    .add-to-cart-text.onebuy добавить в корзину
                   .add-text Наличие товара подтвердит наш менеджер
+
+                  //-   характеристики
+                  //-  .params__unit
+                  //-    .params__unit-title Вязкость
+                  //-    .params__unit-param 205
+                  //-  .params__unit
+                  //-    .params__unit-title Объём, л
+                    //-  .params__unit-param 60
+                  //-   характеристики
+
+
 
                 //- характеристики
                 .params
@@ -80,11 +87,14 @@ section.product
                       .params__dimensions-essence 872571
                   .params__row
                     .params__unit
-                      .params__unit-title Вязкость
+                      .params__unit-title Ширина
                       .params__unit-param 205
                     .params__unit
-                      .params__unit-title Объём, л
-                      .params__unit-param 60
+                      .params__unit-title Высота
+                      .params__unit-param 55
+                    .params__unit
+                      .params__unit-title Диаметр
+                      .params__unit-param R16
                   .params__vendors
                     .params__vendors__item
                       .params__vendors__name Категория
@@ -124,19 +134,13 @@ section.product
 
 
 
-              //-  LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT
+              //-  LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT LEFT  в покрышках нет а в масах есть ряд картинок
               .left
                 .item-imgs.wide
                   a.item-img.big(href="img/p-product__item-img.jpg")
                     img(src="img/p-product__item-img.jpg")
 
-                  .item-img-row
-                    a.item-img.small(href="img/p-product__item-img--small.jpg")
-                      img(src="img/p-product__item-img--small.jpg")
-                    a.item-img.small(href="img/p-product__item-img--small.jpg")
-                      img(src="img/p-product__item-img--small.jpg")
-                    a.item-img.small(href="img/p-product__item-img--small.jpg")
-                      img(src="img/p-product__item-img--small.jpg")
+                  
                 .desc
 
 

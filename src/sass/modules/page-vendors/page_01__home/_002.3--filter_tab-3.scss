@@ -22,13 +22,13 @@
 
     @media #{$tablet-wide} {
       background: #464649 url('../img/home_filter_tab-1_col-left_thumb-btm.png') no-repeat;
-      background-position: center bottom -300px;
+      background-position: center bottom -330px;
       height: 630px;
       min-height: 630px;
       margin-right: 30px;
     }
 
-    @media #{$tablet} {
+    @media #{$widetab} {
       width: 320px;
     }
 
@@ -84,7 +84,7 @@
       margin-right: 20px;
     }
 
-    @media #{$tablet} {
+    @media #{$widetab} {
       width: 320px;
     }
 

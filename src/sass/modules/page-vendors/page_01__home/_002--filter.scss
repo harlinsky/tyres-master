@@ -13,7 +13,7 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
-    @media #{$tablet} {
+    @media #{$widetab} {
       min-width: 1024px;
       max-width: 1024px;
 
@@ -75,7 +75,7 @@
 
 .page-index .filter {
   & .handy-title {
-    display: none;
+    display: block;
 
     @media #{$mobile} {
       display: block;
@@ -87,6 +87,7 @@
       // margin-top: 10px;
     }
 
+
     &-text {
       @media #{$mobile} {
         display: block;
@@ -97,6 +98,7 @@
         text-align: center;
       }
     }
+
 
   }
 }

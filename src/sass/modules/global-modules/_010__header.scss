@@ -133,13 +133,13 @@ h1 {
   & .header-desc {
     position: absolute;
 top: 55px;
-left: 400px;
+left: 350px;
 width: 260px;
 
     @media #{$tablet} {
       position: absolute;
       top: 55px;
-      left: 350px;
+      left: 335px;
       z-index: 1;
     }
 

@@ -5,7 +5,7 @@
   background-position: center top;
   box-shadow: 2px 3px 8px 0 rgba(30, 30, 30, 0.35);
 
-  @media #{$wide} {
+  @media #{$wide1190h} {
     background: #262627 url('../img/p-services-item__breadcrumbs_bg.jpg') no-repeat;
     background-size: cover;
   }
@@ -25,7 +25,7 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
-    @media #{$tablet} {
+    @media #{$wide1190} {
       min-width: 1024px;
       max-width: 1024px;
 
