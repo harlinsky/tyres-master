@@ -7,13 +7,10 @@
     right: 100px;
     width: 260px;
 
-    @media #{$tablet} {
+    @media #{$wide1190} {
       right: 60px;
     }
 
-    @media #{$head-break} {
-      right: 10px;
-    }
 
     @media #{$mobile} {
       display: none;

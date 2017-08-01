@@ -4,7 +4,7 @@ h1 {
    color: #cfdee7;
    text-transform: uppercase;
    text-align: center;
-   @media #{$wide} {
+   @media #{$wide1190h} {
      font: normal 400 24px/36px "PTSans-Narrow";
      font-size: 1.5rem;
      margin: 0 auto;
@@ -44,7 +44,7 @@ h1 {
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
-    @media #{$tablet} {
+    @media #{$wide1190} {
       min-width: 1024px;
       max-width: 1024px;
 
@@ -110,13 +110,10 @@ h1 {
     z-index: 2;
 
 
-    @media #{$tablet} {
+    @media #{$wide1190} {
       left: 30px;
     }
 
-    @media #{$head-break} {
-      left: 10px;
-    }
 
     @media #{$mobile} {
       display: none;
@@ -136,7 +133,7 @@ top: 55px;
 left: 350px;
 width: 260px;
 
-    @media #{$tablet} {
+    @media #{$wide1190} {
       position: absolute;
       top: 55px;
       left: 335px;
