@@ -12,14 +12,14 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
-    @media #{$tablet} {
+    @media #{$widepromo} {
       min-width: 1024px;
       max-width: 1024px;
 
       padding: 0;
     }
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       min-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
@@ -51,7 +51,7 @@
       text-decoration: none;
       display: block;
 
-      @media #{$mobile} {
+      @media #{$mobilepromo} {
         width: auto;
         margin-left: 25px;
       }
@@ -140,7 +140,7 @@
 
   &:nth-child(1) {
     background: url('../img/home_services_bg-item-01.png') no-repeat;
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       background: url('../img/home_services_bg-item-01--mobile.png') no-repeat;
       // background-position: left 35px top 10px;
       background-position: left 65px top 25px;
@@ -152,7 +152,7 @@
     background-position: left top 70px;
     padding-top: 95px;
     padding-top: 70px;
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       background: url('../img/home_services_bg-item-02--mobile.png') no-repeat;
       // background-position: left 50px top 15px;
       background-position: left 83px top 15px;
@@ -164,7 +164,7 @@
     background-position: left top 70px;
     padding-top: 120px;
     padding-top: 50px;
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       background: url('../img/home_services_bg-item-03--mobile.png') no-repeat;
       background-position: left 65px top 10px;
       // background-position: left 40px top 10px;
@@ -183,7 +183,7 @@
     border-radius: 2px;
     border: 2px solid #464649;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       width: 320px;
       float: none;
       margin: 0 auto;
@@ -265,7 +265,7 @@
     border-radius: 2px;
     background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       float: none;
       margin-bottom: 20px;
     }
@@ -307,7 +307,7 @@
 
     float: left;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       float: none;
     }
 

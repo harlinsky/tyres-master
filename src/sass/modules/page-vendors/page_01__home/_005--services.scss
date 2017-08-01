@@ -12,14 +12,14 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
-    @media #{$tablet} {
+    @media #{$widepromo} {
       min-width: 1024px;
       max-width: 1024px;
 
       padding: 0;
     }
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       min-width: 320px;
       // а для внутряков обязательно заранее пропиши:
       // & .wrap {
@@ -64,7 +64,7 @@
     text-align: center;
     margin-bottom: 35px;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
       width: 250px;
       margin: 0 auto;
@@ -110,7 +110,7 @@
 
   &:nth-child(1) {
     background: url('../img/home_services_bg-item-01.png') no-repeat;
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       background: url('../img/home_services_bg-item-01--mobile.png') no-repeat;
       background-position: left 70px top 25px;
     }
@@ -120,7 +120,7 @@
     background: url('../img/home_services_bg-item-02.png') no-repeat;
     background-position: left top 70px;
     padding-top: 95px;
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       background: url('../img/home_services_bg-item-02--mobile.png') no-repeat;
       background-position: left 83px top 15px;
     }
@@ -130,7 +130,7 @@
     background: url('../img/home_services_bg-item-03.png') no-repeat;
     background-position: left top 70px;
     padding-top: 95px;
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       background: url('../img/home_services_bg-item-03--mobile.png') no-repeat;
       background-position: left 75px top 10px;
       padding-top: 50px;
@@ -149,7 +149,7 @@
     border-radius: 2px;
     border: 2px solid #464649;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       width: 320px;
       float: none;
       margin: 0 auto;
@@ -207,7 +207,7 @@
     -moz-column-gap: 40px;
     -webkit-column-gap: 40px;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       width: 100%;
       column-count: 1;
       -moz-column-count: 1;
@@ -250,7 +250,7 @@
     border-radius: 2px;
     background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       float: none;
       margin-bottom: 20px;
     }
@@ -294,7 +294,7 @@
     text-align: center;
 
     float: left;
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       float: none;
     }
 

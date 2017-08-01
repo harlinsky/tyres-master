@@ -12,14 +12,14 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
-    @media #{$tablet} {
+    @media #{$widepromo} {
       min-width: 1024px;
       max-width: 1024px;
 
       padding: 0;
     }
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       min-width: 320px;
       max-width: 320px;
       // а для внутряков обязательно заранее пропиши:
@@ -36,7 +36,7 @@
   & .container {
     padding: 50px 0 150px;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       padding-top: 70px;
       padding-bottom: 280px;
     }

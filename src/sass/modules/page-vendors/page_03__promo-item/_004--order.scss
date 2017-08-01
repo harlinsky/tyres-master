@@ -12,14 +12,14 @@
     // outline: 2px dashed tan;
     // outline-offset: -2px;
 
-    @media #{$tablet} {
+    @media #{$widepromo} {
       // min-width: 1024px;
       max-width: 1024px;
 
       padding: 0;
     }
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       min-width: 320px;
       max-width: 320px;
 
@@ -53,7 +53,7 @@
       margin-bottom: 65px;
       letter-spacing: 0.8px;
 
-      @media #{$mobile} {
+      @media #{$mobilepromo} {
         @include font(normal, 400, 24px, 36px, 'PTSans-Narrow');
         width: 250px;
         margin: 0 auto 25px;
@@ -83,10 +83,10 @@
         width: 57.26495726495726%; /* 670 / 1170 */
         padding-top: 30px;
         padding-bottom: 30px;
-        @media #{$tablet} {
+        @media #{$widepromo} {
           padding-top: 0;
         }
-        @media #{$mobile} {
+        @media #{$mobilepromo} {
           width: 320px;
           padding-left: 25px;
           padding-right: 25px;
@@ -101,7 +101,7 @@
         margin-right: 30px;
         margin-right: 2.564102564102564%; /* 30 / 1170 */
 
-        @media #{$mobile} {
+        @media #{$mobilepromo} {
           width: 320px;
           margin-right: 0;
         }
@@ -136,7 +136,7 @@
         border-radius: 2px;
         background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
 
-        @media #{$mobile} {
+        @media #{$mobilepromo} {
           margin-bottom: 10px;
         }
 
@@ -174,7 +174,7 @@
         height: 40px;
         position: relative;
 
-        @media #{$mobile} {
+        @media #{$mobilepromo} {
           width: 100%;
         }
 
@@ -185,7 +185,7 @@
           left: 0;
           transform: translateY(-50%);
 
-          @media #{$mobile} {
+          @media #{$mobilepromo} {
             position: relative;
             top: 0;
             transform: none;
@@ -206,7 +206,7 @@
     max-width: 730px;
     margin: 0 auto;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
 
       padding: 0 25px;
     }
@@ -253,7 +253,7 @@
     border: 3px solid #464649;
     margin-bottom: 70px;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       padding: 30px 22px 40px;
       height: auto;
     }
@@ -267,7 +267,7 @@
     @include clearfix;
     padding-top: 65px;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       padding-top: 0;
       width: auto;
     }
@@ -286,7 +286,7 @@
     width: 200px;
     margin-top: 30px;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       margin-top: 0;
       float: none;
       margin-bottom: 70px;
@@ -299,7 +299,7 @@
   & .order-send__left-subtext{
     display: none;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       display: block;
 
       @include font(italic, 400, 14px, 21px, 'Georgia');
@@ -316,7 +316,7 @@
     margin-right: 30px;
     @include clearfix;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       float: none;
       width: auto;
       margin-right: 0;
@@ -327,7 +327,7 @@
     margin-right: 30px;
     margin-bottom: 15px;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       margin-right: 0;
       float: none;
     }
@@ -336,7 +336,7 @@
       width: 170px;
       padding-left: 15px;
 
-      @media #{$mobile} {
+      @media #{$mobilepromo} {
         width: 100%;
       }
     }
@@ -344,14 +344,14 @@
   & .order-send__mid-phone {
     float: right;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       float: none;
     }
     & > input {
       width: 270px;
       padding-left: 15px;
 
-      @media #{$mobile} {
+      @media #{$mobilepromo} {
         width: 100%;
       }
     }
@@ -414,7 +414,7 @@
     @include font(italic, 400, 14px, 21px, 'Georgia');
     color: #cfdee7;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       display: none;
     }
   }
@@ -474,7 +474,7 @@
     text-decoration: none;
     display: block;
 
-    @media #{$mobile} {
+    @media #{$mobilepromo} {
       width: auto;
       margin-left: 25px;
     }

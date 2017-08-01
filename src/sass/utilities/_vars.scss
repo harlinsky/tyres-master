@@ -58,6 +58,8 @@ $break-970: 970px;
 $break-1170: 1170px;
 $break-1190: 1190px;
 
+$break-1044: 1044px;
+
 $head-break: "only screen and (min-width: "$break-970") and (max-width: "$break-1170 - 1")";
 
 // когда таблет высчитывается от значения desktop, поэтому после комментирования,
@@ -79,3 +81,6 @@ $widetab: "only screen and (min-width: "$break-tablet") and (max-width: "$break-
 $widetabmain: "only screen and (min-width: "$break-widetab")";
 $wide1190: "only screen and (min-width: "$break-tablet") and (max-width: "$break-1190 - 1")";
 $wide1190h: "only screen and (min-width: "$break-1190")";
+
+$mobilepromo: "only screen and (max-width: "$break-1044 - 1")";
+$widepromo: "only screen and (min-width: "$break-1044") and (max-width: "$break-wide - 1")";

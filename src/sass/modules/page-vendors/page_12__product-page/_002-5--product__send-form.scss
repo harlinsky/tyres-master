@@ -10,8 +10,9 @@
     border: 3px solid #464649;
     padding-top: 40px;
     padding-bottom: 50px;
+    position: relative;
 
-    @media #{$wide1190} {
+    @media #{$tablet} {
       margin: 0 auto;
     }
 
@@ -55,6 +56,7 @@
     @include font(italic, 400, 16px, 24px, 'Georgia');
     max-width: 400px;
     color: #cfdee7;
+    text-align: center;
 
     @media #{$tablet-wide} {
       margin: 0 auto 20px;
@@ -151,8 +153,11 @@
     background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
     position: relative;
     &:hover {
-      background-size: 200% auto;
-      background-position: bottom center; /* change the direction of the change here */
+      @media #{$tablet-wide} {
+
+        background-size: 200% auto;
+        background-position: bottom center; /* change the direction of the change here */
+      }
     }
     &:active {
       top: 1px;
@@ -176,11 +181,130 @@
   }
 }
 
+
+.page-product .product .form-send__init {
+  & .btn.load-more--loading {
+
+    & > * {
+      display: none;
+    }
+
+    box-shadow: none;
+
+    transition:
+      all .2s ease,
+      background-color .01s ease,
+      color .01s ease;
+
+    animation: rotate 1.5s linear infinite;
+    animation-delay: .2s;
+    background-image: none;
+    background-color: transparent;
+    border: .3em solid #f99944;
+    border-radius: 1.5em;
+    border-top-color: #f67519;
+    box-sizing: border-box;
+    height: 2em;
+    color: transparent;
+    padding: 0;
+    pointer-events: none;
+    width: 2em;
+    margin: 0 auto;
+    // margin-left: 120px;
+
+    @keyframes rotate {
+      100% { transform: rotate(360deg) }
+    }
+  }
+}
+
 .page-product .product {
   & .CLASS{
 
   }
 }
+.page-product .form-send .back-end {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+
+.page-product .form-send .back-end {
+  & .title {
+    @include font(normal, 400, 33px, 48px, 'PTSans-Narrow');
+    text-align: center;
+    color: #cfdee7;
+    text-transform: uppercase;
+
+    @media #{$mobile} {
+      @include font(normal, 400, 24px, 48px, 'PTSans-Narrow');
+    }
+  }
+  & .subtitle{
+    @include font(italic, 400, 16px, 24px, 'Georgia');
+    max-width: 400px;
+    color: #cfdee7;
+    text-align: center;
+
+    @media #{$tablet-wide} {
+      margin: 0 auto 20px;
+    }
+
+    @media #{$mobile} {
+      text-align: center;
+      margin: 0 auto 20px;
+    }
+  }
+  & .btn {
+    /* Style for "Прямоуголь" */
+    width: 370px;
+    height: 40px;
+    box-shadow: 3px 4px 10px rgba(37, 19, 6, 0.2);
+    border-radius: 2px;
+    background-image: linear-gradient(17deg, #f5802c 0%, #f99944 100%);
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+
+    @media #{$mobile} {
+      width: 270px;
+    }
+    // ---
+    transition: 0.5s;
+    background-size: 100% auto;
+    background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
+    position: relative;
+    &:hover {
+      @media #{$tablet-wide} {
+
+        background-size: 200% auto;
+        background-position: bottom center; /* change the direction of the change here */
+      }
+    }
+    &:active {
+      top: 1px;
+    }
+    &.inactive {
+      opacity: 0.5;
+    }
+  }
+
+  & .btn-text {
+    user-select: none;
+    // ---
+    @include font(normal, 400, 18px, 27px, 'Arial');
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 
 
 .page-product .product {

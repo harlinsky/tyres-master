@@ -15,7 +15,7 @@
     }
 
     &-five {
-      
+
       @include clearfix;
       float: left;
       padding-top: 2px;
@@ -241,31 +241,6 @@
   & .add{
     margin-bottom: 55px;
   }
-    & .one-click-add-hide{
-      display:none;
-    }
-      & .tel-number{
-        width: 30%;
-        text-align: center;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        outline: none;
-        border: none;
-        background: #353538;
-        height: 40px;
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        border-radius: 2px;
-        border: 1px solid #464649;
-        background-color: #353538;
-
-        display: block;
-        margin: 20px auto;
-        font: normal 400 18px/27px "MyriadPro-Regular";
-        font-size: 1.125rem;
-        color: #cfdee7;
-      }
 }
 
 .page-product .product .right {
@@ -301,7 +276,86 @@
       white-space: nowrap;
     }
   }
+
+  & .one-click-add-container {
+    position: relative;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+
+  & .one-click-phone {
+    display: none;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 370px;
+    margin: 0 auto;
+
+    @media #{$mobile} {
+      width: 270px;
+    }
+
+    & .one-click-phone-label{
+      @include font(normal, 400, 14px, 21px, 'Arial');
+      color: #cfdee7;
+
+      display: block;
+      margin-bottom: 5px;
+    }
+    & .one-click-phone-input{
+      display: block;
+      width: 100%;
+      height: 40px;
+
+      border-radius: 2px;
+      border: 1px solid #6b6b72;
+      background-color: #353538;
+      outline: none;
+      padding: 12px;
+      opacity: 0.4;
+      color: #cfdee7;
+      @include font(normal, 400, 14px, 21px, 'Arial');
+
+      // margin-bottom: 30px;
+
+      &:focus  {
+        opacity: 1;
+        border-radius: 2px;
+        border: 1px solid #cfdee7;
+      }
+
+      &::placeholder {
+        @include font(italic, 400, 14px, 21px, 'Arial');
+      }
+      &::-webkit-input-placeholder {
+        @include font(italic, 400, 14px, 21px, 'Arial');
+      }
+      &::-moz-placeholder {
+        @include font(italic, 400, 14px, 21px, 'Arial');
+      }/* Firefox 19+ */
+      &:-moz-placeholder {
+        @include font(italic, 400, 14px, 21px, 'Arial');
+      }/* Firefox 18- */
+      &:-ms-input-placeholder {
+        @include font(italic, 400, 14px, 21px, 'Arial');
+      }
+      // early 2014 http://html5.by/blog/placeholder/
+    }
+  }
 }
+
+
+
+.page-product .product .right {
+  & .addinput {
+    margin-bottom: 50px;
+  }
+}
+
+
+
 .page-product .product .right {
   & .add-to-cart{
     /* Style for "Прямоуголь" */
@@ -335,8 +389,10 @@
     background-image: linear-gradient(to top, #f67519 0%, #fa8c3c 51%, #fd9d58 100%);
     position: relative;
     &:hover {
-      background-size: 200% auto;
-      background-position: bottom center; /* change the direction of the change here */
+      @media #{$tablet-wide} {
+        background-size: 200% auto;
+        background-position: bottom center; /* change the direction of the change here */
+      }
     }
     &:active {
       top: 1px;
@@ -369,6 +425,7 @@
     @include font(italic, 400, 16px, 24px, 'Georgia');
     text-align: center;
     color: #cfdee7;
+    letter-spacing: 0.45px;
 
     @media #{$mobile} {
       padding: 0 15px;

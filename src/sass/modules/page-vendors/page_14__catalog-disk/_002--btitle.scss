@@ -1,8 +1,8 @@
 .page-catalog-disk .breadcrumbs {
   // bg 1
   min-height: 250px;
-  background: #353538 url('../img/bg/p-catalog-disk__breadcrumbs_bg01.png') no-repeat;
-  background-position: center bottom;
+  background: #353538 url('../img/p-catalog-disk__breadcrumbs_bg01.png') no-repeat;
+  background-position: center center;
   box-shadow: 2px 3px 8px 0 rgba(30, 30, 30, 0.35);
 
   @media #{$mobile} {

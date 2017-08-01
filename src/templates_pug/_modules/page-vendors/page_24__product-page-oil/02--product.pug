@@ -63,15 +63,21 @@ section.product
                     .prices-sum-wrap
                       .prices-sum-text Общая сумма
                       .prices-sum-essence 30 000
-                .add
-                  #onebuyopentab.one-click-add-hide
-                    .add-text Укажите ваш номер телефона
-                    input.tel-number(type ="tel" placeholder="+7 505 ___ __ __" name="telnumb")
-                  #onebuyopen.one-click-add
-                    button#onebuyopenv.one-click-add-text Купить в один клик
+                
+                
+                .addinput
+                  .one-click-add-container
+                    .one-click-phone
+                      label.one-click-phone-label Ваш номер телефона
+                      input.tel-value.one-click-phone-input(placeholder="+7 (__) ___ __ __")
+                    #oneClick.one-click-add
+                      .one-click-add-text Купить в один клик      
+                
                   .add-to-cart
                     .add-to-cart-text.onebuy добавить в корзину
                   .add-text Наличие товара подтвердит наш менеджер
+                
+                
 
                   //-   характеристики
                   //-  .params__unit
@@ -115,23 +121,27 @@ section.product
 
                 //- обратный звонок
                 .form-send
-
-                  form.form-send__init
-                    .title появились вопросы?
-                    .subtitle Вы можете заказать обратный звонок, и наши меджеры с радостью&nbsp;вам помогут
-                    .item
-                      label.label Ваше имя
-                      input(type="text" placeholder="Имя")
-                    .item
-                      label.label Ваш номер телефона
-                      input(type="text" placeholder="+ 7 (__) __ __ __")
-                    .btn
-                      .btn-text отправить
-
-                  .form-send__activated
+                  .front-end
+                    form.form-send__init
+                      .title появились вопросы?
+                      .subtitle Вы можете заказать обратный звонок, и наши меджеры с радостью&nbsp;вам помогут
+                      .item
+                        label.label Ваше имя
+                        input(type="text" placeholder="Имя")
+                      .item
+                        label.label Ваш номер телефона
+                        input.tel-value(type="text" placeholder="+7 (__) ___ __ __")
+                      .btn
+                        #btn-question.btn-text отправить
+                    .form-send__activated
+                      .title Спасибо
+                      .subtitle В ближайшее время вам перезвонит наш&nbsp;консультант
+                      .done-btn Готово  
+                  .back-end
                     .title Спасибо
-                    .sub-title В ближайшее время вам перезвонит наш консультант
-                    .done-btn Готово
+                    .subtitle В ближайшее время вам перезвонит наш&nbsp;консультант
+                    .btn
+                       .btn-text Готово  
 
 
 
